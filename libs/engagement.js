@@ -1,5 +1,7 @@
 var autoScroll = false;
 
+// USE SCROLLSPY
+
 $("#welcome").backstretch("images/walden-blur.jpg");
 $("#our-story").backstretch("gallery/purple/dome.jpg");
 $("#wedding").backstretch("gallery/green/log.jpg");
@@ -32,20 +34,46 @@ function getCurrentSectionIndex() {
     return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
 }
 
+function getCurrentSection() {
+    var i;
+    var center = $(window).scrollTop() + $(window).height()/2;
+    for (var i=0; i < section.s.length; i++) {
+        if ($('#' + section.s[i]).offset().top > center) {
+            return i-1;
+        }
+    }
+    return i-1;
+}
+
 // TODO: make this smoother
 $(document).keydown(function (e) {
-    var i = section.s.indexOf(section.now);
-    var move = false;
+    switch (e.which) {
+        case 38: // up
+        case 33:
+        case 40: // down
+        case 34:
+        case 36: // home
+        case 35: // end
+        case 37: // left
+        case 39: // right
+        case 32: // spacebar
+            e.preventDefault();
+            break;
+    }
+}).keyup(function (e) {
+    //e.preventDefault();
+    var i = getCurrentSection(),
+        j, move = false;
 
     switch (e.which) {
         case 38: // up
         case 33:
-            var j = Math.max(i-1, 0);
+            j = Math.max(i-1, 0);
             move = !(i===j);
             break;
         case 40: // down
         case 34:
-            var j = Math.min(i+1, section.s.length-1);
+            j = Math.min(i+1, section.s.length-1);
             move = !(i===j);
             break;
         case 36: // home
@@ -59,7 +87,6 @@ $(document).keydown(function (e) {
         case 39: // right
             break;
         case 32: // spacebar
-            var j;
             if (e.shiftKey) {
                 j = Math.max(i-1, 0);
             } else {
@@ -69,17 +96,25 @@ $(document).keydown(function (e) {
             break;
     }
 
+    console.log(i, j, move)
     if (move) {
         $('a[href="#' + section.s[j] + '"]').click();
     }
+    return;
 });
 
-$('.navbar a').click(function () {
+$('.navbar a').click(function (e) {
+    e.preventDefault();
+    
     section.now = this.hash.substr(1);
-    $('.navbar a').removeClass('active');
+    /*$('.navbar a').removeClass('active');
     autoScroll = true;
     setTimeout(function () {
         $('a[href="' + this.hash + '"]').addClass('active');
         autoScroll = false;
+    }, 1000);
+    */
+    $('html,body').animate({
+        scrollTop: $('#' + section.now).offset().top
     }, 1000);
 });

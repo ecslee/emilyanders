@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emily & Anders</title>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    
+    <link rel='icon' type='img/png' href='images/favicon.png' />
+    <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='css/engagement.css' rel='stylesheet' />
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div id='main-content' class='quick-info col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0'>
+                <div>
+                    <div class='quick-info-img col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-1'>
+                        <img src='images/mit-love-transparent-square.png' class='img-circle' />
+                    </div>
+                    <div class='quick-info-text col-xs-12 col-sm-7'>
+                        <div class='quick-info-text-wrap'>
+                            <h1>Emily <i>&</i> Anders</h1>
+                            <h2>coming July 11, 2015 <div id='device-info'></div></h2>
+                            <h2><a href='http://eventsatthefarm.com/' target="_blank">Khimaira Farm - Luray, VA</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id='background-portrait' class='background'></div>
+        <div id='background-landscape' class='background'></div>
+    </div>
+    <div class='navbar navbar-fixed-bottom seitz-footer'>
+        <div class='col-xs-6 col-xs-offset-6'><span class='seitz'>web seitz 2014</span></div>
+    </div>
+    
+    <script type='text/javascript'>
+        $(window).resize(function () {
+            // choose background
+            var ratio = $(window).width() / $(window).height();
+            if (ratio >= 1) {
+                $('#background-landscape').removeClass('background-hidden');
+                $('#background-portrait').addClass('background-hidden');
+            } else {
+                $('#background-portrait').removeClass('background-hidden');
+                $('#background-landscape').addClass('background-hidden');
+            }
+        });
+        $(document).ready(function () {
+            $(window).resize();
+            console.log('=====   web seitz 2014   =====');
+        });
+    </script>
+</body>
+
+</html>

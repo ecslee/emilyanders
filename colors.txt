@@ -1,0 +1,5 @@
+light green: 181, 202, 146 = #b5ca92
+medium green: 128, 144, 95 = #80905f
+dark purple: 74, 37, 68 = #4a2544
+medium purple: 106, 83, 112 = #6a5370
+light purple: 146, 132, 147 = #928493

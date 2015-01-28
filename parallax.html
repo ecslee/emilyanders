@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emily & Anders</title>
+    <link rel="icon" type="img/png" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.stellar.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link type="text/css" href="libs/jquery-ui-1.11.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <style>
+        div.block {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 200px;"></div>
+    <div class="block" data-stellar-ratio="0.5" style="background-color: #5050ff; margin-top: 50px; margin-left: 100px;"></div>
+    <div class="block" data-stellar-ratio="1"   style="background-color: #f72e9a; margin-top: 100px; margin-left: 200px;"></div>
+    <div class="block" data-stellar-ratio="3"   style="background-color: #f72e9a; margin-top: 300px; margin-left: 300px;"></div>
+    <div class="block" data-stellar-ratio="2"   style="background-color: #e8f72e; margin-top: 200px; margin-left: 400px;"></div>
+    <div class="block" data-stellar-ratio="1"   style="background-color: #e8f72e; margin-top: 100px; margin-left: 500px;"></div>
+    <div class="block" data-stellar-ratio="1.5" style="background-color: #5050ff; margin-top: 150px; margin-left: 600px;"></div>
+    
+    <script type="text/javascript">
+        $(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+    </script>
+    
+</body>
+
+</html>

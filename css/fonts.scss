@@ -1,0 +1,47 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Champagne&Limousines';
+    src: url('fonts/champagnelimousines-webfont.eot');
+    src: url('fonts/champagnelimousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagnelimousines-webfont.woff') format('woff'),
+         url('fonts/champagnelimousines-webfont.ttf') format('truetype'),
+         url('fonts/champagnelimousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champagne&LimousinesBold';
+    src: url('fonts/champagnelimousinesbold-webfont.eot');
+    src: url('fonts/champagnelimousinesbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagnelimousinesbold-webfont.woff') format('woff'),
+         url('fonts/champagnelimousinesbold-webfont.ttf') format('truetype'),
+         url('fonts/champagnelimousinesbold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Champagne&LimousinesItalic';
+    src: url('fonts/champagnelimousinesitalic-webfont.eot');
+    src: url('fonts/champagnelimousinesitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagnelimousinesitalic-webfont.woff') format('woff'),
+         url('fonts/champagnelimousinesitalic-webfont.ttf') format('truetype'),
+         url('fonts/champagnelimousinesitalic-webfont.svg#champagne__limousinesitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Champagne&LimousinesBoldItalic';
+    src: url('fonts/champagnelimousinesbolditalic-webfont.eot');
+    src: url('fonts/champagnelimousinesbolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/champagnelimousinesbolditalic-webfont.woff') format('woff'),
+         url('fonts/champagnelimousinesbolditalic-webfont.ttf') format('truetype'),
+         url('fonts/champagnelimousinesbolditalic-webfont.svg#champagne__limousinesBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

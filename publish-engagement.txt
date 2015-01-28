@@ -1,0 +1,10 @@
+cd ~/Dropbox
+scp -r engagement/ alee003@athena.dialup.mit.edu:/afs/athena.mit.edu/user/a/l/alee003/web_scripts
+
+
+
+@	A	1h	18.181.0.46
+www	CNAME	1h	emilyanders.us.
+
+hostname	path
+emilyanders.us	/mit/alee003/web_scripts/

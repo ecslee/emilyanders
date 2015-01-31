@@ -18,13 +18,8 @@ $lightest-purple:#aaa0ab;
 /*rgb(170, 160, 171)*/
 
 
-nav.navbar {
+.navbar {
     height: 50px;
-    //&.affix-top {
-        position: static;
-        top: 300px;
-    //}
-    
     .container-fluid {
         height: 100%;
         .navbar-header {
@@ -35,6 +30,17 @@ nav.navbar {
                     height: 100%;
                 }
             }
+        }
+    }
+    
+    &.affix-top {
+        li.nav-li-brand {
+            display: none;
+        }
+    }
+    &.affix {
+        li.nav-li-brand {
+            display: block;
         }
     }
 }
@@ -51,9 +57,12 @@ li.nav-li-brand {
         }
     }
     
-    &.active {
-        a.navbar-brand img {
-            border: 2px solid $dark-purple;
+    &.active, &:hover, &.active:hover {
+        a.navbar-brand {
+            background-color: #f8f8f8; // default
+            img {
+                border: 2px solid $dark-purple;
+            }
         }
     }
 }

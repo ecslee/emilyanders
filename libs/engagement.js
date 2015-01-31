@@ -1,7 +1,3 @@
-var autoScroll = false;
-
-// USE SCROLLSPY
-
 $("#welcome").backstretch("images/walden-blur.jpg");
 //$("#our-story").backstretch("gallery/purple/dome.jpg");
 //$("#wedding").backstretch("gallery/green/log.jpg");
@@ -9,12 +5,12 @@ $("#welcome").backstretch("images/walden-blur.jpg");
 //$("#thanks").backstretch("gallery/purple/stata.jpg");
 $(".section").css("min-height", $(window).height() + 130);
 
-//$("body").scrollspy({target: "#navigation-top"});
-
 $('#ecs-navbar').on('affix.bs.affix', function () {
     $(this).addClass('navbar-fixed-top');
+    $(this).removeClass('col-sm-8 col-sm-offset-2');
 }).on('affix-top.bs.affix', function () {
     $(this).removeClass('navbar-fixed-top');
+    $(this).addClass('col-sm-8 col-sm-offset-2');
 });
 
 var section = {
@@ -34,22 +30,6 @@ var section = {
         return i-1;
     }
 };
-
-/*$(window).scroll(function (event) {
-    var curId = section.s[section.getCurrentIndex()];
-    section.now = curId;
-    
-    if (!autoScroll) {
-        $('a', '.navbar').removeClass('active');
-        $('a[href="#'+curId+'"]', '.navbar').addClass('active');
-    }
-
-    if (curId === 'welcome') {
-        $('.navbar.fixed').addClass('hide');
-    } else {
-        $('.navbar.fixed').removeClass('hide');
-    }
-});*/
 
 // TODO: make this smoother
 $(document).keydown(function (e) {
@@ -111,13 +91,6 @@ $('.navbar a').click(function (e) {
     e.preventDefault();
     
     section.now = this.hash.substr(1);
-    /*$('.navbar a').removeClass('active');
-    autoScroll = true;
-    setTimeout(function () {
-        $('a[href="' + this.hash + '"]').addClass('active');
-        autoScroll = false;
-    }, 1000);
-    */
     $('html,body').animate({
         scrollTop: $('#' + section.now).offset().top
     }, 800);

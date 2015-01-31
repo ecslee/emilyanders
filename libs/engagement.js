@@ -8,9 +8,11 @@ $(".section").css("min-height", $(window).height() + 130);
 $('#ecs-navbar').on('affix.bs.affix', function () {
     $(this).addClass('navbar-fixed-top');
     $(this).removeClass('col-sm-8 col-sm-offset-2');
+    $('.navbar-brand', this).addClass('navbar-brand-show');
 }).on('affix-top.bs.affix', function () {
     $(this).removeClass('navbar-fixed-top');
     $(this).addClass('col-sm-8 col-sm-offset-2');
+    $('.navbar-brand', this).removeClass('navbar-brand-show');
 });
 
 var section = {

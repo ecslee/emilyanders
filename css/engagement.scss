@@ -24,28 +24,36 @@ $lightest-purple:#aaa0ab;
         height: 100%;
         .navbar-header {
             height: 100%;
+            margin-left: 8.33333333%; // col-sm-offset-1
             .navbar-nav {
                 height: 100%;
                 li {
                     height: 100%;
+                    text-align: center;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    a {
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
                 }
             }
         }
     }
     
-    &.affix-top {
-        li.nav-li-brand {
+    /*&.affix-top {
+        div.nav-li-brand a.navbar-brand {
             display: none;
         }
     }
     &.affix {
-        li.nav-li-brand {
+        div.nav-li-brand a.navbar-brand {
             display: block;
         }
-    }
+    }*/
 }
 
-li.nav-li-brand {
+div.nav-li-brand {
     a.navbar-brand {
         height: 50px;
         padding: 5px !important;
@@ -53,7 +61,11 @@ li.nav-li-brand {
             height: 100%;
             width: auto;
             border: 2px solid $sage-green;
+            border-radius: 100%;
             box-sizing: border-box;
+        }
+        &.navbar-brand-show {
+            display: block !important;
         }
     }
     

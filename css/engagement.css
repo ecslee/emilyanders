@@ -1,18 +1,21 @@
 /* light green gradient */
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
-.navbar { height: 50px; }
+.navbar { height: 50px; /*&.affix-top { div.nav-li-brand a.navbar-brand { display: none; }
+}
+&.affix { div.nav-li-brand a.navbar-brand { display: block; }
+}*/ }
 .navbar .container-fluid { height: 100%; }
-.navbar .container-fluid .navbar-header { height: 100%; }
+.navbar .container-fluid .navbar-header { height: 100%; margin-left: 8.33333333%; }
 .navbar .container-fluid .navbar-header .navbar-nav { height: 100%; }
-.navbar .container-fluid .navbar-header .navbar-nav li { height: 100%; }
-.navbar.affix-top li.nav-li-brand { display: none; }
-.navbar.affix li.nav-li-brand { display: block; }
+.navbar .container-fluid .navbar-header .navbar-nav li { height: 100%; text-align: center; padding-left: 3px; padding-right: 3px; }
+.navbar .container-fluid .navbar-header .navbar-nav li a { padding-left: 3px; padding-right: 3px; }
 
-li.nav-li-brand a.navbar-brand { height: 50px; padding: 5px !important; }
-li.nav-li-brand a.navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; box-sizing: border-box; }
-li.nav-li-brand.active a.navbar-brand, li.nav-li-brand:hover a.navbar-brand, li.nav-li-brand.active:hover a.navbar-brand { background-color: #f8f8f8; }
-li.nav-li-brand.active a.navbar-brand img, li.nav-li-brand:hover a.navbar-brand img, li.nav-li-brand.active:hover a.navbar-brand img { border: 2px solid #4a2544; }
+div.nav-li-brand a.navbar-brand { height: 50px; padding: 5px !important; }
+div.nav-li-brand a.navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; border-radius: 100%; box-sizing: border-box; }
+div.nav-li-brand a.navbar-brand.navbar-brand-show { display: block !important; }
+div.nav-li-brand.active a.navbar-brand, div.nav-li-brand:hover a.navbar-brand, div.nav-li-brand.active:hover a.navbar-brand { background-color: #f8f8f8; }
+div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-brand img, div.nav-li-brand.active:hover a.navbar-brand img { border: 2px solid #4a2544; }
 
 .navbar-e { min-height: 40px !important; height: 40px !important; font-size: 20px; line-height: 40px; text-align: center; margin-bottom: 0px; }
 .navbar-e a { margin: 10px; padding: 5px 15px; /*-webkit-border-radius: 5px;

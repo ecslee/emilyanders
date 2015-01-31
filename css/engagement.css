@@ -1,7 +1,7 @@
 /* light green gradient */
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
-nav.navbar { height: 50px; }
+nav.navbar { height: 50px; position: static; top: 300px; }
 nav.navbar .container-fluid { height: 100%; }
 nav.navbar .container-fluid .navbar-header { height: 100%; }
 nav.navbar .container-fluid .navbar-header .navbar-nav { height: 100%; }

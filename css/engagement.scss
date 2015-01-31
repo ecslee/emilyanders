@@ -20,6 +20,11 @@ $lightest-purple:#aaa0ab;
 
 nav.navbar {
     height: 50px;
+    //&.affix-top {
+        position: static;
+        top: 300px;
+    //}
+    
     .container-fluid {
         height: 100%;
         .navbar-header {

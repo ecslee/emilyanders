@@ -11,6 +11,12 @@ $(".section").css("min-height", $(window).height() + 130);
 
 //$("body").scrollspy({target: "#navigation-top"});
 
+$('#ecs-navbar').on('affix.bs.affix', function () {
+    $(this).addClass('navbar-fixed-top');
+}).on('affix-top.bs.affix', function () {
+    $(this).removeClass('navbar-fixed-top');
+});
+
 var section = {
     now: 'welcome',
     s: ['welcome', 'our-story', 'wedding', 'gallery', 'thanks'],

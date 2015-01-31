@@ -3,19 +3,34 @@ var autoScroll = false;
 // USE SCROLLSPY
 
 $("#welcome").backstretch("images/walden-blur.jpg");
-$("#our-story").backstretch("gallery/purple/dome.jpg");
-$("#wedding").backstretch("gallery/green/log.jpg");
-$("#gallery").backstretch("gallery/bw/sculpture.jpg");
-$("#thanks").backstretch("gallery/purple/stata.jpg");
+//$("#our-story").backstretch("gallery/purple/dome.jpg");
+//$("#wedding").backstretch("gallery/green/log.jpg");
+//$("#gallery").backstretch("gallery/bw/sculpture.jpg");
+//$("#thanks").backstretch("gallery/purple/stata.jpg");
 $(".section").css("min-height", $(window).height() + 130);
+
+//$("body").scrollspy({target: "#navigation-top"});
 
 var section = {
     now: 'welcome',
-    s: ['welcome', 'our-story', 'wedding', 'gallery', 'thanks']
+    s: ['welcome', 'our-story', 'wedding', 'gallery', 'thanks'],
+    getCurrentIndex: function ()  {
+        return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
+    },
+    getCurrent: function () {
+        var i;
+        var center = $(window).scrollTop() + $(window).height()/2;
+        for (var i=0; i < section.s.length; i++) {
+            if ($('#' + section.s[i]).offset().top > center) {
+                return i-1;
+            }
+        }
+        return i-1;
+    }
 };
 
 $(window).scroll(function (event) {
-    var curId = section.s[getCurrentSectionIndex()];
+    var curId = section.s[section.getCurrentIndex()];
     section.now = curId;
     
     if (!autoScroll) {
@@ -29,21 +44,6 @@ $(window).scroll(function (event) {
         $('.navbar.fixed').removeClass('hide');
     }
 });
-
-function getCurrentSectionIndex() {
-    return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
-}
-
-function getCurrentSection() {
-    var i;
-    var center = $(window).scrollTop() + $(window).height()/2;
-    for (var i=0; i < section.s.length; i++) {
-        if ($('#' + section.s[i]).offset().top > center) {
-            return i-1;
-        }
-    }
-    return i-1;
-}
 
 // TODO: make this smoother
 $(document).keydown(function (e) {
@@ -61,8 +61,9 @@ $(document).keydown(function (e) {
             break;
     }
 }).keyup(function (e) {
+    console.log('keyup:', e.which == 32);
     //e.preventDefault();
-    var i = getCurrentSection(),
+    var i = section.getCurrent(),
         j, move = false;
 
     switch (e.which) {
@@ -116,5 +117,5 @@ $('.navbar a').click(function (e) {
     */
     $('html,body').animate({
         scrollTop: $('#' + section.now).offset().top
-    }, 1000);
+    }, 800);
 });

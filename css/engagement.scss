@@ -17,6 +17,42 @@ $lightest-purple:#aaa0ab;
 
 /*rgb(170, 160, 171)*/
 
+
+nav.navbar {
+    height: 50px;
+    .container-fluid {
+        height: 100%;
+        .navbar-header {
+            height: 100%;
+            .navbar-nav {
+                height: 100%;
+                li {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+li.nav-li-brand {
+    a.navbar-brand {
+        height: 50px;
+        padding: 5px !important;
+        img {
+            height: 100%;
+            width: auto;
+            border: 2px solid $sage-green;
+            box-sizing: border-box;
+        }
+    }
+    
+    &.active {
+        a.navbar-brand img {
+            border: 2px solid $dark-purple;
+        }
+    }
+}
+
 .navbar-e {
     min-height: 40px !important;
     height: 40px !important;

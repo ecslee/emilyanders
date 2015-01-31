@@ -19,18 +19,32 @@
     <!-- custom Bootstrap: http://getbootstrap.com/customize/?id=9e374f26fe438cee6039 -->
 </head>
 
-<body>
-    <div class="navbar navbar-fixed-top">
-        <div class="row">
-            <div id="navigation-top" class="ten columns centered">
-                <a href="#welcome" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='welcome']" style="display: none;">Welcome</a>
-                <a href="#our-story" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='our-story']">Our story</a>
-                <a href="#wedding" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='wedding']">Wedding</a>
-                <a href="#gallery" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='gallery']">Gallery</a>
-                <a href="#thanks" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='thanks']">Thanks</a>
+<body data-spy="scroll">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--a class="navbar-brand" href="#welcome">
+                    <img alt="Brand" src="images/favicon.png">
+                </a-->
+                <ul class="nav navbar-nav" data-spy="affix" data-offset-top="20">
+                    <li class="nav-li-brand"><a href="#welcome" class="navbar-brand"><img alt="e&a" src="images/favicon.png"></a></li>
+                    <li><a href="#our-story">Our story</a></li>
+                    <li><a href="#wedding">Wedding</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#thanks">Thanks</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <!--div class="row">
+            <div id="navigation-top" class="ten columns centered" data-spy="affix" data-offset-top="600">
+                <a href="#welcome" style="/*display: none;*/">Welcome</a>
+                <a href="#our-story">Our story</a>
+                <a href="#wedding">Wedding</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#thanks">Thanks</a>
+            </div>
+        </div-->
+    </nav>
     <div id="welcome" class="section section-intro container-fluid">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
@@ -45,17 +59,18 @@
                 </div>
             </div>
         </div>
-        <div class="navbar navbar-welcome">
+        
+        <!--div class="navbar navbar-welcome">
             <div class="row">
-                <div id="navigation-welcome" class="ten columns centered">
-                    <a href="#welcome" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='welcome']" style="display: none;">Welcome</a>
-                    <a href="#our-story" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='our-story']">Our story</a>
-                    <a href="#wedding" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='wedding']">Wedding</a>
-                    <a href="#gallery" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='gallery']">Gallery</a>
-                    <a href="#thanks" class="skip" gumby-update gumby-duration="1000" gumby-goto="[data-target='thanks']">Thanks</a>
+                <div id="navigation-welcome" class="ten columns centered" data-spy="affix" data-offset-top="10">
+                    <a href="#welcome" style="/*display: none;*/">Welcome</a>
+                    <a href="#our-story">Our story</a>
+                    <a href="#wedding">Wedding</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#thanks">Thanks</a>
                 </div>
             </div>
-        </div>
+        </div-->
     </div>
     <div id="our-story" data-target="our-story" class="section section-purple">
         <div class="section-content">

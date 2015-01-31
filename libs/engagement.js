@@ -29,7 +29,7 @@ var section = {
     }
 };
 
-$(window).scroll(function (event) {
+/*$(window).scroll(function (event) {
     var curId = section.s[section.getCurrentIndex()];
     section.now = curId;
     
@@ -43,7 +43,7 @@ $(window).scroll(function (event) {
     } else {
         $('.navbar.fixed').removeClass('hide');
     }
-});
+});*/
 
 // TODO: make this smoother
 $(document).keydown(function (e) {
@@ -61,8 +61,6 @@ $(document).keydown(function (e) {
             break;
     }
 }).keyup(function (e) {
-    console.log('keyup:', e.which == 32);
-    //e.preventDefault();
     var i = section.getCurrent(),
         j, move = false;
 
@@ -97,7 +95,6 @@ $(document).keydown(function (e) {
             break;
     }
 
-    console.log(i, j, move)
     if (move) {
         $('a[href="#' + section.s[j] + '"]').click();
     }

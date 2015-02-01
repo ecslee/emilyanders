@@ -1,15 +1,13 @@
 /* light green gradient */
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
-.navbar { height: 50px; /*&.affix-top { div.nav-li-brand a.navbar-brand { display: none; }
-}
-&.affix { div.nav-li-brand a.navbar-brand { display: block; }
-}*/ }
+.navbar { height: 50px; }
 .navbar .container-fluid { height: 100%; }
 .navbar .container-fluid .navbar-header { height: 100%; margin-left: 8.33333333%; }
 .navbar .container-fluid .navbar-header .navbar-nav { height: 100%; }
 .navbar .container-fluid .navbar-header .navbar-nav li { height: 100%; text-align: center; padding-left: 3px; padding-right: 3px; }
-.navbar .container-fluid .navbar-header .navbar-nav li a { padding-left: 3px; padding-right: 3px; }
+.navbar .container-fluid .navbar-header .navbar-nav li a { padding-left: 3px; padding-right: 3px; font-size: 20px; font-family: 'Champagne&Limousines', Helvetica, sans-serif; text-decoration: none; }
+.navbar .container-fluid .navbar-header .navbar-nav li a:hover { color: #4a2544; background: #aaa0ab; background: rgba(255, 255, 255, 0.3); text-decoration: none; }
 
 div.nav-li-brand a.navbar-brand { height: 50px; padding: 5px !important; }
 div.nav-li-brand a.navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; border-radius: 100%; box-sizing: border-box; }
@@ -34,15 +32,18 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .section-intro div.main-title { top: 50vh; }
 .section-intro img.img-circle { top: 10vh; }
 
+.welcome-info { margin-top: 20vh; }
+.welcome-info .row { margin-bottom: 50px; }
+
 .img-circle { width: 100%; border-radius: 100%; border: 3px solid #fff; background-color: #fff; }
 
 .backstretch img { -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px); }
 
 .section { min-height: 600px; width: 100vw; }
-.section .section-content { height: 85%; width: 70%; margin-left: auto; margin-right: auto; padding: 20px; background-image: url("../gallery/frame.png"); background-repeat: no-repeat; background-size: 100% 100%; opacity: 0.7; border-radius: 10px; }
+.section .section-content { min-height: 200px; width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 20px; padding: 20px; background-color: #eeeeee; background-color: rgba(238, 238, 238, 0.7); border-radius: 10px; }
 
 .section-purple, .section-green { padding-top: 15vh; }
-.section-purple h1, .section-green h1 { font-family: 'Champagne&LimousinesBoldItalic', Helvetica, sans-serif; font-size: 40px; }
+.section-purple h1, .section-green h1 { font-family: 'Champagne&LimousinesBoldItalic', Helvetica, sans-serif; font-size: 40px; text-align: right; margin-bottom: 30px; margin-top: 10px; }
 
 .section-purple { color: #6a5370; background-color: #aaa0ab; /*#DCD0FF;  lavendar */ }
 

@@ -17,7 +17,7 @@ $('#ecs-navbar').on('affix.bs.affix', function () {
 
 var section = {
     now: 'welcome',
-    s: ['welcome', 'our-story', 'wedding', 'gallery', 'thanks'],
+    s: ['welcome', 'wedding', 'guests', 'registry', 'gallery'],
     getCurrentIndex: function ()  {
         return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
     },
@@ -33,7 +33,17 @@ var section = {
     }
 };
 
-// TODO: make this smoother
+// click navbar
+$('.navbar a').click(function (e) {
+    e.preventDefault();
+    
+    section.now = this.hash.substr(1);
+    $('html,body').animate({
+        scrollTop: $('#' + section.now).offset().top
+    }, 800);
+});
+
+// scroll with keyboard shortcuts
 $(document).keydown(function (e) {
     switch (e.which) {
         case 38: // up
@@ -87,13 +97,4 @@ $(document).keydown(function (e) {
         $('a[href="#' + section.s[j] + '"]').click();
     }
     return;
-});
-
-$('.navbar a').click(function (e) {
-    e.preventDefault();
-    
-    section.now = this.hash.substr(1);
-    $('html,body').animate({
-        scrollTop: $('#' + section.now).offset().top
-    }, 800);
 });

@@ -35,22 +35,20 @@ $lightest-purple:#aaa0ab;
                     a {
                         padding-left: 3px;
                         padding-right: 3px;
+                        font-size: 20px;
+                        font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                        text-decoration: none;
+                        &:hover {
+                            color: $dark-purple;
+                            background: $lightest-purple;
+                            background: rgba(255, 255, 255, 0.3);
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
     }
-    
-    /*&.affix-top {
-        div.nav-li-brand a.navbar-brand {
-            display: none;
-        }
-    }
-    &.affix {
-        div.nav-li-brand a.navbar-brand {
-            display: block;
-        }
-    }*/
 }
 
 div.nav-li-brand {
@@ -159,6 +157,13 @@ div.nav-li-brand {
         top: 10vh;
     }
 }
+
+.welcome-info {
+    margin-top: 20vh;
+    .row {
+        margin-bottom: 50px;
+    }
+}
 .img-circle {
     width: 100%;
     border-radius: 100%;
@@ -178,16 +183,15 @@ div.nav-li-brand {
     min-height: 600px;
     width: 100vw;
     .section-content {
-        height: 85%;
+        //height: 85%;
+        min-height: 200px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
         padding: 20px;
-        //background-color: #eee;
-        background-image: url('../gallery/frame.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        opacity: 0.7;
+        background-color: rgb(238, 238, 238);
+        background-color: rgba(238, 238, 238, 0.7);
         border-radius: 10px;
     }
 }
@@ -197,6 +201,9 @@ div.nav-li-brand {
     h1 {
         font-family: 'Champagne&LimousinesBoldItalic', Helvetica, sans-serif;
         font-size: 40px;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 }
 .section-purple {

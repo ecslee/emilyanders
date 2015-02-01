@@ -98,3 +98,13 @@ $(document).keydown(function (e) {
     }
     return;
 });
+
+/* wedding party pics alignment */
+$(window).resize(function () {
+    // .css('height') includes border, .height() just gets content height
+    var picHeight = parseInt($('.img-circle', '.wedding-party-pics').css('height'), 10),
+        margin = (100 - picHeight) / 2;
+    $('.img-circle', '.wedding-party-pics').css('margin', margin + 'px 0');
+});
+
+$(window).resize();

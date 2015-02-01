@@ -187,17 +187,24 @@ div.nav-li-brand {
 .section {
     min-height: 600px;
     width: 100vw;
+    height: auto;
+    padding-bottom: 100px;
     .section-content {
         //height: 85%;
         min-height: 200px;
+        height: auto;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
         padding: 20px;
+        padding-bottom: 60px;
         background-color: rgb(238, 238, 238);
         background-color: rgba(238, 238, 238, 0.7);
         border-radius: 10px;
+    }
+    &#welcome {
+        z-index: 100 !important;
     }
 }
 .section-purple,
@@ -209,6 +216,7 @@ div.nav-li-brand {
         text-align: right;
         margin-bottom: 30px;
         margin-top: 10px;
+        margin-right: 30px;
     }
 }
 .section-purple {
@@ -231,6 +239,102 @@ div.nav-li-brand {
         &.active i.nav-heart:before {
             content: "\e005";
             color: $lightest-purple;
+        }
+    }
+}
+
+/* wedding */
+.wedding-party-pics {
+    height: 400px;
+    a .img-circle {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+.wedding-party-info {
+    height: 400px;
+    h3 {
+        margin-top: 15px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    div {
+        height: 100px;
+        display: inline-block;
+        //border: 1px solid white;
+    }
+}
+.bridesmaids {
+    height: 400px;
+    .wedding-party-info {
+        text-align: right;
+    }
+    .wedding-party-pics {
+        .img-circle:hover {
+            border: 3px solid $medium-purple;
+        }
+    }
+}
+.groomsmen {
+    height: 400px;
+    .wedding-party-info {
+        text-align: left;
+    }
+    .wedding-party-pics {
+        .img-circle:hover {
+            border: 3px solid $medium-green;
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        text-align: right;
+        .wedding-party-pics {
+            float: right!important;
+            margin-right: 8.33333333%;
+        }
+    }
+}
+.wedding-party-modal {
+    .modal-content {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $dark-purple;
+        .modal-body {
+            padding: 8px;
+            img {
+                border: 1px solid #ddd;
+            }
+        }
+        .modal-footer {
+            height: 50px;
+            padding: 5px;
+            border-top: 0;
+            h4 {
+                text-align: center;
+                color: #ddd;
+                font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+    &.modal-h .modal-content {
+        width: 620px;
+        height: 470px;
+        .modal-body {
+            width: 620px;
+            height: 420px;
+        }
+    }
+    &.modal-v .modal-content {
+        width: 420px;
+        height: 670px;
+        .modal-body {
+            width: 420px;
+            height: 620px;
         }
     }
 }

@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/engagement.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/engagement.css" />
     <!-- custom Bootstrap: http://getbootstrap.com/customize/?id=9e374f26fe438cee6039 -->
 </head>
 
@@ -49,54 +49,188 @@
             </div>
         </div>
     </div>
-    <div id="wedding" class="section section-green">
-        <div class="section-content">
+    <div id="wedding" class="section section-green container-fluid">
+        <div class="section-content container">
             <h1>Wedding Info</h1>
             <h2>July 11, 2015</h2>
             <h2>Khimaira Farm - Luray, VA</h2>
             <h3>Ceremony at 6 o'clock in the evening</h3>
             <h3>Reception to follow</h3>
         </div>
-        <div class="section-content">
+        <div class="section-content container">
             <h1>Wedding Party</h1>
-            <span class="col-sm-6" style="border-right: 1px solid black; text-align: right;">
-                <div id="bethany">
-                    <h3>Bethany Kroese</h3>
-                    <p>Friend from college</p>
-                    <p>Fellow EECS geek</p>
+            <div class="row">
+                <div class="bridesmaids col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="wedding-party-info col-xs-8 col-sm-9">
+                            <div id="bethany">
+                                <h3>Bethany Kroese</h3>
+                                <h5>Fellow EECS geek</h5>
+                            </div>
+                            <div id="kayla">
+                                <h3>Kayla Underwood</h3>
+                                <h5>Friend since 5th grade</h5>
+                            </div>
+                            <div id="becca">
+                                <h3>Rebecca Kobayashi</h3>
+                                <h5>Friend from high school</h5>
+                            </div>
+                            <div id="kathleen">
+                                <h3>Kathleen Kraines</h3>
+                                <h5>Friend from college</h5>
+                            </div>
+                        </div>
+                        <div class="wedding-party-pics col-xs-3">
+                            <a data-toggle="modal" data-target="#bethanyModal">
+                                <img src="images/bridesmaids/icon-bethany.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#kaylaModal">
+                                <img src="images/bridesmaids/icon-kayla.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#beccaModal">
+                                <img src="images/bridesmaids/icon-becca.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#kathleenModal">
+                                <img src="images/bridesmaids/icon-kathleen.png" class="img-circle" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div id="kayla">
-                    <h3>Kayla Underwood</h3>
-                    <p>Friend since 5th grade</p>
+                <div class="groomsmen col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="wedding-party-pics col-xs-3">
+                            <a data-toggle="modal" data-target="#aleksiModal">
+                                <img src="images/groomsmen/icon-aleksi.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#cameronModal">
+                                <img src="images/groomsmen/icon-cameron.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#antuanModal">
+                                <img src="images/groomsmen/icon-antuan.png" class="img-circle" />
+                            </a>
+                            <a data-toggle="modal" data-target="#dorianModal">
+                                <img src="images/groomsmen/icon-dorian.png" class="img-circle" />
+                            </a>
+                        </div>
+                        <div class="wedding-party-info col-xs-8 col-sm-9">
+                            <div id="aleksi">
+                                <h3>Aleksi Lee</h3>
+                                <h5>Brother</h5>
+                            </div>
+                            <div id="cameron">
+                                <h3>Cameron French</h3>
+                                <h5>Fellow guitar and metal enthusiast</h5>
+                            </div>
+                            <div id="antuan">
+                                <h3>Antuan Weeks</h3>
+                                <h5>Friend from college</h5>
+                            </div>
+                            <div id="dorian">
+                                <h3>Dorian Burks</h3>
+                                <h5>Friend from college</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="becca">
-                    <h3>Rebecca Kobayashi</h3>
-                    <p>Friend from high school</p>
+            </div>
+        </div>
+        <!-- bridesmaid pics -->
+        <div class="modal fade wedding-party-modal modal-h" id="bethanyModal" tabindex="-1" role="dialog" aria-labelledby="bethanyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/bridesmaids/bethany.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="bethanyModalLabel">Emily & Bethany</h4>
+                    </div>
                 </div>
-                <div id="kathleen">
-                    <h3>Kathleen Kraines</h3>
-                    <p>Friend from college</p>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-v" id="kaylaModal" tabindex="-1" role="dialog" aria-labelledby="kaylaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="400" height="600" src="images/bridesmaids/kayla.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="kaylaModalLabel">Emily & Kayla (& Becca)</h4>
+                    </div>
                 </div>
-            </span>
-            <span class="col-sm-6">
-                <div id="aleksi">
-                    <h3>Aleksi Lee</h3>
-                    <p>Brother</p>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-h" id="beccaModal" tabindex="-1" role="dialog" aria-labelledby="beccaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/bridesmaids/becca.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="beccaModalLabel">Becca & Emily (& Kayla)</h4>
+                    </div>
                 </div>
-                <div id="cameron">
-                    <h3>Cameron French</h3>
-                    <p>Friend from college</p>
-                    <p>Fellow guitar and metal enthusiast</p>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-h" id="kathleenModal" tabindex="-1" role="dialog" aria-labelledby="kathleenModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/bridesmaids/kathleen.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="kathleenModalLabel">Emily & Kathleen</h4>
+                    </div>
                 </div>
-                <div id="antuan">
-                    <h3>Antuan Weeks</h3>
-                    <p>Friend from college</p>
+            </div>
+        </div>
+        <!-- gromosmen pics -->
+        <div class="modal fade wedding-party-modal modal-h" id="aleksiModal" tabindex="-1" role="dialog" aria-labelledby="aleksiModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/groomsmen/aleksi.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="aleksiModalLabel">Aleksi & Anders (& Emily)</h4>
+                    </div>
                 </div>
-                <div id="dorian">
-                    <h3>Dorian Burk</h3>
-                    <p>Friend from college</p>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-h" id="cameronModal" tabindex="-1" role="dialog" aria-labelledby="cameronModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/groomsmen/cameron.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="cameronModalLabel">Anders & Cameron</h4>
+                    </div>
                 </div>
-            </span>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-v" id="antuanModal" tabindex="-1" role="dialog" aria-labelledby="antuanModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="400" height="600" src="images/groomsmen/antuan.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="antuanModalLabel">Anders & Antuan</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade wedding-party-modal modal-h" id="dorianModal" tabindex="-1" role="dialog" aria-labelledby="dorianModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img width="600" height="400" src="images/groomsmen/dorian.png">
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="modal-title" id="dorianModalLabel">Dorian & Anders (& Cameron)</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="guests" class="section section-purple">

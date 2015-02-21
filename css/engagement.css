@@ -1,6 +1,7 @@
 /* light green gradient */
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
+/* sizes */
 .navbar { height: 50px; }
 .navbar .container-fluid { height: 100%; }
 .navbar .container-fluid .navbar-header { height: 100%; margin-left: 8.33333333%; }
@@ -52,6 +53,17 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .side-nav { font-size: 14px; }
 .side-nav li a i.nav-heart:before { content: "\e143"; color: #fff; }
 .side-nav li a.active i.nav-heart:before { content: "\e005"; color: #aaa0ab; }
+
+/* registry */
+.registry-link:hover img { opacity: 0.5; filter: alpha(opacity=40); }
+
+.registry-logo-right { padding: 15px; float: left; margin-left: 16.66666667%; width: 66.66666667%; }
+@media (min-width: 768px) { .registry-logo-right { margin-left: 0; width: 41.66666667%; } }
+@media (min-width: 992px) { .registry-logo-right { margin-left: 0; width: 33.33333333%; } }
+
+.registry-logo-left { padding: 15px; float: left; margin-left: 16.66666667%; width: 66.66666667%; }
+@media (min-width: 768px) { .registry-logo-left { margin-left: 8.33333333%; width: 41.66666667%; } }
+@media (min-width: 992px) { .registry-logo-left { margin-left: 16.66666667%; width: 33.33333333%; } }
 
 @media all and (max-width: 1200px) { .section-intro h1 { font-size: 50px; }
   .section-intro h2 { font-size: 36px; } }

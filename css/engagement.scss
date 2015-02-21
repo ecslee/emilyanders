@@ -17,6 +17,11 @@ $lightest-purple:#aaa0ab;
 
 /*rgb(170, 160, 171)*/
 
+/* sizes */
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
 
 .navbar {
     height: 50px;
@@ -229,6 +234,49 @@ div.nav-li-brand {
         }
     }
 }
+
+/* registry */
+.registry-link {
+    &:hover {
+        img {
+            opacity: 0.5;
+            filter:alpha(opacity=40);
+        }
+    }
+}
+.registry-logo-right {
+    padding: 15px;
+    float: left;
+    margin-left: 16.66666667%;
+    width: 66.66666667%;
+    
+    @media (min-width: $screen-sm-min) {
+        margin-left: 0;
+        width: 41.66666667%;
+    }
+    
+    @media (min-width: $screen-md-min) {
+        margin-left: 0;
+        width: 33.33333333%;
+    }
+}
+.registry-logo-left {
+    padding: 15px;
+    float: left;
+    margin-left: 16.66666667%;
+    width: 66.66666667%;
+    
+    @media (min-width: $screen-sm-min) {
+        margin-left: 8.33333333%;
+        width: 41.66666667%;
+    }
+    
+    @media (min-width: $screen-md-min) {
+        margin-left: 16.66666667%;
+        width: 33.33333333%;
+    }
+}
+
 @media all and (max-width: 1200px) {
     .section-intro h1 {
         font-size: 50px;

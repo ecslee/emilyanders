@@ -24,32 +24,55 @@ $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
 .navbar {
-    height: 50px;
     .container-fluid {
-        height: 100%;
+        .row {
+            margin-bottom: 0; 
+        }
         .navbar-header {
-            height: 100%;
-            margin-left: 8.33333333%; // col-sm-offset-1
-            .navbar-nav {
-                height: 100%;
-                li {
+            .navbar-brand {
+                height: 50px;
+                padding: 5px !important;
+                img {
                     height: 100%;
-                    text-align: center;
+                    width: auto;
+                    border: 2px solid $sage-green;
+                    border-radius: 100%;
+                    box-sizing: border-box;
+                }
+                &.navbar-brand-show {
+                    display: block !important;
+                }
+            }
+
+            &.active, &:hover, &.active:hover {
+                a.navbar-brand {
+                    background-color: #f8f8f8; // default
+                    img {
+                        border: 2px solid $dark-purple;
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            width: 83.33333333%;
+        }
+        .navbar-nav {
+            li {
+                text-align: center;
+                padding-left: 3px;
+                padding-right: 3px;
+                a {
                     padding-left: 3px;
                     padding-right: 3px;
-                    a {
-                        padding-left: 3px;
-                        padding-right: 3px;
-                        font-size: 20px;
-                        font-family: 'Champagne&Limousines', Helvetica, sans-serif;
-                        text-decoration: none;
-                        &:hover {
-                            color: $dark-purple;
-                            background: $lightest-purple;
-                            background: rgba(255, 255, 255, 0.3);
-                            text-decoration: none;
-                        }
-                    }
+                    font-size: 20px;
+                    font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                    text-decoration: none;
+                }
+                &:hover {
+                    color: $dark-purple;
+                    background: $lightest-purple;
+                    //background: rgba(255, 255, 255, 0.3);
+                    text-decoration: none;
                 }
             }
         }

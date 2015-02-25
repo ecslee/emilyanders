@@ -2,13 +2,16 @@
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
 /* sizes */
-.navbar { height: 50px; }
-.navbar .container-fluid { height: 100%; }
-.navbar .container-fluid .navbar-header { height: 100%; margin-left: 8.33333333%; }
-.navbar .container-fluid .navbar-header .navbar-nav { height: 100%; }
-.navbar .container-fluid .navbar-header .navbar-nav li { height: 100%; text-align: center; padding-left: 3px; padding-right: 3px; }
-.navbar .container-fluid .navbar-header .navbar-nav li a { padding-left: 3px; padding-right: 3px; font-size: 20px; font-family: 'Champagne&Limousines', Helvetica, sans-serif; text-decoration: none; }
-.navbar .container-fluid .navbar-header .navbar-nav li a:hover { color: #4a2544; background: #aaa0ab; background: rgba(255, 255, 255, 0.3); text-decoration: none; }
+.navbar .container-fluid .row { margin-bottom: 0; }
+.navbar .container-fluid .navbar-header .navbar-brand { height: 50px; padding: 5px !important; }
+.navbar .container-fluid .navbar-header .navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; border-radius: 100%; box-sizing: border-box; }
+.navbar .container-fluid .navbar-header .navbar-brand.navbar-brand-show { display: block !important; }
+.navbar .container-fluid .navbar-header.active a.navbar-brand, .navbar .container-fluid .navbar-header:hover a.navbar-brand, .navbar .container-fluid .navbar-header.active:hover a.navbar-brand { background-color: #f8f8f8; }
+.navbar .container-fluid .navbar-header.active a.navbar-brand img, .navbar .container-fluid .navbar-header:hover a.navbar-brand img, .navbar .container-fluid .navbar-header.active:hover a.navbar-brand img { border: 2px solid #4a2544; }
+.navbar .container-fluid .navbar-collapse { width: 83.33333333%; }
+.navbar .container-fluid .navbar-nav li { text-align: center; padding-left: 3px; padding-right: 3px; }
+.navbar .container-fluid .navbar-nav li a { padding-left: 3px; padding-right: 3px; font-size: 20px; font-family: 'Champagne&Limousines', Helvetica, sans-serif; text-decoration: none; }
+.navbar .container-fluid .navbar-nav li:hover { color: #4a2544; background: #aaa0ab; text-decoration: none; }
 
 div.nav-li-brand a.navbar-brand { height: 50px; padding: 5px !important; }
 div.nav-li-brand a.navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; border-radius: 100%; box-sizing: border-box; }

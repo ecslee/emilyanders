@@ -41,7 +41,7 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .backstretch img { -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px); }
 
 .section { min-height: 600px; width: 100vw; height: auto; padding-bottom: 100px; }
-.section .section-content { min-height: 200px; height: auto; width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 20px; padding: 20px; padding-bottom: 60px; background-color: #eeeeee; background-color: rgba(238, 238, 238, 0.7); border-radius: 10px; }
+.section .section-content { min-height: 200px; height: auto; margin-bottom: 20px; padding: 20px; padding-bottom: 60px; background-color: #eeeeee; background-color: rgba(238, 238, 238, 0.7); border-radius: 10px; }
 .section#welcome { z-index: 100 !important; }
 
 .section-purple, .section-green { padding-top: 15vh; }
@@ -85,15 +85,8 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .wedding-party-modal.modal-v .modal-content .modal-body { width: 420px; height: 620px; }
 
 /* registry */
+.registry-link img { padding: 15px; }
 .registry-link:hover img { opacity: 0.5; filter: alpha(opacity=40); }
-
-.registry-logo-right { padding: 15px; float: left; margin-left: 16.66666667%; width: 66.66666667%; }
-@media (min-width: 768px) { .registry-logo-right { margin-left: 0; width: 41.66666667%; } }
-@media (min-width: 992px) { .registry-logo-right { margin-left: 0; width: 33.33333333%; } }
-
-.registry-logo-left { padding: 15px; float: left; margin-left: 16.66666667%; width: 66.66666667%; }
-@media (min-width: 768px) { .registry-logo-left { margin-left: 8.33333333%; width: 41.66666667%; } }
-@media (min-width: 992px) { .registry-logo-left { margin-left: 16.66666667%; width: 33.33333333%; } }
 
 @media all and (max-width: 1200px) { .section-intro h1 { font-size: 50px; }
   .section-intro h2 { font-size: 36px; } }

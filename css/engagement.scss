@@ -49,9 +49,14 @@ $screen-lg-min: 1200px;
                     }
                 }
             }
+            .navbar-toggle:hover {
+                background-color: $light-green;
+            }
         }
         .navbar-collapse {
-            width: 83.33333333%;
+            @media (min-width: $screen-sm-min) {
+                width: 83.33333333%;
+            }
         }
         .navbar-nav {
             li {

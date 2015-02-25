@@ -7,7 +7,8 @@
 .navbar .container-fluid .navbar-header .navbar-brand img { height: 100%; width: auto; border: 2px solid #9aa882; border-radius: 100%; box-sizing: border-box; }
 .navbar .container-fluid .navbar-header.active a.navbar-brand, .navbar .container-fluid .navbar-header:hover a.navbar-brand, .navbar .container-fluid .navbar-header.active:hover a.navbar-brand { background-color: #f8f8f8; }
 .navbar .container-fluid .navbar-header.active a.navbar-brand img, .navbar .container-fluid .navbar-header:hover a.navbar-brand img, .navbar .container-fluid .navbar-header.active:hover a.navbar-brand img { border: 2px solid #4a2544; }
-.navbar .container-fluid .navbar-collapse { width: 83.33333333%; }
+.navbar .container-fluid .navbar-header .navbar-toggle:hover { background-color: #b5ca92; }
+@media (min-width: 768px) { .navbar .container-fluid .navbar-collapse { width: 83.33333333%; } }
 .navbar .container-fluid .navbar-nav li { text-align: center; padding-left: 3px; padding-right: 3px; }
 .navbar .container-fluid .navbar-nav li a { padding-left: 3px; padding-right: 3px; font-size: 20px; font-family: 'Champagne&Limousines', Helvetica, sans-serif; text-decoration: none; }
 .navbar .container-fluid .navbar-nav li:hover { color: #4a2544; background: #aaa0ab; text-decoration: none; }

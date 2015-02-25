@@ -27,6 +27,13 @@ $(document).ready(function () {
         $(this).addClass('col-sm-8 col-sm-offset-2');
     });
     
+    $(document).click(function (evt) {
+        var closestNavbar = $(evt.target).closest('.navbar');
+        if ($('.navbar-collapse').hasClass('in') && (closestNavbar.length == 0 || evt.target.nodeName == 'A')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
+    
     $(window).resize(function () {
         // trigger a scroll event to reset the navbar position
         $(window).scroll();

@@ -3,23 +3,43 @@
 $(document).ready(function () {
     "use strict";
 
-    //$("#welcome").backstretch("images/walden-blur.jpg");
-    $("#welcome").backstretch("gallery/purple/sculpture.jpg");
-    //$("#our-story").backstretch("gallery/purple/dome.jpg");
+    $("#welcome").backstretch("images/walden-blur.jpg");
+    //$("#welcome").backstretch("gallery/purple/sculpture.jpg");
+    //$("#registry").backstretch("gallery/purple/dome.jpg");
     //$("#wedding").backstretch("gallery/green/log.jpg");
     //$("#gallery").backstretch("gallery/bw/sculpture.jpg");
-    //$("#thanks").backstretch("gallery/purple/stata.jpg");
+    //$("#guests").backstretch("gallery/purple/stata.jpg");
     $(".section").css("min-height", $(window).height() + 130);
 
+    /*
+     * Navbar
+     * Mobile: always affix to top
+     * Other: affix to top after welcome section
+     * Only show brand icon when affixed to top
+     */
     $('#ecs-navbar').on('affix.bs.affix', function () {
+        console.log('affixed to top');
         $(this).addClass('navbar-fixed-top');
         $(this).removeClass('col-sm-8 col-sm-offset-2');
-        $('.navbar-brand', this).addClass('navbar-brand-show');
     }).on('affix-top.bs.affix', function () {
+        console.log('not affixed to top');
         $(this).removeClass('navbar-fixed-top');
         $(this).addClass('col-sm-8 col-sm-offset-2');
-        $('.navbar-brand', this).removeClass('navbar-brand-show');
     });
+    
+    $(window).resize(function () {
+        // trigger a scroll event to reset the navbar position
+        $(window).scroll();
+    });
+    
+    $('#ecs-navbar').affix({
+        offset: {
+            top: function () {
+                return ($(window).width() < 768 ? -100 : 300);
+            }
+        }
+    });
+    
 
     var section = {
         now: 'welcome',

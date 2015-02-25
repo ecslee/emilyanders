@@ -32,6 +32,7 @@ $screen-lg-min: 1200px;
             .navbar-brand {
                 height: 50px;
                 padding: 5px !important;
+                visibility: hidden;
                 img {
                     height: 100%;
                     width: auto;
@@ -39,11 +40,7 @@ $screen-lg-min: 1200px;
                     border-radius: 100%;
                     box-sizing: border-box;
                 }
-                &.navbar-brand-show {
-                    display: block !important;
-                }
             }
-
             &.active, &:hover, &.active:hover {
                 a.navbar-brand {
                     background-color: #f8f8f8; // default
@@ -75,6 +72,11 @@ $screen-lg-min: 1200px;
                     text-decoration: none;
                 }
             }
+        }
+    }
+    &.navbar-fixed-top {
+        .navbar-brand {
+            visibility: visible !important;
         }
     }
 }

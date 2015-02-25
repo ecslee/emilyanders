@@ -290,7 +290,9 @@ div.nav-li-brand {
         }
     }
     @media (max-width: $screen-xs-max) {
-        text-align: right;
+        .wedding-party-info {
+            text-align: right;
+        }
         .wedding-party-pics {
             float: right!important;
             margin-right: 8.33333333%;

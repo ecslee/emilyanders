@@ -71,7 +71,7 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .groomsmen { height: 400px; }
 .groomsmen .wedding-party-info { text-align: left; }
 .groomsmen .wedding-party-pics .img-circle:hover { border: 3px solid #80905f; }
-@media (max-width: 767px) { .groomsmen { text-align: right; }
+@media (max-width: 767px) { .groomsmen .wedding-party-info { text-align: right; }
   .groomsmen .wedding-party-pics { float: right !important; margin-right: 8.33333333%; } }
 
 .wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #4a2544; }

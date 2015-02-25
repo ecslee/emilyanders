@@ -66,6 +66,7 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .wedding-party-info h3 { margin-top: 15px; font-size: 24px; font-weight: 500; }
 .wedding-party-info h5 { font-size: 14px; font-weight: normal; }
 .wedding-party-info div { height: 100px; display: inline-block; }
+@media (max-width: 767px) { .wedding-party-info div { display: inline; } }
 
 .bridesmaids { height: 400px; }
 .bridesmaids .wedding-party-info { text-align: right; }
@@ -75,7 +76,7 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 .groomsmen .wedding-party-info { text-align: left; }
 .groomsmen .wedding-party-pics .img-circle:hover { border: 3px solid #80905f; }
 @media (max-width: 767px) { .groomsmen .wedding-party-info { text-align: right; }
-  .groomsmen .wedding-party-pics { float: right !important; margin-right: 8.33333333%; } }
+  .groomsmen .wedding-party-pics { float: right !important; } }
 
 .wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #4a2544; }
 .wedding-party-modal .modal-content .modal-body { padding: 8px; }

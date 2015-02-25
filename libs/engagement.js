@@ -1,51 +1,57 @@
-$("#welcome").backstretch("images/walden-blur.jpg");
-//$("#our-story").backstretch("gallery/purple/dome.jpg");
-//$("#wedding").backstretch("gallery/green/log.jpg");
-//$("#gallery").backstretch("gallery/bw/sculpture.jpg");
-//$("#thanks").backstretch("gallery/purple/stata.jpg");
-$(".section").css("min-height", $(window).height() + 130);
+/*global $, document, window*/
 
-$('#ecs-navbar').on('affix.bs.affix', function () {
-    $(this).addClass('navbar-fixed-top');
-    $(this).removeClass('col-sm-8 col-sm-offset-2');
-    $('.navbar-brand', this).addClass('navbar-brand-show');
-}).on('affix-top.bs.affix', function () {
-    $(this).removeClass('navbar-fixed-top');
-    $(this).addClass('col-sm-8 col-sm-offset-2');
-    $('.navbar-brand', this).removeClass('navbar-brand-show');
-});
+$(document).ready(function () {
+    "use strict";
 
-var section = {
-    now: 'welcome',
-    s: ['welcome', 'wedding', 'guests', 'registry', 'gallery'],
-    getCurrentIndex: function ()  {
-        return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
-    },
-    getCurrent: function () {
-        var i;
-        var center = $(window).scrollTop() + $(window).height()/2;
-        for (var i=0; i < section.s.length; i++) {
-            if ($('#' + section.s[i]).offset().top > center) {
-                return i-1;
+    //$("#welcome").backstretch("images/walden-blur.jpg");
+    $("#welcome").backstretch("gallery/purple/sculpture.jpg");
+    //$("#our-story").backstretch("gallery/purple/dome.jpg");
+    //$("#wedding").backstretch("gallery/green/log.jpg");
+    //$("#gallery").backstretch("gallery/bw/sculpture.jpg");
+    //$("#thanks").backstretch("gallery/purple/stata.jpg");
+    $(".section").css("min-height", $(window).height() + 130);
+
+    $('#ecs-navbar').on('affix.bs.affix', function () {
+        $(this).addClass('navbar-fixed-top');
+        $(this).removeClass('col-sm-8 col-sm-offset-2');
+        $('.navbar-brand', this).addClass('navbar-brand-show');
+    }).on('affix-top.bs.affix', function () {
+        $(this).removeClass('navbar-fixed-top');
+        $(this).addClass('col-sm-8 col-sm-offset-2');
+        $('.navbar-brand', this).removeClass('navbar-brand-show');
+    });
+
+    var section = {
+        now: 'welcome',
+        s: ['welcome', 'wedding', 'guests', 'registry', 'gallery'],
+        getCurrentIndex: function () {
+            return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
+        },
+        getCurrent: function () {
+            var i,
+                center = $(window).scrollTop() + $(window).height() / 2;
+            for (i = 0; i < section.s.length; i++) {
+                if ($('#' + section.s[i]).offset().top > center) {
+                    return i - 1;
+                }
             }
+            return i - 1;
         }
-        return i-1;
-    }
-};
+    };
 
-// click navbar
-$('.navbar a').click(function (e) {
-    e.preventDefault();
-    
-    section.now = this.hash.substr(1);
-    $('html,body').animate({
-        scrollTop: $('#' + section.now).offset().top
-    }, 800);
-});
+    // click navbar
+    $('.navbar a').click(function (e) {
+        e.preventDefault();
 
-// scroll with keyboard shortcuts
-$(document).keydown(function (e) {
-    switch (e.which) {
+        section.now = this.hash.substr(1);
+        $('html,body').animate({
+            scrollTop: $('#' + section.now).offset().top
+        }, 800);
+    });
+
+    // scroll with keyboard shortcuts
+    $(document).keydown(function (e) {
+        switch (e.which) {
         case 38: // up
         case 33:
         case 40: // down
@@ -57,21 +63,22 @@ $(document).keydown(function (e) {
         case 32: // spacebar
             e.preventDefault();
             break;
-    }
-}).keyup(function (e) {
-    var i = section.getCurrent(),
-        j, move = false;
+        }
+    }).keyup(function (e) {
+        var i = section.getCurrent(),
+            j,
+            move = false;
 
-    switch (e.which) {
+        switch (e.which) {
         case 38: // up
         case 33:
-            j = Math.max(i-1, 0);
-            move = !(i===j);
+            j = Math.max(i - 1, 0);
+            move = !(i === j);
             break;
         case 40: // down
         case 34:
-            j = Math.min(i+1, section.s.length-1);
-            move = !(i===j);
+            j = Math.min(i + 1, section.s.length - 1);
+            move = !(i === j);
             break;
         case 36: // home
             i = 0;
@@ -85,26 +92,26 @@ $(document).keydown(function (e) {
             break;
         case 32: // spacebar
             if (e.shiftKey) {
-                j = Math.max(i-1, 0);
+                j = Math.max(i - 1, 0);
             } else {
-                j = Math.min(i+1, section.s.length-1);
+                j = Math.min(i + 1, section.s.length - 1);
             }
-            move = !(i===j);
+            move = !(i === j);
             break;
-    }
+        }
 
-    if (move) {
-        $('a[href="#' + section.s[j] + '"]').click();
-    }
-    return;
+        if (move) {
+            $('a[href="#' + section.s[j] + '"]').click();
+        }
+        return;
+    });
+
+    /* wedding party pics alignment */
+    $(window).resize(function () {
+        // .css('height') includes border, .height() just gets content height
+        var picHeight = parseInt($('.img-circle', '.wedding-party-pics').css('height'), 10),
+            margin = (100 - picHeight) / 2;
+        $('.img-circle', '.wedding-party-pics').css('margin', margin + 'px 0');
+    });
+    $(window).resize();
 });
-
-/* wedding party pics alignment */
-$(window).resize(function () {
-    // .css('height') includes border, .height() just gets content height
-    var picHeight = parseInt($('.img-circle', '.wedding-party-pics').css('height'), 10),
-        margin = (100 - picHeight) / 2;
-    $('.img-circle', '.wedding-party-pics').css('margin', margin + 'px 0');
-});
-
-$(window).resize();

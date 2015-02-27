@@ -213,6 +213,17 @@ div.nav-li-brand {
     background-color: $light-green;
 }
 
+/* section backgrounds */
+#welcome {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../gallery/bw/hands-medium.png);
+    @media (min-width: $screen-sm-min) {
+        background-image: url(../gallery/bw/piggy-back-medium.png);
+    }
+}
+
 /* wedding */
 .wedding-party-pics {
     height: 400px;

@@ -49,6 +49,10 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 .section-green { color: #1D2951; /* space cadet */ background-color: #b5ca92; }
 
+/* section backgrounds */
+#welcome { background-repeat: no-repeat; background-size: cover; background-position: center; background-image: url(../gallery/bw/hands-medium.png); }
+@media (min-width: 768px) { #welcome { background-image: url(../gallery/bw/piggy-back-medium.png); } }
+
 /* wedding */
 .wedding-party-pics { height: 400px; }
 .wedding-party-pics a .img-circle { max-width: 100px; max-height: 100px; }

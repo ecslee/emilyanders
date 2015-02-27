@@ -111,12 +111,6 @@ div.nav-li-brand {
     }
 }
 
-.welcome-info {
-    margin-top: 20vh;
-    .row {
-        margin-bottom: 50px;
-    }
-}
 .img-circle {
     width: 100%;
     border-radius: 100%;
@@ -160,13 +154,8 @@ div.nav-li-brand {
         background-color: rgba(238, 238, 238, 0.7);
         border-radius: 10px;
     }
-    &#welcome {
-        z-index: 100 !important;
-    }
 }
 .section-intro {
-    height: 400px;
-    width: 100%;
     h1 {
         color: #fff;
         font-family: 'Champagne&LimousinesBold', Helvetica, sans-serif;
@@ -184,10 +173,36 @@ div.nav-li-brand {
         margin: 0px;
     }
     div.main-title {
-        top: 50vh;
+        margin: 30px auto;
     }
     img.img-circle {
         top: 10vh;
+    }
+    @media all and (max-width: $screen-lg-min) {
+        .section-intro h1 {
+            font-size: 50px;
+        }
+        .section-intro h2 {
+            font-size: 36px;
+        }
+    }
+    @media all and (max-width: $screen-md-min) {
+        .section-intro h1 {
+            font-size: 42px;
+        }
+        .section-intro h2 {
+            font-size: 28px;
+        }
+    }
+    @media all and (max-width: $screen-sm-min) {
+        .section-intro h1 {
+            font-size: 72px;
+            padding-bottom: 0px;
+        }
+        .section-intro h2 {
+            font-size: 48px;
+            //padding-bottom: 20px;
+        }
     }
 }
 .section-purple,
@@ -215,12 +230,20 @@ div.nav-li-brand {
 
 /* section backgrounds */
 #welcome {
+    z-index: 100 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../gallery/bw/hands-medium.png);
+    // TODO: select image based on screen size
+    background-image: url(../gallery/IMG_0019.JPG);
     @media (min-width: $screen-sm-min) {
         background-image: url(../gallery/bw/piggy-back-medium.png);
+    }
+    .welcome-info {
+        margin-top: 20vh;
+        @media (max-width: $screen-xs-max) {
+            border: 6px solid white;
+        }
     }
 }
 
@@ -339,33 +362,6 @@ div.nav-li-brand {
             opacity: 0.5;
             filter:alpha(opacity=40);
         }
-    }
-}
-
-@media all and (max-width: 1200px) {
-    .section-intro h1 {
-        font-size: 50px;
-    }
-    .section-intro h2 {
-        font-size: 36px;
-    }
-}
-@media all and (max-width: 991px) {
-    .section-intro h1 {
-        font-size: 42px;
-    }
-    .section-intro h2 {
-        font-size: 28px;
-    }
-}
-@media all and (max-width: 767px) {
-    .section-intro h1 {
-        font-size: 72px;
-        padding-bottom: 0px;
-    }
-    .section-intro h2 {
-        font-size: 48px;
-        padding-bottom: 20px;
     }
 }
 

@@ -83,10 +83,10 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }
 .wedding-party-modal .modal-content .modal-footer { height: 50px; padding: 5px; border-top: 0; }
 .wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'Champagne&Limousines', Helvetica, sans-serif; font-size: 24px; line-height: 24px; }
-.wedding-party-modal.modal-h .modal-content { width: 620px; height: 470px; }
-.wedding-party-modal.modal-h .modal-content .modal-body { width: 620px; height: 420px; }
-.wedding-party-modal.modal-v .modal-content { width: 420px; height: 670px; }
-.wedding-party-modal.modal-v .modal-content .modal-body { width: 420px; height: 620px; }
+.wedding-party-modal.modal-h .modal-content { max-width: 620px; max-height: 470px; }
+.wedding-party-modal.modal-h .modal-content .modal-body { max-width: 620px; max-height: 420px; }
+.wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 670px; }
+.wedding-party-modal.modal-v .modal-content .modal-body { max-width: 420px; max-height: 620px; }
 
 /* registry */
 .registry-link img { padding: 15px; }

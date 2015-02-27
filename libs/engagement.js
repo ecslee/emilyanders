@@ -147,4 +147,19 @@ $(document).ready(function () {
             $(window).resize();
         }
     });
+    
+    // when opening a wedding party modal, center vertically
+    $('.wedding-party-modal').click(function (evt) {
+        var closestModal = $(evt.target).closest('.wedding-party-modal');
+        if (closestModal.length > 0) {
+            closestModal.modal('hide');
+        }
+    }).on('shown.bs.modal', function (evt) {
+        if (evt.target) {
+            // recenter wedding party pic modals
+            var marginTop = Math.max(($(window).height() - $('.modal-dialog', evt.target).height()) / 2, 10),
+                modalType = $(evt.target).hasClass('modal-h') ? '.modal-h' : '.modal-v';
+            $('.modal-dialog', modalType).css('margin-top', marginTop);
+        }
+    });
 });

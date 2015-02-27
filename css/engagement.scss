@@ -345,19 +345,19 @@ div.nav-li-brand {
         }
     }
     &.modal-h .modal-content {
-        width: 620px;
-        height: 470px;
+        max-width: 620px;
+        max-height: 470px;
         .modal-body {
-            width: 620px;
-            height: 420px;
+            max-width: 620px;
+            max-height: 420px;
         }
     }
     &.modal-v .modal-content {
-        width: 420px;
-        height: 670px;
+        max-width: 420px;
+        max-height: 670px;
         .modal-body {
-            width: 420px;
-            height: 620px;
+            max-width: 420px;
+            max-height: 620px;
         }
     }
 }

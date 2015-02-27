@@ -276,6 +276,11 @@ div.nav-li-brand {
         max-width: 100px;
         max-height: 100px;
     }
+    @media (max-width: $screen-xs-max) {
+        a {
+            display: block;
+        }
+    }
 }
 .wedding-party-info {
     height: 400px;

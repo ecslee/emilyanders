@@ -1,9 +1,9 @@
-/*global $, document, window*/
+/*global $, document, window, console*/
 
 $(document).ready(function () {
     "use strict";
 
-    $("#welcome").backstretch("images/walden-blur.jpg");
+    //$("#welcome").backstretch("images/walden-blur.jpg");
     //$("#welcome").backstretch("gallery/purple/sculpture.jpg");
     //$("#registry").backstretch("gallery/purple/dome.jpg");
     //$("#wedding").backstretch("gallery/green/log.jpg");
@@ -26,19 +26,14 @@ $(document).ready(function () {
         $(this).removeClass('navbar-fixed-top');
         $(this).addClass('col-sm-8 col-sm-offset-2');
     });
-    
+
     $(document).click(function (evt) {
         var closestNavbar = $(evt.target).closest('.navbar');
-        if ($('.navbar-collapse').hasClass('in') && (closestNavbar.length == 0 || evt.target.nodeName == 'A')) {
+        if ($('.navbar-collapse').hasClass('in') && (closestNavbar.length === 0 || evt.target.nodeName === 'A')) {
             $('.navbar-collapse').collapse('hide');
         }
     });
-    
-    $(window).resize(function () {
-        // trigger a scroll event to reset the navbar position
-        $(window).scroll();
-    });
-    
+
     $('#ecs-navbar').affix({
         offset: {
             top: function () {
@@ -46,7 +41,6 @@ $(document).ready(function () {
             }
         }
     });
-    
 
     var section = {
         now: 'welcome',
@@ -133,12 +127,24 @@ $(document).ready(function () {
         return;
     });
 
-    /* wedding party pics alignment */
     $(window).resize(function () {
+        // trigger a scroll event to reset the navbar position
+        $(window).scroll();
+        
+        // reset margin between wedding party pics
         // .css('height') includes border, .height() just gets content height
         var picHeight = parseInt($('.img-circle', '.wedding-party-pics').css('height'), 10),
             margin = (100 - picHeight) / 2;
         $('.img-circle', '.wedding-party-pics').css('margin', margin + 'px 0');
     });
-    $(window).resize();
+    
+    // after the images are loaded, trigger a resize to get alignment cleaned up
+    var imagesLoaded = 0,
+        expectedImages = $('img', '.wedding-party-pics').length;
+    $('img', '.wedding-party-pics').load(function () {
+        imagesLoaded++;
+        if (imagesLoaded === expectedImages) {
+            $(window).resize();
+        }
+    });
 });

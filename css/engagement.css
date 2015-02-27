@@ -62,6 +62,7 @@ border-radius: 5px;*/ color: #fff; font-family: 'Champagne&Limousines', Helvetic
 /* wedding */
 .wedding-party-pics { height: 400px; }
 .wedding-party-pics a .img-circle { max-width: 100px; max-height: 100px; }
+@media (max-width: 767px) { .wedding-party-pics a { display: block; } }
 
 .wedding-party-info { height: 400px; }
 .wedding-party-info h3 { margin-top: 15px; font-size: 24px; font-weight: 500; }

@@ -44,7 +44,7 @@ $(document).ready(function () {
 
     var section = {
         now: 'welcome',
-        s: ['welcome', 'wedding', 'guests', 'registry', 'gallery'],
+        s: ['welcome', 'wedding', 'us', 'guests', 'map', 'registry', 'gallery'],
         getCurrentIndex: function () {
             return Math.max(0, Math.floor($(window).scrollTop() / $(window).height()));
         },

@@ -23,6 +23,7 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
+/* navbar */
 .navbar {
     .container-fluid {
         .row {
@@ -85,7 +86,6 @@ $screen-lg-min: 1200px;
         }
     }
 }
-
 div.nav-li-brand {
     a.navbar-brand {
         height: 50px;
@@ -101,7 +101,6 @@ div.nav-li-brand {
             display: block !important;
         }
     }
-    
     &.active, &:hover, &.active:hover {
         a.navbar-brand {
             background-color: #f8f8f8; // default
@@ -112,58 +111,57 @@ div.nav-li-brand {
     }
 }
 
-.navbar-e {
-    min-height: 40px !important;
-    height: 40px !important;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 0px;
-    a {
-        margin: 10px;
-        padding: 5px 15px;
-        /*-webkit-border-radius: 5px;
-        border-radius: 5px;*/
-        color: #fff;
-        font-family: 'Champagne&Limousines', Helvetica, sans-serif;
-        text-decoration: none;
-        &:hover {
-            color: $dark-purple;
-            background: $lightest-purple;
-            background: rgba(255, 255, 255, 0.3);
-            text-decoration: none;
-        }
+.welcome-info {
+    margin-top: 20vh;
+    .row {
+        margin-bottom: 50px;
     }
-    &.navbar-welcome {
-        background: none;
-        .row {
-            .columns {
-                border-top: 3px solid #fff;
-                border-bottom: 3px solid #fff;
-            }
-        }
+}
+.img-circle {
+    width: 100%;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    background-color: #fff;
+}
+.backstretch {
+    img {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
     }
-    &.fixed {
-        height: 50px !important;
-        line-height: 50px;
-        background: #4a2544;
-        box-shadow: 0px 2px 5px #333;
-        display: inline;
-        a {
-            &.active {
-                color: #fff;
-                background: $light-purple;
-                background: rgba(146, 132, 147, 0.5);
-                font-family: 'Champagne&Limousines', Helvetica, sans-serif;
-                text-decoration: none;
-            }
-        }
+}
+.seitz-footer.navbar-fixed-bottom {
+    height: 30px;
+    min-height: 30px;
+    font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    .seitz {
+        clear: both;
+        float: right;
     }
-    &.hide {
-        display: none;
+}
+
+/* sections */
+.section {
+    min-height: 600px;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 100px;
+    .section-content {
+        min-height: 200px;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 20px;
+        padding-bottom: 60px;
+        background-color: rgb(238, 238, 238);
+        background-color: rgba(238, 238, 238, 0.7);
+        border-radius: 10px;
     }
-    &.unfixed {
-        display: none;
+    &#welcome {
+        z-index: 100 !important;
     }
 }
 .section-intro {
@@ -192,47 +190,6 @@ div.nav-li-brand {
         top: 10vh;
     }
 }
-
-.welcome-info {
-    margin-top: 20vh;
-    .row {
-        margin-bottom: 50px;
-    }
-}
-.img-circle {
-    width: 100%;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    background-color: #fff;
-}
-.backstretch {
-    img {
-        -webkit-filter: blur(3px);
-        -moz-filter: blur(3px);
-        -o-filter: blur(3px);
-        -ms-filter: blur(3px);
-        filter: blur(3px);
-    }
-}
-.section {
-    min-height: 600px;
-    width: 100vw;
-    height: auto;
-    padding-bottom: 100px;
-    .section-content {
-        min-height: 200px;
-        height: auto;
-        margin-bottom: 20px;
-        padding: 20px;
-        padding-bottom: 60px;
-        background-color: rgb(238, 238, 238);
-        background-color: rgba(238, 238, 238, 0.7);
-        border-radius: 10px;
-    }
-    &#welcome {
-        z-index: 100 !important;
-    }
-}
 .section-purple,
 .section-green {
     padding-top: 15vh;
@@ -254,19 +211,6 @@ div.nav-li-brand {
     color: #1D2951;
     /* space cadet */
     background-color: $light-green;
-}
-.side-nav {
-    font-size: 14px;
-    li a {
-        i.nav-heart:before {
-            content: "\e143";
-            color: #fff;
-        }
-        &.active i.nav-heart:before {
-            content: "\e005";
-            color: $lightest-purple;
-        }
-    }
 }
 
 /* wedding */
@@ -413,6 +357,8 @@ div.nav-li-brand {
         padding-bottom: 20px;
     }
 }
+
+/* styles for single page site */
 .background {
     height: 100vh;
     width: 100vw;
@@ -490,17 +436,6 @@ div.nav-li-brand {
             border: 2px solid $sage-green;
             background-color: #fff;
         }
-    }
-}
-.seitz-footer.navbar-fixed-bottom {
-    height: 30px;
-    min-height: 30px;
-    font-family: 'Champagne&Limousines', Helvetica, sans-serif;
-    font-size: 14px;
-    color: #333;
-    .seitz {
-        clear: both;
-        float: right;
     }
 }
 @media all and (min-width: 1081px) {

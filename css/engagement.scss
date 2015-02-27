@@ -25,6 +25,7 @@ $screen-lg-min: 1200px;
 
 /* navbar */
 .navbar {
+    margin-top: 60px;
     .container-fluid {
         .row {
             margin-bottom: 0; 
@@ -81,6 +82,7 @@ $screen-lg-min: 1200px;
         }
     }
     &.navbar-fixed-top {
+        margin-top: 0px;
         .navbar-brand {
             visibility: visible !important;
         }
@@ -141,8 +143,8 @@ div.nav-li-brand {
 /* sections */
 .section {
     min-height: 600px;
-    width: 100vw;
-    height: auto;
+    //width: 100vw;
+    //height: auto;
     padding-bottom: 100px;
     .section-content {
         min-height: 200px;
@@ -232,17 +234,25 @@ div.nav-li-brand {
 #welcome {
     z-index: 100 !important;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
     // TODO: select image based on screen size
     background-image: url(../gallery/IMG_0019.JPG);
     @media (min-width: $screen-sm-min) {
-        background-image: url(../gallery/bw/piggy-back-medium.png);
+        //background-image: url(../gallery/bw/piggy-back-medium.png);
     }
     .welcome-info {
         margin-top: 20vh;
-        @media (max-width: $screen-xs-max) {
-            border: 6px solid white;
+        border: 6px solid white;
+        border-radius:3px;
+        @media (min-width: $screen-sm-min) {
+            padding: 40px;
+            //-color: rgb(238, 238, 238);
+            //background-color: rgba(238, 238, 238, 0.3);
+            //border-radius: 0px;
+            
         }
     }
 }

@@ -20,11 +20,11 @@ $(document).ready(function () {
     $('#ecs-navbar').on('affix.bs.affix', function () {
         console.log('affixed to top');
         $(this).addClass('navbar-fixed-top');
-        $(this).removeClass('col-sm-8 col-sm-offset-2');
+        $(this).removeClass('col-sm-12');
     }).on('affix-top.bs.affix', function () {
         console.log('not affixed to top');
         $(this).removeClass('navbar-fixed-top');
-        $(this).addClass('col-sm-8 col-sm-offset-2');
+        $(this).addClass('col-sm-12');
     });
 
     $(document).click(function (evt) {

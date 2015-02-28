@@ -93,7 +93,7 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .registry-link:hover img { opacity: 0.5; filter: alpha(opacity=40); }
 
 /* map */
-.luray-map { height: 300px; }
+.luray-map { height: 300px; border: 3px solid white; }
 
 /* styles for single page site */
 .background { height: 100vh; width: 100vw; position: absolute; z-index: -1 !important; top: 0px; left: 0px; }

@@ -17,12 +17,19 @@ $(document).ready(function () {
      * Other: affix to top after welcome section
      * Only show brand icon when affixed to top
      */
+    var navbarOffset = 500;
+    $('#ecs-navbar').affix({
+        offset: {
+            top: function () {
+                return ($(window).width() < 768 ? -100 : navbarOffset);
+            }
+        }
+    });
+    
     $('#ecs-navbar').on('affix.bs.affix', function () {
-        console.log('affixed to top');
         $(this).addClass('navbar-fixed-top');
         $(this).removeClass('col-sm-12');
     }).on('affix-top.bs.affix', function () {
-        console.log('not affixed to top');
         $(this).removeClass('navbar-fixed-top');
         $(this).addClass('col-sm-12');
     });
@@ -31,14 +38,6 @@ $(document).ready(function () {
         var closestNavbar = $(evt.target).closest('.navbar');
         if ($('.navbar-collapse').hasClass('in') && (closestNavbar.length === 0 || evt.target.nodeName === 'A')) {
             $('.navbar-collapse').collapse('hide');
-        }
-    });
-
-    $('#ecs-navbar').affix({
-        offset: {
-            top: function () {
-                return ($(window).width() < 768 ? -100 : 300);
-            }
         }
     });
 
@@ -129,6 +128,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         // trigger a scroll event to reset the navbar position
+        navbarOffset = parseInt($('.welcome-info').css('height')) + $('.welcome-info').offset().top + 62;
         $(window).scroll();
         
         // reset margin between wedding party pics
@@ -140,8 +140,8 @@ $(document).ready(function () {
     
     // after the images are loaded, trigger a resize to get alignment cleaned up
     var imagesLoaded = 0,
-        expectedImages = $('img', '.wedding-party-pics').length;
-    $('img', '.wedding-party-pics').load(function () {
+        expectedImages = $('.img-circle').length;
+    $('.img-circle').load(function () {
         imagesLoaded++;
         if (imagesLoaded === expectedImages) {
             $(window).resize();

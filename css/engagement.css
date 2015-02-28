@@ -54,7 +54,7 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 /* section backgrounds */
 #welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-image: url(../gallery/IMG_0019.JPG); }
-#welcome .welcome-info { margin-top: 20vh; border: 6px solid white; border-radius: 3px; }
+#welcome .welcome-info { margin-top: 10vh; border: 6px solid white; border-radius: 3px; }
 @media (min-width: 768px) { #welcome .welcome-info { padding: 40px; } }
 
 /* wedding */
@@ -91,6 +91,9 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 /* registry */
 .registry-link img { padding: 15px; }
 .registry-link:hover img { opacity: 0.5; filter: alpha(opacity=40); }
+
+/* map */
+.luray-map { height: 300px; }
 
 /* styles for single page site */
 .background { height: 100vh; width: 100vw; position: absolute; z-index: -1 !important; top: 0px; left: 0px; }

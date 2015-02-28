@@ -244,7 +244,7 @@ div.nav-li-brand {
         //background-image: url(../gallery/bw/piggy-back-medium.png);
     }
     .welcome-info {
-        margin-top: 20vh;
+        margin-top: 10vh;
         border: 6px solid white;
         border-radius:3px;
         @media (min-width: $screen-sm-min) {
@@ -373,6 +373,11 @@ div.nav-li-brand {
             filter:alpha(opacity=40);
         }
     }
+}
+
+/* map */
+.luray-map {
+    height: 300px;
 }
 
 /* styles for single page site */

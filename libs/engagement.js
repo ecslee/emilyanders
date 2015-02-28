@@ -71,7 +71,7 @@ $(document).ready(function () {
     });
 
     // scroll with keyboard shortcuts
-    $(document).keydown(function (e) {
+    $(document).not('input').keydown(function (e) {
         switch (e.which) {
         case 38: // up
         case 33:

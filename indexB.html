@@ -13,6 +13,7 @@
     <script type="text/javascript" src="libs/jquery-ui-1.11.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="libs/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="libs/songs.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
     <!--link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
@@ -259,6 +260,32 @@
     <div id="guests" class="section section-purple container-fluid">
         <div class="section-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h1>Guests</h1>
+            <!--iframe src="https://docs.google.com/forms/d/1906QMPalvWnym_SPhQVZvoJoZLkFBmzio8RYbhbqHek/viewform?embedded=true" width="300" height="100" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe-->
+            <div>
+                <h3>Song requests</h3>
+                <h4>I promise to dance if you play...</h4>
+                <form id="song-request" target="_self" onsubmit="" action="javascript: postContactToGoogle()">
+                    <fieldset>
+                        <label for="song">Song</label>
+                        <input id="song" type="text" name="song">
+                    </fieldset>
+                    <fieldset>
+                        <label for="artist">Artist</label>
+                        <input id="artist" type="text" name="artist">
+                    </fieldset>
+                    <fieldset>
+                        <label for="name">Your name</label>
+                        <input id="name" type="text" name="name">
+                    </fieldset>
+                    <div style="width: 100%; display: block; float: right;">
+                        <button id="send" type="submit">Submit</button>
+                    </div>
+                    <div style="width: 100%; display: block; float: right; padding-top: 15px;">
+                        <div class="requestSubmited" style="display:none; text-align: center;">Your request has been sent!</div>
+                    </div>
+                </form>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LcoygITAAAAAIhNyDGxVdVReBDiVKNK_8kDV9aa"></div>
         </div>
     </div>
     <div id="map" class="section section-green container-fluid">

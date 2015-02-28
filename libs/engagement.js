@@ -16,7 +16,15 @@ $(document).ready(function () {
      * Mobile: always affix to top
      * Other: affix to top after welcome section
      * Only show brand icon when affixed to top
-     */
+     */    
+    $('#ecs-navbar').on('affix.bs.affix', function () {
+        $(this).addClass('navbar-fixed-top');
+        $(this).removeClass('col-sm-12');
+    }).on('affix-top.bs.affix', function () {
+        $(this).removeClass('navbar-fixed-top');
+        $(this).addClass('col-sm-12');
+    });
+    
     var navbarOffset = 500;
     $('#ecs-navbar').affix({
         offset: {
@@ -25,14 +33,6 @@ $(document).ready(function () {
                 return ($(window).width() < 768 ? -100 : navbarOffset);
             }
         }
-    });
-    
-    $('#ecs-navbar').on('affix.bs.affix', function () {
-        $(this).addClass('navbar-fixed-top');
-        $(this).removeClass('col-sm-12');
-    }).on('affix-top.bs.affix', function () {
-        $(this).removeClass('navbar-fixed-top');
-        $(this).addClass('col-sm-12');
     });
 
     $(document).click(function (evt) {

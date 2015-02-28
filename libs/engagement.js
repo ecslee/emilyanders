@@ -29,7 +29,6 @@ $(document).ready(function () {
     $('#ecs-navbar').affix({
         offset: {
             top: function () {
-                console.log('offset', navbarOffset)
                 return ($(window).width() < 768 ? -100 : navbarOffset);
             }
         }
@@ -173,7 +172,7 @@ $(document).ready(function () {
         var khimairaLatLong = new google.maps.LatLng(38.628217, -78.428725);
         var mapOptions = {
             zoom: 8,
-            // Warrenton, VA
+            // Warrenton, VA - recenter on page resize
             center: new google.maps.LatLng(38.729663, -77.792662)
         };
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

@@ -1,4 +1,4 @@
-function postContactToGoogle() {
+function postSongToGoogle() {
     var formKey = '1906QMPalvWnym_SPhQVZvoJoZLkFBmzio8RYbhbqHek';
     
     var name = $('#name').val();
@@ -13,7 +13,8 @@ function postContactToGoogle() {
                 "entry.1730225343": name
             },
             type: "POST",
-            dataType: "xml",
+            crossDomain: true,
+            dataType: 'jsonp',
             statusCode: {
                 0: function () {
                     $('#name').val("");

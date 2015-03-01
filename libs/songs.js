@@ -13,60 +13,21 @@ function postSongToGoogle($form) {
         var request = $.ajax({
             url: url,
             type: 'POST',
-            data: serializedData
-        });
-        
-        request.done(function (result,status,xhr) {
-            console.log('success', result,status,xhr);
-            alert("Thanks for helping us with the playlist!");
-        });
-        request.fail(function (xhr,status,error) {
-            console.log('error', xhr,status,error);
-        });
-        request.always(function () {
-            $('#name').val("");
-            $('#title').val("");
-            $('#artist').val("");
-        });
-        
-        /*$.getJSON(url,
-        function (data) {
-            console.log(data.feed)
-            //console.log(data.feed.entry[0]['gsx$title']['$t'])
-            console.log(data);
-        }).success(function (data) {
-            console.log('success', data);
-        }).error(function (message) {
-            console.log('error', message);
-        }).complete(function () {
-            console.log('complete');
-        });
-        
-        $.ajax({
-            url: url, //"https://docs.google.com/forms/d/" + formKey + "/formResponse",
-            data: {
-                "entry.1327441261": song,
-                "entry.7876010": artist,
-                "entry.1730225343": name
-            },
-            type: "POST",
-            crossDomain: true,
-            dataType: 'jsonp',
-            accepts: 'text/javascript',
+            data: serializedData,
             success: function (result,status,xhr) {
-                console.log('success', result,status,xhr);
+                console.log(serializedData);
+                $('#songForm').addClass('hidden');
+                $('.songSuccess').removeClass('hidden');
             },
             error: function (xhr,status,error) {
                 console.log('error', xhr,status,error);
             },
             complete: function () {
                 $('#name').val("");
-                $('#song').val("");
+                $('#title').val("");
                 $('#artist').val("");
             }
-        });*/
-    } else {
-        //Error message
+        });
     }
 }
 
@@ -79,5 +40,9 @@ $(document).ready(function () {
             console.log(e.message);
         }
 
+    });
+    $('#anotherSong').click(function () {
+        $('.songSuccess').addClass('hidden');
+        $('#songForm').removeClass('hidden');
     });
 });

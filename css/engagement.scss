@@ -119,6 +119,11 @@ div.nav-li-brand {
     border: 3px solid #fff;
     background-color: #fff;
 }
+.btn-green {
+    color: white;
+    background-color: $dark-green;
+    border-color: white;
+}
 .backstretch {
     img {
         -webkit-filter: blur(3px);
@@ -393,17 +398,6 @@ div.nav-li-brand {
         .form-group {
             margin: 0px;
         }
-        .formButton {
-            width: 90px;
-            box-sizing: border-box;
-            margin-left: auto;
-            margin-right: auto;
-            button {
-                color: white;
-                background-color: $dark-green;
-                border-color: white;
-            }
-        }
         @media (min-width: $screen-sm-min) {
             position: relative;
             top: 50px;
@@ -422,8 +416,28 @@ div.nav-li-brand {
         }
     }
 }
-.input-group .form-control {
-    width: 150px;
+.formButton {
+    width: 90px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.songSuccess {
+    width: 390px;
+    height: 165px;
+    margin: 0px auto;
+    padding: 30px;
+    position: relative;
+    top: 40px;
+    border-radius: 10px;
+    background-color: $light-green;
+    h4 {
+        text-align: center;
+    }
+    .formButton {
+        width: 112px;
+        margin-top: 30px;
+    }
 }
 
 /* registry */

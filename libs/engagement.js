@@ -169,6 +169,12 @@ $(document).ready(function () {
         }
     });
     
+    // registry links
+    $('.registry-link').click(function () {
+        var store = $('img', this).attr('alt-text');
+        ga('send', 'event', 'registry', 'click', store);
+    });
+    
     // map section
     var map;
     function mapInit() {

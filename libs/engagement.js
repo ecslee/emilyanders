@@ -67,6 +67,8 @@ $(document).ready(function () {
         $('html,body').animate({
             scrollTop: $('#' + section.now).offset().top
         }, 800);
+        
+        ga('send', 'event', 'navbar', 'click', this.hash.substring(1, this.hash.length));
     });
 
     // scroll with keyboard shortcuts
@@ -157,7 +159,7 @@ $(document).ready(function () {
     }).on('shown.bs.modal', function (evt) {
         if (evt.target) {
             var id = $(evt.target).attr('id');
-            ga('send', 'event', 'modal', 'show', 'wedding party pic', id.substring(0, id.indexOf("Modal")));
+            ga('send', 'event', 'modal', 'show', id.substring(0, id.indexOf("Modal")));
         }
     });
     

@@ -90,12 +90,15 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 /* guests */
 .cassette { background-image: url("../images/cassette.png"); background-repeat: no-repeat; background-position: center; -o-background-size: contain; -moz-background-size: contain; -webkit-background-size: contain; height: 300px; }
+.cassette form .input-group .input-group-addon { width: 40px; padding: 3px 6px; font-size: 16px; color: #FFFFFF; background-color: #555; border: 1px solid #333; top: 0px; }
+.cassette form .input-group input { width: 150px; background-color: transparent; color: #555555; border: 2px solid #333; border-left: 0px; }
+.cassette form .form-group { margin: 0px; }
+.cassette form .formButton { width: 90px; box-sizing: border-box; margin-left: auto; margin-right: auto; }
+.cassette form .formButton button { color: white; background-color: #53652e; border-color: white; }
 @media (min-width: 768px) { .cassette form { position: relative; top: 50px; width: 340px; margin: 0px auto; }
-  .cassette form .input-group .input-group-addon { width: 40px; padding: 3px 6px; font-size: 16px; }
-  .cassette form .input-group input { width: 150px; }
   .cassette form .form-group-1 { margin: 0px auto; }
   .cassette form .form-group-2 { width: 190px; margin: 92px auto 0px auto; }
-  .cassette form .formButton { width: 90px; margin: 30px auto 0px auto; box-sizing: border-box; } }
+  .cassette form .formButton { margin-top: 30px; } }
 
 .input-group .form-control { width: 150px; }
 

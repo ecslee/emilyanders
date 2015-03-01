@@ -1,11 +1,9 @@
 function postSongToGoogle() {
     var formKey = '1906QMPalvWnym_SPhQVZvoJoZLkFBmzio8RYbhbqHek';
-    
     var name = $('#name').val();
     var song = $('#song').val();
     var artist = $('#artist').val();
-    console.log(name, song, artist)
-    
+
     if ((name !== "") && (song !== "")) {
         $.ajax({
             url: "https://docs.google.com/forms/d/" + formKey + "/formResponse",
@@ -17,19 +15,17 @@ function postSongToGoogle() {
             type: "POST",
             crossDomain: true,
             dataType: 'jsonp',
-            statusCode: {
-                0: function () {
-                    $('#name').val("");
-                    $('#song').val("");
-                    $('#artist').val("");
-                    //Success message
-                },
-                200: function () {
-                    $('#name').val("");
-                    $('#song').val("");
-                    $('#artist').val("");
-                    //Success Message
-                }
+            accepts: 'text/javascript',
+            success: function (result,status,xhr) {
+                console.log('success', result,status,xhr);
+            },
+            error: function (xhr,status,error) {
+                console.log('error', xhr,status,error);
+            },
+            complete: function () {
+                $('#name').val("");
+                $('#song').val("");
+                $('#artist').val("");
             }
         });
     } else {
@@ -37,4 +33,14 @@ function postSongToGoogle() {
     }
 }
 
-$('#send').click(postSongToGoogle);
+$(document).ready(function () {
+    $('#songForm').submit(function (evt) {
+        try {
+            evt.preventDefault();
+            postSongToGoogle();
+        } catch (e) {
+            console.log(e.message);
+        }
+
+    });
+});

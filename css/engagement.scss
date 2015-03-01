@@ -372,21 +372,43 @@ div.nav-li-brand {
     -webkit-background-size:contain;
     height: 300px;
     form {
+        .input-group {
+            .input-group-addon {
+                width: 40px;
+                padding: 3px 6px;
+                font-size: 16px;
+                color: #FFFFFF;
+                background-color: #555;
+                border: 1px solid #333;
+                top: 0px;
+            }
+            input {
+                width: 150px;
+                background-color: transparent;
+                color: #555555;
+                border: 2px solid #333;
+                border-left: 0px;
+            }
+        }
+        .form-group {
+            margin: 0px;
+        }
+        .formButton {
+            width: 90px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            button {
+                color: white;
+                background-color: $dark-green;
+                border-color: white;
+            }
+        }
         @media (min-width: $screen-sm-min) {
             position: relative;
             top: 50px;
             width: 340px;
             margin: 0px auto;
-            .input-group {
-                .input-group-addon {
-                    width: 40px;
-                    padding: 3px 6px;
-                    font-size: 16px;
-                }
-                input {
-                    width: 150px;
-                }
-            }
             .form-group-1 {
                 margin: 0px auto;
             }
@@ -395,9 +417,7 @@ div.nav-li-brand {
                 margin: 92px auto 0px auto;
             }
             .formButton {
-                width: 90px;
-                margin: 30px auto 0px auto;
-                box-sizing: border-box;
+                margin-top: 30px;
             }
         }
     }

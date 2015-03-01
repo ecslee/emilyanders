@@ -139,9 +139,10 @@ $screen-lg-min: 1200px;
     z-index: 100 !important;
     background-repeat: no-repeat;
     background-position: center;
-    -o-background-size: cover;
-    -moz-background-size: cover;
     -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     // TODO: select image based on screen size
     background-image: url(../gallery/IMG_0019.JPG);
     @media (min-width: $screen-sm-min) {

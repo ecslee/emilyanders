@@ -88,6 +88,17 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 670px; }
 .wedding-party-modal.modal-v .modal-content .modal-body { max-width: 420px; max-height: 620px; }
 
+/* guests */
+.cassette { background-image: url("../images/cassette.png"); background-repeat: no-repeat; background-position: center; -o-background-size: contain; -moz-background-size: contain; -webkit-background-size: contain; height: 300px; }
+@media (min-width: 768px) { .cassette form { position: relative; top: 50px; width: 340px; margin: 0px auto; }
+  .cassette form .input-group .input-group-addon { width: 40px; padding: 3px 6px; font-size: 16px; }
+  .cassette form .input-group input { width: 150px; }
+  .cassette form .form-group-1 { margin: 0px auto; }
+  .cassette form .form-group-2 { width: 190px; margin: 92px auto 0px auto; }
+  .cassette form .formButton { width: 90px; margin: 30px auto 0px auto; box-sizing: border-box; } }
+
+.input-group .form-control { width: 150px; }
+
 /* registry */
 .registry-link img { padding: 15px; }
 .registry-link:hover img { opacity: 0.5; filter: alpha(opacity=40); }

@@ -362,6 +362,50 @@ div.nav-li-brand {
     }
 }
 
+/* guests */
+.cassette {
+    background-image: url('../images/cassette.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size:contain;
+    height: 300px;
+    form {
+        @media (min-width: $screen-sm-min) {
+            position: relative;
+            top: 50px;
+            width: 340px;
+            margin: 0px auto;
+            .input-group {
+                .input-group-addon {
+                    width: 40px;
+                    padding: 3px 6px;
+                    font-size: 16px;
+                }
+                input {
+                    width: 150px;
+                }
+            }
+            .form-group-1 {
+                margin: 0px auto;
+            }
+            .form-group-2 {
+                width: 190px;
+                margin: 92px auto 0px auto;
+            }
+            .formButton {
+                width: 90px;
+                margin: 30px auto 0px auto;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+.input-group .form-control {
+    width: 150px;
+}
+
 /* registry */
 .registry-link {
     img {

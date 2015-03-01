@@ -4,6 +4,8 @@ function postSongToGoogle() {
     var name = $('#name').val();
     var song = $('#song').val();
     var artist = $('#artist').val();
+    console.log(name, song, artist)
+    
     if ((name !== "") && (song !== "")) {
         $.ajax({
             url: "https://docs.google.com/forms/d/" + formKey + "/formResponse",
@@ -34,3 +36,5 @@ function postSongToGoogle() {
         //Error message
     }
 }
+
+$('#send').click(postSongToGoogle);

@@ -1,7 +1,4 @@
 function postSongToGoogle($form) {
-    var formKey = '1906QMPalvWnym_SPhQVZvoJoZLkFBmzio8RYbhbqHek';
-    var sheetKey = '1vFmSEAErnL98lay5-9H6XUa5IgC5vZlANxJCPUypOKE';
-    //var url = 'https://spreadsheets.google.com/feeds/list/1vFmSEAErnL98lay5-9H6XUa5IgC5vZlANxJCPUypOKE/od6/public/values?alt=json-in-script&callback=?';
     var url = 'https://script.google.com/macros/s/AKfycbwWPxKWiK33tNF_9wUlS_uSLGI3UjtgBlAB2nSdjQUIVNEheU01/exec';
     var name = $('#name').val();
     var song = $('#title').val();
@@ -9,7 +6,6 @@ function postSongToGoogle($form) {
 
     if ((name !== "") && (song !== "")) {
         var serializedData = $form.serialize();
-        console.log(serializedData);
         var request = $.ajax({
             url: url,
             type: 'POST',

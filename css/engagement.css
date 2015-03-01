@@ -32,8 +32,8 @@
 
 /* section backgrounds */
 #welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-image: url(../gallery/IMG_0019.JPG); }
-#welcome .welcome-info { margin-top: 10vh; border: 6px solid white; border-radius: 3px; }
-@media (min-width: 768px) { #welcome .welcome-info { padding: 40px; } }
+#welcome .welcome-info { margin-top: 60px; border: 6px solid white; border-radius: 3px; }
+@media (min-width: 768px) { #welcome .welcome-info { margin-top: 10vh; padding: 40px; } }
 
 /* navbar */
 .navbar { margin-top: 60px; }
@@ -81,6 +81,9 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 @media (max-width: 767px) { .groomsmen .wedding-party-info { text-align: right; }
   .groomsmen .wedding-party-pics { float: right !important; } }
 
+.wedding-party-modal.modal-h .modal-dialog { margin-top: 10vh; }
+@media (max-width: 767px) { .wedding-party-modal.modal-h .modal-dialog { margin-top: 20vh; } }
+.wedding-party-modal.modal-v .modal-dialog { margin-top: 5vh; }
 .wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #4a2544; }
 .wedding-party-modal .modal-content .modal-body { padding: 8px; }
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }

@@ -156,11 +156,6 @@ $(document).ready(function () {
         }
     }).on('shown.bs.modal', function (evt) {
         if (evt.target) {
-            // recenter wedding party pic modals
-            var marginTop = Math.max(($(window).height() - $('.modal-dialog', evt.target).height()) / 2, 10),
-                modalType = $(evt.target).hasClass('modal-h') ? '.modal-h' : '.modal-v';
-            $('.modal-dialog', modalType).css('margin-top', marginTop);
-            
             var id = $(evt.target).attr('id');
             ga('send', 'event', 'modal', 'show', 'wedding party pic', id.substring(0, id.indexOf("Modal")));
         }

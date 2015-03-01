@@ -149,10 +149,11 @@ $screen-lg-min: 1200px;
         //background-image: url(../gallery/bw/piggy-back-medium.png);
     }
     .welcome-info {
-        margin-top: 10vh;
+        margin-top: 60px;
         border: 6px solid white;
         border-radius:3px;
         @media (min-width: $screen-sm-min) {
+            margin-top: 10vh;
             padding: 40px;
             //-color: rgb(238, 238, 238);
             //background-color: rgba(238, 238, 238, 0.3);

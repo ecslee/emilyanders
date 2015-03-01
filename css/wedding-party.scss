@@ -67,6 +67,15 @@
 }
 
 .wedding-party-modal {
+    &.modal-h .modal-dialog {
+        margin-top: 10vh;
+        @media (max-width: $screen-xs-max) {
+            margin-top: 20vh;
+        }
+    }
+    &.modal-v .modal-dialog {
+        margin-top: 5vh;
+    }
     .modal-content {
         margin-left: auto;
         margin-right: auto;

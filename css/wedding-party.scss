@@ -1,0 +1,109 @@
+/* wedding */
+
+.wedding-party-pics {
+    height: 400px;
+    a .img-circle {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    @media (max-width: $screen-xs-max) {
+        a {
+            display: block;
+        }
+    }
+}
+
+.wedding-party-info {
+    height: 400px;
+    h3 {
+        margin-top: 15px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    h5 {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    div {
+        height: 100px;
+        display: inline-block;
+        @media (max-width: $screen-xs-max) {
+            display: inline;
+        }
+        //border: 1px solid white;
+    }
+}
+
+.bridesmaids {
+    height: 400px;
+    .wedding-party-info {
+        text-align: right;
+    }
+    .wedding-party-pics {
+        .img-circle:hover {
+            border: 3px solid $medium-purple;
+        }
+    }
+}
+
+.groomsmen {
+    height: 400px;
+    .wedding-party-info {
+        text-align: left;
+    }
+    .wedding-party-pics {
+        .img-circle:hover {
+            border: 3px solid $medium-green;
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        .wedding-party-info {
+            text-align: right;
+        }
+        .wedding-party-pics {
+            float: right!important;
+        }
+    }
+}
+
+.wedding-party-modal {
+    .modal-content {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $dark-purple;
+        .modal-body {
+            padding: 8px;
+            img {
+                border: 1px solid #ddd;
+            }
+        }
+        .modal-footer {
+            height: 50px;
+            padding: 5px;
+            border-top: 0;
+            h4 {
+                text-align: center;
+                color: #ddd;
+                font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+    &.modal-h .modal-content {
+        max-width: 620px;
+        max-height: 470px;
+        .modal-body {
+            max-width: 620px;
+            max-height: 420px;
+        }
+    }
+    &.modal-v .modal-content {
+        max-width: 420px;
+        max-height: 670px;
+        .modal-body {
+            max-width: 420px;
+            max-height: 620px;
+        }
+    }
+}

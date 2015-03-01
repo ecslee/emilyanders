@@ -1,0 +1,164 @@
+/* styles for single page site */
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1 !important;
+    top: 0px;
+    left: 0px;
+    &.background-hidden {
+        display: none;
+    }
+    &#background-landscape {
+        //display: inline;
+        background-position: top;
+        background-size: cover;
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: blur(1px);
+    }
+    &#background-portrait {
+        //display: none;
+        background-position: top;
+        background-size: cover;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+    }
+}
+
+.quick-info {
+    margin-top: 50vh;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(74, 37, 68, 0.7);
+    background-image: url('/images/fabric_of_squares_purple90.png');
+    height: 160px;
+    .quick-info-text {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 10px;
+        .quick-info-text-wrap {
+            float: left;
+            h1 {
+                margin: 0px 0px 5px 0px;
+                font-family: 'Champagne&LimousinesBold', Helvetica, sans-serif;
+                font-size: 50px;
+                color: #ccc;
+                i {
+                    color: $sage-green;
+                }
+            }
+            h2 {
+                margin: 2px 0px;
+                font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                font-size: 26px;
+                color: #ccc;
+                a {
+                    color: #ccc;
+                    &:hover {
+                        color: $sage-green;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .quick-info-img {
+        .img-circle {
+            height: 140px;
+            width: 140px;
+            float: right;
+            border-radius: 100%;
+            border: 2px solid $sage-green;
+            background-color: #fff;
+        }
+    }
+}
+
+@media all and (min-width: 1081px) {
+    #background-landscape {
+        background-image: url('../gallery/bw/piggy-back-large.png');
+    }
+    #background-portrait {
+        background-image: url('../gallery/bw/hands-large.png');
+    }
+}
+
+@media all and (max-width: 1080px) {
+    #background-landscape {
+        background-image: url('../gallery/bw/piggy-back-medium.png');
+    }
+    #background-portrait {
+        background-image: url('../gallery/bw/hands-medium.png');
+    }
+}
+
+@media all and (max-width: 767px) {
+    #background-landscape {
+        //display: none !important;
+        background-image: url('/gallery/bw/piggy-back-small.png');
+    }
+    #background-portrait {
+        //display: inline !important;
+        background-image: url('/gallery/bw/hands-small.png');
+    }
+    .quick-info {
+        height: 60vh;
+        min-height: 320px;
+        margin-top: 20vh;
+        display: flex;
+        align-items: center;
+        .quick-info-text {
+            bottom: auto;
+            .quick-info-text-wrap {
+                float: center;
+                h1 {
+                    font-size: 32px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+        .quick-info-img {
+            .img-circle {
+                height: 200px;
+                width: 200px;
+                float: center;
+                margin: 40px;
+            }
+        }
+    }
+    .seitz-footer {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .quick-info {
+        .quick-info-text {
+            bottom: auto;
+            .quick-info-text-wrap {
+                h1 {
+                    font-size: 26px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+        .quick-info-img {
+            .img-circle {
+                height: 120px;
+                width: 120px;
+                margin: 20px;
+            }
+        }
+    }
+}

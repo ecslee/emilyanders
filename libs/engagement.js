@@ -72,7 +72,10 @@ $(document).ready(function () {
     });
 
     // scroll with keyboard shortcuts
-    $(document).not('input').keydown(function (e) {
+    $(document).keydown(function (e) {
+        if (document.activeElement.tagName == 'INPUT') {
+            return;
+        }
         switch (e.which) {
         case 38: // up
         case 33:
@@ -87,6 +90,9 @@ $(document).ready(function () {
             break;
         }
     }).keyup(function (e) {
+        if (document.activeElement.tagName == 'INPUT') {
+            return;
+        }
         var i = section.getCurrent(),
             j,
             move = false;

@@ -41,13 +41,13 @@
                 padding-left: 3px;
                 padding-right: 3px;
                 a {
-                    padding-left: 3px;
-                    padding-right: 3px;
-                    font-size: 20px;
-                    font-family: 'Champagne&Limousines', Helvetica, sans-serif;
+                    padding: 10px 3px 10px 3px;
+                    margin: 5px auto;
+                    font-size: 16px;
+                    font-family: 'raleway-light', sans-serif;
                     text-decoration: none;
                 }
-                &:hover {
+                &:hover a {
                     color: $dark-purple;
                     background: $lightest-purple;
                     //background: rgba(255, 255, 255, 0.3);

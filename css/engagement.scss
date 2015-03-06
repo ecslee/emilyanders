@@ -44,6 +44,10 @@ $screen-lg-min: 1200px;
     }
 }
 
+body {
+    font-family: "raleway", sans-serif;
+}
+
 /* sections */
 .section {
     min-height: 600px;
@@ -166,6 +170,7 @@ $screen-lg-min: 1200px;
 }
 
 @import "navbar";
+@import "wedding";
 @import "wedding-party";
 @import "guests";
 @import "map";

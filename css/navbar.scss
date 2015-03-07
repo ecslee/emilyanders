@@ -43,12 +43,13 @@
                 a {
                     padding: 10px 3px 10px 3px;
                     margin: 5px auto;
-                    font-size: 16px;
-                    font-family: 'raleway-light', sans-serif;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    font-family: 'raleway-extralight', sans-serif;
                     text-decoration: none;
                 }
                 &:hover a {
-                    color: $dark-purple;
+                    color: #eee;
                     background: $lightest-purple;
                     //background: rgba(255, 255, 255, 0.3);
                     text-decoration: none;

@@ -48,8 +48,8 @@ body { font-family: "raleway", sans-serif; }
 .navbar .container-fluid .navbar-header .navbar-toggle:hover { background-color: #b5ca92; }
 @media (min-width: 768px) { .navbar .container-fluid .navbar-collapse { width: 83.33333333%; } }
 .navbar .container-fluid .navbar-nav li { text-align: center; padding-left: 3px; padding-right: 3px; }
-.navbar .container-fluid .navbar-nav li a { padding: 10px 3px 10px 3px; margin: 5px auto; font-size: 16px; font-family: 'raleway-light', sans-serif; text-decoration: none; }
-.navbar .container-fluid .navbar-nav li:hover a { color: #4a2544; background: #aaa0ab; text-decoration: none; }
+.navbar .container-fluid .navbar-nav li a { padding: 10px 3px 10px 3px; margin: 5px auto; border-radius: 4px; font-size: 18px; font-family: 'raleway-extralight', sans-serif; text-decoration: none; }
+.navbar .container-fluid .navbar-nav li:hover a { color: #eee; background: #aaa0ab; text-decoration: none; }
 .navbar.navbar-fixed-top { margin-top: 0px; }
 .navbar.navbar-fixed-top .navbar-brand { visibility: visible !important; }
 
@@ -72,16 +72,16 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 #wedding h5 { font-family: 'raleway-light', Helvetica, sans-serif; margin-top: 40px; }
 #wedding #fontA h1 { font-family: 'sunshine-soul', Helvetica, sans-serif; font-size: 58px; color: #D3D9B5; z-index: 3; display: inline-block; }
 #wedding #fontA h1.ampersand { margin-left: 10px; margin-right: 10px; }
-#wedding #fontA h2 { font-family: 'return-sender', Helvetica, sans-serif; font-size: 84px; color: #3C2F40; z-index: 2; margin-top: -20px; }
-#wedding #fontB h1 { font-family: 'cursif', Helvetica, sans-serif; font-size: 60px; color: #6A5370; z-index: 3; display: inline-block; }
+#wedding #fontA h2 { font-family: 'return-sender', Helvetica, sans-serif; font-size: 84px; color: #352938; z-index: 2; margin-top: -20px; }
+#wedding #fontB h1 { font-family: 'cursif', Helvetica, sans-serif; font-size: 60px; color: #5f4a64; z-index: 3; display: inline-block; }
 #wedding #fontB h1.ampersand { font-family: 'brannboll'; font-size: 32px; width: 32px; top: -10px; margin-left: 10px; margin-right: 10px; }
-#wedding #fontB h2 { font-family: 'futura-hand', Helvetica, sans-serif; font-size: 84px; color: #9c84a3; z-index: 2; padding-left: 156px; margin-top: -15px; }
-#wedding #fontC h1 { font-family: 'cursif', Helvetica, sans-serif; font-size: 56px; color: #ccc; z-index: 3; display: inline-block; }
+#wedding #fontB h2 { font-family: 'futura-hand', Helvetica, sans-serif; font-size: 84px; color: #d2cbd4; z-index: 2; padding-left: 156px; margin-top: -15px; }
+#wedding #fontC h1 { font-family: 'windsong', Helvetica, sans-serif; font-size: 86px; color: #ccc; z-index: 3; display: inline-block; }
 #wedding #fontC h1.ampersand { margin-left: 10px; margin-right: 10px; }
-#wedding #fontC h2 { font-family: 'return-sender', Helvetica, sans-serif; font-size: 100px; color: #505E3A; z-index: 2; margin-top: -20px; }
-#wedding #fontD h1 { font-family: 'brannboll-thin', Helvetica, sans-serif; font-size: 72px; color: #bbb; z-index: 3; display: inline-block; }
-#wedding #fontD h1.ampersand { font-family: 'brannboll', Helvetica, sans-serif; font-size: 40px; margin-left: 14px; margin-right: 14px; margin-top: -5px; padding-left: 10px; padding-right: 10px; top: -10px; }
-#wedding #fontD h2 { font-family: 'deming', Helvetica, sans-serif; font-size: 48px; color: #6A5370; z-index: 2; margin-top: -20px; }
+#wedding #fontC h2 { font-family: 'return-sender', Helvetica, sans-serif; font-size: 96px; color: #505E3A; z-index: 2; margin-top: -55px; margin-right: 20px; }
+#wedding #fontD h1 { font-family: 'windsong', Helvetica, sans-serif; font-size: 108px; color: #d2cbd4; z-index: 3; display: inline-block; }
+#wedding #fontD h1.ampersand { font-family: 'windsong', Helvetica, sans-serif; font-size: 40px; margin-left: 14px; margin-right: 14px; margin-top: -5px; padding-left: 10px; padding-right: 10px; top: -10px; }
+#wedding #fontD h2 { font-family: 'deming', Helvetica, sans-serif; font-size: 48px; color: #5f4a64; z-index: 4; margin-top: -60px; margin-right: 10px; }
 
 /* wedding */
 .wedding-party-pics { height: 400px; }
@@ -111,7 +111,7 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal .modal-content .modal-body { padding: 8px; }
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }
 .wedding-party-modal .modal-content .modal-footer { height: 50px; padding: 5px; border-top: 0; }
-.wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'Champagne&Limousines', Helvetica, sans-serif; font-size: 24px; line-height: 24px; }
+.wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'cursif', sans-serif; font-size: 24px; line-height: 24px; }
 .wedding-party-modal.modal-h .modal-content { max-width: 620px; max-height: 470px; }
 .wedding-party-modal.modal-h .modal-content .modal-body { max-width: 620px; max-height: 420px; }
 .wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 670px; }
@@ -193,8 +193,8 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 /* fonts */
 /* Amatic */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
-@font-face { font-family: 'amatic'; src: url("AmaticSC-Regular-webfont.eot"); src: url("AmaticSC-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("AmaticSC-Regular-webfont.woff2") format("woff2"), url("AmaticSC-Regular-webfont.woff") format("woff"), url("AmaticSC-Regular-webfont.ttf") format("truetype"), url("AmaticSC-Regular-webfont.svg#amatic_scregular") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'amatic-bold'; src: url("Amatic-Bold-webfont.eot"); src: url("Amatic-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Amatic-Bold-webfont.woff2") format("woff2"), url("Amatic-Bold-webfont.woff") format("woff"), url("Amatic-Bold-webfont.ttf") format("truetype"), url("Amatic-Bold-webfont.svg#amaticbold") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'amatic'; src: url("fonts/amatic/AmaticSC-Regular-webfont.eot"); src: url("fonts/amatic/AmaticSC-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/amatic/AmaticSC-Regular-webfont.woff2") format("woff2"), url("fonts/amatic/AmaticSC-Regular-webfont.woff") format("woff"), url("fonts/amatic/AmaticSC-Regular-webfont.ttf") format("truetype"), url("fonts/amatic/AmaticSC-Regular-webfont.svg#amatic_scregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'amatic-bold'; src: url("fonts/amatic/Amatic-Bold-webfont.eot"); src: url("fonts/amatic/Amatic-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/amatic/Amatic-Bold-webfont.woff2") format("woff2"), url("fonts/amatic/Amatic-Bold-webfont.woff") format("woff"), url("fonts/amatic/Amatic-Bold-webfont.ttf") format("truetype"), url("fonts/amatic/Amatic-Bold-webfont.svg#amaticbold") format("svg"); font-weight: normal; font-style: normal; }
 /* Antrokas */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
 @font-face { font-family: 'antrokas'; src: url("fonts/antrokas/antrokas_demo-webfont.eot"); src: url("fonts/antrokas/antrokas_demo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/antrokas/antrokas_demo-webfont.woff2") format("woff2"), url("fonts/antrokas/antrokas_demo-webfont.woff") format("woff"), url("fonts/antrokas/antrokas_demo-webfont.ttf") format("truetype"), url("fonts/antrokas/antrokas_demo-webfont.svg#antrokasdemoregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -261,3 +261,6 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 /* Sunshine in My Soul */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
 @font-face { font-family: 'sunshine-soul'; src: url("fonts/sunshine-soul/Sunshine in my Soul-webfont.eot"); src: url("fonts/sunshine-soul/Sunshine in my Soul-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.woff2") format("woff2"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.woff") format("woff"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.ttf") format("truetype"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.svg#sunshine_in_my_soulregular") format("svg"); font-weight: normal; font-style: normal; }
+/* Windsong */
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
+@font-face { font-family: 'windsong'; src: url("fonts/windsong/Windsong-webfont.eot"); src: url("fonts/windsong/Windsong-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/windsong/Windsong-webfont.woff2") format("woff2"), url("fonts/windsong/Windsong-webfont.woff") format("woff"), url("fonts/windsong/Windsong-webfont.ttf") format("truetype"), url("fonts/windsong/Windsong-webfont.svg#windsongregular") format("svg"); font-weight: normal; font-style: normal; }

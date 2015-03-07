@@ -1,8 +1,9 @@
 /* wedding details */
-$purple0: #9c84a3;
-$purple1: #795E7F;
-$purple2: #6A5370;
-$purple3: #3C2F40;
+// 
+$purple0: #d2cbd4;
+$purple1: #96869a;
+$purple2: #5f4a64;
+$purple3: #352938;
 
 $green0: #D3D9B5;
 $green1: #BCDE8A;
@@ -79,8 +80,8 @@ $green3: #505E3A;
     }
     #fontC {
         h1 {
-            font-family: 'cursif', Helvetica, sans-serif;
-            font-size: 56px;
+            font-family: 'windsong', Helvetica, sans-serif;
+            font-size: 86px;
             color: #ccc;
             z-index: 3;
             display: inline-block;
@@ -91,22 +92,23 @@ $green3: #505E3A;
         }
         h2 {
             font-family: 'return-sender', Helvetica, sans-serif;
-            font-size: 100px;
+            font-size: 96px;
             color: $green3;
             z-index: 2;
-            margin-top: -20px;
+            margin-top: -55px;
+            margin-right: 20px;
         }
     }
     #fontD {
         h1 {
-            font-family: 'brannboll-thin', Helvetica, sans-serif;
-            font-size: 72px;
-            color: #bbb;
+            font-family: 'windsong', Helvetica, sans-serif;
+            font-size: 108px;
+            color: $purple0;
             z-index: 3;
             display: inline-block;
         }
         h1.ampersand {
-            font-family: 'brannboll', Helvetica, sans-serif;
+            font-family: 'windsong', Helvetica, sans-serif;
             font-size: 40px;
             margin-left: 14px;
             margin-right: 14px;
@@ -119,8 +121,9 @@ $green3: #505E3A;
             font-family: 'deming', Helvetica, sans-serif;
             font-size: 48px;
             color: $purple2;
-            z-index: 2;
-            margin-top: -20px;
+            z-index: 4;
+            margin-top: -60px;
+            margin-right: 10px;
         }
     }
 }

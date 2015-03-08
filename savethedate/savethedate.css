@@ -1,0 +1,38 @@
+/* sizes */
+/* colors */
+body { font-family: 'myriad-pro', sans-serif; }
+
+div { box-sizing: border-box; }
+
+.container-fluid { height: 100vh; }
+
+.row { height: 100%; }
+
+#sidebar-left { height: 100%; border-right: 4px solid #FFF; background-color: #555; padding: 5% 8px; }
+#sidebar-left #sidebar-title { height: 100%; max-width: 75px; width: 100%; float: right; background-image: url(images/sidebar.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+@media (min-width: 768px) { #sidebar-left { padding: 5% 18px; } }
+
+#sidebar-right { height: 100%; border-left: 4px solid #FFF; background-color: #555; }
+
+#centerbar { height: 14%; background-color: #CDC5DB; border-top: 4px solid #FFF; border-bottom: 4px solid #FFF; text-align: center; padding: 0px; position: relative; font-size: 13vh; }
+#centerbar #centerbar-title { height: 100%; margin: auto auto; background-image: url(images/centerbar.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+#centerbar #centerbar-title:hover { background-image: url(images/centerbar-hover.png); }
+#centerbar h2 { position: relative; top: 5%; font-size: 40%; color: #555; text-shadow: -2px -2px #FFF; margin: 0px -0.6em 0px 0px; letter-spacing: 0.6em; }
+#centerbar h3 { position: relative; top: 5%; font-size: 20%; color: #FFF; margin: 2px auto; margin: 0px -1px 0px 0px; letter-spacing: 1px; }
+#centerbar h4 { position: relative; top: 5%; font-size: 20%; color: #555; margin: 0px auto 0px auto; }
+#centerbar h4 .bullet { font-size: 50%; margin: auto 5px; }
+#centerbar h4 a { color: #555; }
+#centerbar h4 a:hover { text-decoration: none; color: #6A7b59; }
+@media (max-width: 767px) { #centerbar h2 { font-size: 25%; top: 15%; text-shadow: -1px -1px #FFF; }
+  #centerbar h3, #centerbar h4 { font-size: 20%; top: 15%; } }
+@media (max-width: 991px) { #centerbar h2 { margin: 0px -0.5em 0px 0px; letter-spacing: 0.5em; } }
+@media (min-width: 992px) { #centerbar h2 { margin: 0px -0.6em 0px 0px; letter-spacing: 0.6em; } }
+
+#savethedate-main { height: 60%; background-image: url("images/savethedate-main-sm.png"); background-size: cover; background-position: center; }
+@media (min-width: 992px) { #savethedate-main { background-image: url("images/savethedate-main-md.png"); } }
+
+#small-pics { height: 26%; }
+
+#savethedate-left { height: 100%; background-image: url("images/savethedate-left-sm.png"); background-size: cover; background-position: center top; border-right: 2px solid #FFF; }
+
+#savethedate-right { height: 100%; background-image: url("images/savethedate-right-sm.png"); background-size: cover; background-position: center top; border-left: 2px solid #FFF; }

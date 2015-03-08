@@ -1,0 +1,164 @@
+/* sizes */
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+/* colors */
+$savethedate-purple: #CDC5DB;
+$savethedate-grey: #555;
+$savethedate-green: #6A7b59;
+
+body {
+    //font-family: Futura, 'myriad-pro', sans-serif;
+    font-family: 'myriad-pro', sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+#sidebar-left {
+    height: 100%;
+    border-right: 4px solid #FFF;
+    background-color: $savethedate-grey;
+    padding: 5% 8px;
+    #sidebar-title {
+        height: 100%;
+        max-width: 75px;
+        width: 100%;
+        float: right;
+        background-image: url(images/sidebar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    @media (min-width: $screen-sm-min) {
+        padding: 5% 18px;
+    }
+}
+
+#sidebar-right {
+    height: 100%;
+    border-left: 4px solid #FFF;
+    background-color: $savethedate-grey;
+}
+
+#centerbar {
+    height: 14%;
+    background-color: $savethedate-purple;
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    font-size: 13vh;
+    #centerbar-title {
+        height: 100%;
+        margin: auto auto;
+        background-image: url(images/centerbar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &:hover {
+            background-image: url(images/centerbar-hover.png);
+        }
+    }
+    h2 {
+        position: relative;
+        top: 5%;
+        font-size: 40%;
+        color: $savethedate-grey;
+        text-shadow: -2px -2px #FFF;
+        margin: 0px -0.6em 0px 0px;
+        letter-spacing: 0.6em;
+    }
+    h3 {
+        position: relative;
+        top: 5%;
+        font-size: 20%;
+        color: #FFF;
+        margin: 2px auto;
+        margin: 0px -1px 0px 0px;
+        letter-spacing: 1px;
+    }
+    h4 {
+        position: relative;
+        top: 5%;
+        font-size: 20%;
+        color: $savethedate-grey;
+        margin:0px auto 0px auto;
+        .bullet {
+            font-size: 50%;
+            margin: auto 5px;
+        }
+        a {
+            color: $savethedate-grey;
+            &:hover {
+                text-decoration: none;
+                color: $savethedate-green;
+            }
+        }
+    }
+    @media (max-width: $screen-xs-max) {
+        h2 {
+            font-size: 25%;
+            top: 15%;
+            text-shadow: -1px -1px #FFF;
+        }
+        h3, h4 {
+            font-size: 20%;
+            top: 15%;
+        }
+    }
+    @media (max-width: $screen-md-min - 1) {
+        h2 {
+            margin: 0px -0.5em 0px 0px;
+            letter-spacing: 0.5em;
+        }
+    }
+    @media (min-width: $screen-md-min) {
+        h2 {
+            margin: 0px -0.6em 0px 0px;
+            letter-spacing: 0.6em;
+        }
+    }
+}
+
+#savethedate-main {
+    height: 60%;
+    background-image: url('images/savethedate-main-sm.png');
+    background-size: cover;
+    background-position: center;
+    @media (min-width: $screen-md-min) {
+        background-image: url('images/savethedate-main-md.png');
+    }
+}
+
+#small-pics {
+    height: 26%;
+}
+
+#savethedate-left {
+    height: 100%;
+    background-image: url('images/savethedate-left-sm.png');
+    background-size: cover;
+    background-position: center top;
+    border-right: 2px solid #FFF;
+}
+
+#savethedate-right {
+    height: 100%;
+    background-image: url('images/savethedate-right-sm.png');
+    background-size: cover;
+    background-position: center top;
+    border-left: 2px solid #FFF;
+}

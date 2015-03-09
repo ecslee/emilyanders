@@ -36,3 +36,5 @@ div { box-sizing: border-box; }
 #savethedate-left { height: 100%; background-image: url("images/savethedate-left-sm.png"); background-size: cover; background-position: center top; border-right: 2px solid #FFF; }
 
 #savethedate-right { height: 100%; background-image: url("images/savethedate-right-sm.png"); background-size: cover; background-position: center top; border-left: 2px solid #FFF; }
+
+.preload { visibility: hidden; position: absolute; overflow: hidden; height: 1px; width: 1px; }

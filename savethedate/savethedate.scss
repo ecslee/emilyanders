@@ -162,3 +162,11 @@ div {
     background-position: center top;
     border-left: 2px solid #FFF;
 }
+
+.preload {
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}

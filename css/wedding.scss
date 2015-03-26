@@ -35,95 +35,100 @@ $green3: #505E3A;
     }
     #fontA {
         h1 {
-            font-family: 'sunshine-soul', Helvetica, sans-serif;
-            font-size: 58px;
+            font-family: 'heart-and-soul', cursive, sans-serif;
+            font-size: 100px;
             color: $green0;
-            z-index: 3;
-            display: inline-block;
+            .h1-alt {
+                font-family: 'heart-and-soul-alt', cursive, sans-serif;
+            }
         }
         h1.ampersand {
             margin-left: 10px;
             margin-right: 10px;
         }
         h2 {
-            font-family: 'return-sender', Helvetica, sans-serif;
-            font-size: 84px;
+            font-family: 'yonder', Helvetica, sans-serif;
+            font-size: 116px;
             color: $purple3;
-            z-index: 2;
-            margin-top: -20px;
+            margin-top: -55px;
+        }
+        h3 {
+            font-family: 'heart-and-soul-alt', cursive, sans-serif;
+            font-size: 100px;
+            color: $green0;
+            margin-top: -60px;
         }
     }
     #fontB {
         h1 {
-            font-family: 'cursif', Helvetica, sans-serif;
-            font-size: 60px;
+            font-family: 'smoothy-cursive', cursive, sans-serif;
+            font-size: 80px;
             color: $purple2;
-            z-index: 3;
-            display: inline-block;
-        }
-        h1.ampersand {
-            font-family: 'brannboll';
-            font-size: 32px;
-            width: 32px;
-            top: -10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            .h1-alt {
+                font-family: 'smoothy-sans', sans-serif;
+            }
         }
         h2 {
-            font-family: 'futura-hand', Helvetica, sans-serif;
-            font-size: 84px;
+            font-family: 'true-north-rough3d', Helvetica, sans-serif;
+            font-size: 70px;
             color: $purple0;
-            z-index: 2;
-            padding-left: 156px;
             margin-top: -15px;
+            padding-left: 160px;
         }
     }
     #fontC {
         h1 {
-            font-family: 'windsong', Helvetica, sans-serif;
-            font-size: 86px;
+            font-family: 'heart-and-soul', cursive, sans-serif;
+            font-size: 100px;
             color: #ccc;
-            z-index: 3;
-            display: inline-block;
+            .h1-alt {
+                font-family: 'heart-and-soul-alt', cursive, sans-serif;
+            }
         }
         h1.ampersand {
             margin-left: 10px;
             margin-right: 10px;
         }
         h2 {
-            font-family: 'return-sender', Helvetica, sans-serif;
-            font-size: 96px;
+            font-family: 'true-north-inline', Helvetica, sans-serif;
+            font-size: 93px;
             color: $green3;
-            z-index: 2;
-            margin-top: -55px;
-            margin-right: 20px;
+            margin-top: -12px;
         }
     }
     #fontD {
         h1 {
-            font-family: 'windsong', Helvetica, sans-serif;
-            font-size: 108px;
-            color: $purple0;
-            z-index: 3;
-            display: inline-block;
-        }
-        h1.ampersand {
-            font-family: 'windsong', Helvetica, sans-serif;
-            font-size: 40px;
-            margin-left: 14px;
-            margin-right: 14px;
-            margin-top: -5px;
-            padding-left: 10px;
-            padding-right: 10px;
-            top: -10px;
+            font-family: 'heart-and-soul', cursive, sans-serif;
+            font-size: 160px;
+            color: $purple2;
+            margin-bottom: 0px;
+            &.ampersand {
+                font-family: 'heart-and-soul', cursive, sans-serif;
+                font-size: 120px;
+                color: $purple0;
+                margin: -66px 50px -60px 0px;
+            }
+            .h1-alt {
+                font-family: 'heart-and-soul-alt', cursive, sans-serif;
+            }
         }
         h2 {
-            font-family: 'deming', Helvetica, sans-serif;
-            font-size: 48px;
+            font-family: 'true-north-black-inline', Helvetica, sans-serif;
+            font-size: 70px;
             color: $purple2;
-            z-index: 4;
-            margin-top: -60px;
-            margin-right: 10px;
+            margin-top: 0px;
+            &.inline {
+                font-family: 'true-north-dots', Helvetica, sans-serif;
+            }
+            .glyph {
+                font-family: 'true-north-extras', Helvetica, sans-serif;
+            }
+        }
+        h3 {
+            font-family: 'true-north-extras', Helvetica, sans-serif;
+            font-size: 100px;
+            color: $purple0;
+            margin: 20px;
         }
     }
 }

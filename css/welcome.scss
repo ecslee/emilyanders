@@ -6,10 +6,13 @@
     }
     h1 {
         color: #fff;
-        font-family: 'windsong', Verdana, sans-serif;
+        font-family: 'heart-and-soul', cursive;
         font-size: 110px;
         text-align: center;
         margin: 0px auto;
+        .h1-alt {
+            font-family: 'heart-and-soul-alt', cursive;
+        }
     }
     h2 {
         color: #fff;
@@ -18,7 +21,8 @@
         text-align: center;
         margin: 0px auto;
         z-index: 2;
-        display: inline-block;
+        //display: inline-block;
+        display: block;
     }
     h3 {
         color: #fff;

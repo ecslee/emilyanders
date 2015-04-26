@@ -1,6 +1,7 @@
 /* light green gradient */
 /*rgb(146, 132, 147)*/
 /*rgb(170, 160, 171)*/
+/* colors */
 /* sizes */
 .img-circle { width: 100%; border-radius: 100%; border: 3px solid #fff; background-color: #fff; }
 
@@ -16,7 +17,7 @@ body { font-family: "raleway", Verdana, sans-serif; }
 .section .section-full { padding-left: 10px; padding-right: 10px; }
 
 .section-purple, .section-green { padding-top: 15vh; }
-.section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 32px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 30px; }
+.section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 32px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 10px; }
 .section-purple h2, .section-green h2 { font-family: 'yonder', Verdana, sans-serif; font-size: 32px; }
 
 .section-purple { color: #6a5370; background-color: #aaa0ab; /*#DCD0FF;  lavendar */ }
@@ -100,25 +101,25 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-info h3 { font-family: 'yonder', sans-serif; margin-top: 15px; margin-bottom: 5px; font-size: 28px; }
 @media (max-width: 767px) { .wedding-party-info h3 { font-size: 26px; } }
 .wedding-party-info h4 { font-family: 'raleway-light', sans-serif; margin-top: 5px; font-size: 18px; }
-.wedding-party-info div { height: 100px; display: inline-block; }
-@media (max-width: 767px) { .wedding-party-info div { display: inline; } }
+.wedding-party-info > div { height: 100px; display: inline-block; padding: 0px 5px; }
+@media (max-width: 767px) { .wedding-party-info > div { display: inline; } }
 @media (max-width: 767px) { .wedding-party-info { padding: 0px; }
   .wedding-party-info > div { padding-right: 5px; } }
 
 .bridesmaids { height: 400px; }
 .bridesmaids .wedding-party-info { text-align: right; }
-.bridesmaids .wedding-party-pics .img-circle:hover { border: 3px solid #6a5370; }
+.bridesmaids .wedding-party-pics .img-circle:hover { border: 3px solid #5f4a64; }
 
 .groomsmen { height: 400px; }
 .groomsmen .wedding-party-info { text-align: left; }
-.groomsmen .wedding-party-pics .img-circle:hover { border: 3px solid #80905f; }
+.groomsmen .wedding-party-pics .img-circle:hover { border: 3px solid #869E62; }
 @media (max-width: 767px) { .groomsmen .wedding-party-info { text-align: right; }
   .groomsmen .wedding-party-pics { float: right !important; } }
 
 .wedding-party-modal.modal-h .modal-dialog { margin-top: 10vh; }
 @media (max-width: 767px) { .wedding-party-modal.modal-h .modal-dialog { margin-top: 20vh; } }
 .wedding-party-modal.modal-v .modal-dialog { margin-top: 5vh; }
-.wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #4a2544; }
+.wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #352938; }
 .wedding-party-modal .modal-content .modal-body { padding: 8px; }
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }
 .wedding-party-modal .modal-content .modal-footer { height: 150px; padding: 10px 20px; border-top: 0; }

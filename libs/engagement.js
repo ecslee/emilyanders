@@ -175,4 +175,5 @@ $(document).ready(function () {
         ga('send', 'event', 'registry', 'click', store);
     });
     
+    $(document).resize();
 });

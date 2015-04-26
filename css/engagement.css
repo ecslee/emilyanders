@@ -16,7 +16,8 @@ body { font-family: "raleway", Verdana, sans-serif; }
 .section .section-full { padding-left: 10px; padding-right: 10px; }
 
 .section-purple, .section-green { padding-top: 15vh; }
-.section-purple h1, .section-green h1 { font-family: 'windsong', Verdana, sans-serif; font-size: 40px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 30px; }
+.section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 32px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 30px; }
+.section-purple h2, .section-green h2 { font-family: 'yonder', Verdana, sans-serif; font-size: 32px; }
 
 .section-purple { color: #6a5370; background-color: #aaa0ab; /*#DCD0FF;  lavendar */ }
 
@@ -96,10 +97,13 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 @media (max-width: 767px) { .wedding-party-pics a { display: block; } }
 
 .wedding-party-info { height: 400px; }
-.wedding-party-info h3 { margin-top: 15px; font-size: 24px; font-weight: 500; }
-.wedding-party-info h5 { font-size: 14px; font-weight: normal; }
+.wedding-party-info h3 { font-family: 'yonder', sans-serif; margin-top: 15px; margin-bottom: 5px; font-size: 28px; }
+@media (max-width: 767px) { .wedding-party-info h3 { font-size: 26px; } }
+.wedding-party-info h4 { font-family: 'raleway-light', sans-serif; margin-top: 5px; font-size: 18px; }
 .wedding-party-info div { height: 100px; display: inline-block; }
 @media (max-width: 767px) { .wedding-party-info div { display: inline; } }
+@media (max-width: 767px) { .wedding-party-info { padding: 0px; }
+  .wedding-party-info > div { padding-right: 5px; } }
 
 .bridesmaids { height: 400px; }
 .bridesmaids .wedding-party-info { text-align: right; }
@@ -117,11 +121,12 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal .modal-content { margin-left: auto; margin-right: auto; background-color: #4a2544; }
 .wedding-party-modal .modal-content .modal-body { padding: 8px; }
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }
-.wedding-party-modal .modal-content .modal-footer { height: 50px; padding: 5px; border-top: 0; }
-.wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'raleway-thin-italic', sans-serif; font-size: 24px; line-height: 32px; }
-.wedding-party-modal.modal-h .modal-content { max-width: 620px; max-height: 470px; }
+.wedding-party-modal .modal-content .modal-footer { height: 150px; padding: 10px 20px; border-top: 0; }
+.wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'yonder', sans-serif; font-size: 36px; line-height: 36px; }
+.wedding-party-modal .modal-content .modal-footer h5 { text-align: left; color: #ddd; font-family: 'raleway-extralight', sans-serif; font-size: 14px; }
+.wedding-party-modal.modal-h .modal-content { max-width: 620px; max-height: 550px; }
 .wedding-party-modal.modal-h .modal-content .modal-body { max-width: 620px; max-height: 420px; }
-.wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 670px; }
+.wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 720px; }
 .wedding-party-modal.modal-v .modal-content .modal-body { max-width: 420px; max-height: 620px; }
 
 /* guests */
@@ -198,11 +203,6 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
   .quick-info .quick-info-text .quick-info-text-wrap h2 { font-size: 18px; }
   .quick-info .quick-info-img .img-circle { height: 120px; width: 120px; margin: 20px; } }
 /* fonts */
-/* Champagne and Limousines */
-@font-face { font-family: 'Champagne&Limousines'; src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousines-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousines-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousines-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousines-webfont.svg#champagne__limousinesregular") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesBold'; src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesbold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbold-webfont.svg#champagne__limousinesbold") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesItalic'; src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot"); src: url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.woff") format("woff"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesitalic-webfont.svg#champagne__limousinesitalic") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Champagne&LimousinesBoldItalic'; src: url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot"); src: url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.woff") format("woff"), url("fonts/fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.ttf") format("truetype"), url("fonts/champagne-limousines/champagnelimousinesbolditalic-webfont.svg#champagne__limousinesBdIt") format("svg"); font-weight: normal; font-style: normal; }
 /* Raleway */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
 @font-face { font-family: 'raleway'; src: url("fonts/raleway/Raleway-Regular-webfont.eot"); src: url("fonts/raleway/Raleway-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/raleway/Raleway-Regular-webfont.woff2") format("woff2"), url("fonts/raleway/Raleway-Regular-webfont.woff") format("woff"), url("fonts/raleway/Raleway-Regular-webfont.ttf") format("truetype"), url("fonts/raleway/Raleway-Regular-webfont.svg#ralewayregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -226,18 +226,9 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 /* Return to Sender */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
 @font-face { font-family: 'return-sender'; src: url("fonts/return-sender/Return_To_Sender-webfont.eot"); src: url("fonts/return-sender/Return_To_Sender-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/return-sender/Return_To_Sender-webfont.woff2") format("woff2"), url("fonts/return-sender/Return_To_Sender-webfont.woff") format("woff"), url("fonts/return-sender/Return_To_Sender-webfont.ttf") format("truetype"), url("fonts/return-sender/Return_To_Sender-webfont.svg#return_to_senderregular") format("svg"); font-weight: normal; font-style: normal; }
-/* Sunshine in My Soul */
-/* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
-@font-face { font-family: 'sunshine-soul'; src: url("fonts/sunshine-soul/Sunshine in my Soul-webfont.eot"); src: url("fonts/sunshine-soul/Sunshine in my Soul-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.woff2") format("woff2"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.woff") format("woff"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.ttf") format("truetype"), url("fonts/sunshine-soul/Sunshine in my Soul-webfont.svg#sunshine_in_my_soulregular") format("svg"); font-weight: normal; font-style: normal; }
-/* Windsong */
-/* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 6, 2015 */
-@font-face { font-family: 'windsong'; src: url("fonts/windsong/Windsong-webfont.eot"); src: url("fonts/windsong/Windsong-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/windsong/Windsong-webfont.woff2") format("woff2"), url("fonts/windsong/Windsong-webfont.woff") format("woff"), url("fonts/windsong/Windsong-webfont.ttf") format("truetype"), url("fonts/windsong/Windsong-webfont.svg#windsongregular") format("svg"); font-weight: normal; font-style: normal; }
 /* Heart and Soul */
 @font-face { font-family: 'heart-and-soul'; src: url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.eot"); src: url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.woff2") format("woff2"), url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.woff") format("woff"), url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.ttf") format("truetype"), url("purchased-fonts/heart-and-soul/HeartAndSoul-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'heart-and-soul-alt'; src: url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.eot"); src: url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.woff2") format("woff2"), url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.woff") format("woff"), url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.ttf") format("truetype"), url("purchased-fonts/heart-and-soul/HeartAndSoulAlt-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
-/* Smoothy */
-@font-face { font-family: 'smoothy-cursive'; src: url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.eot"); src: url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.woff2") format("woff2"), url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.woff") format("woff"), url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.ttf") format("truetype"), url("purchased-fonts/smoothy/Smoothy-Cursive-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'smoothy-sans'; src: url("purchased-fonts/smoothy/Smoothy-Sans-webfont.eot"); src: url("purchased-fonts/smoothy/Smoothy-Sans-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/smoothy/Smoothy-Sans-webfont.woff2") format("woff2"), url("purchased-fonts/smoothy/Smoothy-Sans-webfont.woff") format("woff"), url("purchased-fonts/smoothy/Smoothy-Sans-webfont.ttf") format("truetype"), url("purchased-fonts/smoothy/Smoothy-Sans-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 /* True North */
 @font-face { font-family: 'true-north'; src: url("purchased-fonts/true-north/TrueNorth-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorth-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorth-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorth-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorth-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorth-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-dots'; src: url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthDots-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }

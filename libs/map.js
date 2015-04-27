@@ -14,14 +14,22 @@ $(document).ready(function () {
     function mapInit() {
         var icons = {
             purple: {
-                khimaira: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|4A2544|FFFFFF',
-                hotel: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|4A2544|FFFFFF',
-                caverns: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|4A2544|FFFFFF'
+                khimaira: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=K|4A2544|FFFFFF',
+                hotelHampton: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|4A2544|FFFFFF',
+                hotelHoliday: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|4A2544|FFFFFF',
+                hotelBest: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|4A2544|FFFFFF',
+                caverns: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=L|4A2544|FFFFFF',
+                shenandoah: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=S|4A2544|FFFFFF',
+                wine: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=W|4A2544|FFFFFF'
             },
             blue: {
-                khimaira: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|9AD0FF|444444',
-                hotel: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|9AD0FF|444444',
-                caverns: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|9AD0FF|444444'
+                khimaira: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=K|9AD0FF|444444',
+                hotelHampton: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=1|9AD0FF|444444',
+                hotelHoliday: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|9AD0FF|444444',
+                hotelBest: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=3|9AD0FF|444444',
+                caverns: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=L|9AD0FF|444444',
+                shenandoah: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=S|9AD0FF|444444',
+                wine: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=W|9AD0FF|444444'
             }
         };
         
@@ -33,97 +41,119 @@ $(document).ready(function () {
         };
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
+        // Khimaira - 2974 Stonyman Rd, Luray, VA 22835
+        var khimairaInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Khimaira Farm</h4><p>2974 Stonyman Rd<br>Luray, VA 22835</p></div>'
+        });
         var khimairaMarker = new google.maps.Marker({
             position: khimairaLatLong,
             map: map,
             title: 'Khimaira Farm',
             icon: icons.purple.khimaira,
             zIndex: 3,
-            weddingType: 'khimaira'
-        });
-        var khimairaInfo = new google.maps.InfoWindow({
-            content: '<div><h4>Khimaira Farm</h4><p>2974 Stonyman Rd<br>Luray, VA 22835</p></div>'
-        });
-
-        var mimslynMarker = new google.maps.Marker({
-            position: new google.maps.LatLng(38.664417, -78.466819),
-            map: map,
-            title: 'Mimslyn Inn',
-            icon: icons.blue.hotel,
-            zIndex: 2,
-            weddingType: 'hotel'
-        });
-        var mimslynInfo = new google.maps.InfoWindow({
-            content: '<div><h4>Mimslyn Inn</h4><p>401 W. Main Street<br>Luray, VA 22835</p></div>'
+            weddingType: 'khimaira',
+            weddingInfo: khimairaInfo,
+            weddingPanel: 'khimairaPanel'
         });
         
+        // Hampton - 9800 Winchester Rd, Front Royal, VA 22630
+        var hamptonInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Hampton Inn</h4><p>9800 Winchester Rd<br>Front Royal, VA 22630</p></div>'
+        });
         var hamptonMarker = new google.maps.Marker({
             position: new google.maps.LatLng(38.960593, -78.194782),
             map: map,
             title: 'Hampton Inn',
-            icon: icons.blue.hotel,
+            icon: icons.blue.hotelHampton,
             zIndex: 2,
-            weddingType: 'hotel'
+            weddingType: 'hotelHampton',
+            weddingInfo: hamptonInfo,
+            weddingPanel: 'hotelsPanel'
         });
-        var hamptonInfo = new google.maps.InfoWindow({
-            content: '<div><h4>Mimslyn Inn</h4><p>401 W. Main Street<br>Luray, VA 22835</p></div>'
+        
+        // Holiday - 1130 Motel Dr, Woodstock, VA 22664
+        var holidayInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Mimslyn Inn</h4><p>1130 Motel Dr<br>Woodstock, VA 22664</p></div>'
+        });
+        var holidayMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(38.869607, -78.527165),
+            map: map,
+            title: 'Holiday Inn',
+            icon: icons.blue.hotelHoliday,
+            zIndex: 2,
+            weddingType: 'hotelHoliday',
+            weddingInfo: holidayInfo,
+            weddingPanel: 'hotelsPanel'
+        });
+        
+        // Best Western - 410 W Main St, Luray, VA 22835
+        var bestwestInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Best Western</h4><p>410 W Main St<br>Luray, VA 22835</p></div>'
+        });
+        var bestwestMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(38.665769, -78.466715),
+            map: map,
+            title: 'Best Western',
+            icon: icons.blue.hotelBest,
+            zIndex: 2,
+            weddingType: 'hotelBest',
+            weddingInfo: bestwestInfo,
+            weddingPanel: 'hotelsPanel'
         });
 
+        // Caverns: 101 Cave Hill Rd, Luray, VA 22835
+        var cavernsInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Luray Caverns</h4><p>101 Cave Hill Rd<br>Luray, VA 22835</p></div>'
+        });
         var cavernsMarker = new google.maps.Marker({
             position: new google.maps.LatLng(38.663911, -78.483257),
             map: map,
             title: 'Luray Caverns',
             icon: icons.blue.caverns,
             zIndex: 1,
-            weddingType: 'caverns'
-        });
-        var cavernsInfo = new google.maps.InfoWindow({
-            content: '<div><h4>Luray Caverns</h4><p>101 Cave Hill Rd<br>Luray, VA 22835</p></div>'
-        });
-
-        google.maps.event.addListener(khimairaMarker, 'click', function () {
-            mimslynInfo.close();
-            cavernsInfo.close();
-            khimairaInfo.open(map, khimairaMarker);
-        });
-        google.maps.event.addListener(mimslynMarker, 'click', function () {
-            khimairaInfo.close();
-            cavernsInfo.close();
-            mimslynInfo.open(map, mimslynMarker);
-        });
-        google.maps.event.addListener(cavernsMarker, 'click', function () {
-            khimairaInfo.close();
-            mimslynInfo.close();
-            cavernsInfo.open(map, cavernsMarker);
+            weddingType: 'caverns',
+            weddingInfo: cavernsInfo,
+            weddingPanel: 'cavernsPanel'
         });
         
-        var markers = [
-            khimairaMarker,
-            mimslynMarker,
-            hamptonMarker,
-            cavernsMarker
-        ];
+        // Shenandoah -  US Highway 211 East, Luray, VA 22835 (Thornton Gap entrance)
+        var shenandoahInfo = new google.maps.InfoWindow({
+            content: '<div><h4>Shenandoah National Park</h4><p>Thornton Gap entrance<br>US Highway 211 East<br>Luray, VA 22835</p></div>'
+        });
+        var shenandoahMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(38.662387, -78.320798),
+            map: map,
+            title: 'Shenandoah National Park',
+            icon: icons.blue.shenandoah,
+            zIndex: 1,
+            weddingType: 'shenandoah',
+            weddingInfo: shenandoahInfo,
+            weddingPanel: 'shenandoahPanel'
+        });
+
+        // open and close markers
+        var markers = [khimairaMarker, mimslynMarker, hamptonMarker, holidayMarker, bestwestMarker, cavernsMarker, shenandoahMarker];
+        var infos = [khimairaInfo, mimslynInfo, hamptonInfo, holidayInfo, bestwestInfo, cavernsInfo, shenandoahInfo];
+        function clickMarker(evt) {
+            for (var i=0; i < infos.length; i++) {
+                infos[i].close();
+            }
+            this.weddingInfo.open(map, this);
+        }
+        for (var m=0; m < markers.length; m++) {
+            google.maps.event.addListener(markers[m], 'click', clickMarker);
+        }
+        
         $('.panel-heading', '.panel-wedding').click(function () {
             var m;
-            for (m=0; m<markers.length; m++) {
-                markers[m]['z-index'] = 1;
-                markers[m].setIcon(icons.blue[markers[m].weddingType]);
-            }
-            switch (this.id) {
-                case 'khimairaPanel':
-                    khimairaMarker.setIcon(icons.purple.khimaira);
-                    khimairaMarker['z-index'] = 3;
-                    break;
-                case 'hotelsPanel':
-                    mimslynMarker.setIcon(icons.purple.hotel);
-                    hamptonMarker.setIcon(icons.purple.hotel);
-                    mimslynMarker['z-index'] = 3;
-                    hamptonMarker['z-index'] = 3;
-                    break;
-                case 'cavernsPanel':
-                    cavernsMarker.setIcon(icons.purple.caverns);
-                    cavernsMarker['z-index'] = 3;
-                    break;
+            for (var m = 0, len = markers.length; m < len; m++) {
+                if (markers[m].weddingPanel == this.id) {
+                    markers[m].setIcon(icons.purple[markers[m].weddingType]);
+                    markers[m]['z-index'] = 3;
+                } else {
+                    markers[m]['z-index'] = 1;
+                    markers[m].setIcon(icons.blue[markers[m].weddingType]);
+                }
             }
         });
     }

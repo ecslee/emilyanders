@@ -20,9 +20,9 @@ body { font-family: "raleway", Verdana, sans-serif; }
 .section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 32px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 10px; }
 .section-purple h2, .section-green h2 { font-family: 'yonder', Verdana, sans-serif; font-size: 32px; }
 
-.section-purple { color: #6a5370; background-color: #aaa0ab; /*#DCD0FF;  lavendar */ }
+.section-purple { color: #352938; background-color: #d2cbd4; /*#DCD0FF;  lavendar */ }
 
-.section-green { color: #1D2951; /* space cadet */ background-color: #b5ca92; }
+.section-green { color: #1D2951; /* space cadet */ background-color: #D3D9B5; }
 
 /* section backgrounds */
 #welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-image: url(../gallery/IMG_0019.JPG); }
@@ -39,7 +39,7 @@ body { font-family: "raleway", Verdana, sans-serif; }
 .navbar .container-fluid .navbar-header .navbar-toggle:hover { background-color: #b5ca92; }
 @media (min-width: 768px) { .navbar .container-fluid .navbar-collapse { width: 83.33333333%; } }
 .navbar .container-fluid .navbar-nav li { text-align: center; padding-left: 3px; padding-right: 3px; }
-.navbar .container-fluid .navbar-nav li a { padding: 10px 3px 10px 3px; margin: 5px auto; border-radius: 4px; font-size: 18px; font-family: 'raleway-extralight', sans-serif; text-decoration: none; }
+.navbar .container-fluid .navbar-nav li a { padding: 10px 3px 10px 3px; margin: 5px auto; border-radius: 4px; font-size: 16px; font-family: 'raleway-extralight', sans-serif; text-decoration: none; }
 .navbar .container-fluid .navbar-nav li:hover a { color: #eee; background: #aaa0ab; text-decoration: none; }
 .navbar.navbar-fixed-top { margin-top: 0px; }
 .navbar.navbar-fixed-top .navbar-brand { visibility: visible !important; }
@@ -66,31 +66,9 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
   .section-intro h3 { font-size: 48px; } }
 
 /* wedding details */
-#wedding { background-color: #ffffff; }
-#wedding .section-content { padding-top: 60px; background-color: #ffffff; }
-#wedding .separate { margin-top: 20px; margin-bottom: 60px; }
-#wedding .separate .separator { border-top: 1px solid #ccc; height: 2px; }
-#wedding h1, #wedding h2 { text-align: center; margin: 0px; position: relative; }
+#wedding h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
+#wedding h3 { font-family: 'yonder', sans-serif; font-size: 36px; text-align: center; }
 #wedding h5 { font-family: 'raleway-light', Helvetica, sans-serif; margin-top: 40px; }
-#wedding #fontA h1 { font-family: 'heart-and-soul', cursive, sans-serif; font-size: 100px; color: #D3D9B5; }
-#wedding #fontA h1 .h1-alt { font-family: 'heart-and-soul-alt', cursive, sans-serif; }
-#wedding #fontA h1.ampersand { margin-left: 10px; margin-right: 10px; }
-#wedding #fontA h2 { font-family: 'yonder', Helvetica, sans-serif; font-size: 116px; color: #352938; margin-top: -55px; }
-#wedding #fontA h3 { font-family: 'heart-and-soul-alt', cursive, sans-serif; font-size: 100px; color: #D3D9B5; margin-top: -60px; }
-#wedding #fontB h1 { font-family: 'smoothy-cursive', cursive, sans-serif; font-size: 80px; color: #5f4a64; }
-#wedding #fontB h1 .h1-alt { font-family: 'smoothy-sans', sans-serif; }
-#wedding #fontB h2 { font-family: 'true-north-rough3d', Helvetica, sans-serif; font-size: 70px; color: #d2cbd4; margin-top: -15px; padding-left: 160px; }
-#wedding #fontC h1 { font-family: 'heart-and-soul', cursive, sans-serif; font-size: 100px; color: #ccc; }
-#wedding #fontC h1 .h1-alt { font-family: 'heart-and-soul-alt', cursive, sans-serif; }
-#wedding #fontC h1.ampersand { margin-left: 10px; margin-right: 10px; }
-#wedding #fontC h2 { font-family: 'true-north-inline', Helvetica, sans-serif; font-size: 93px; color: #505E3A; margin-top: -12px; }
-#wedding #fontD h1 { font-family: 'heart-and-soul', cursive, sans-serif; font-size: 160px; color: #5f4a64; margin-bottom: 0px; }
-#wedding #fontD h1.ampersand { font-family: 'heart-and-soul', cursive, sans-serif; font-size: 120px; color: #d2cbd4; margin: -66px 50px -60px 0px; }
-#wedding #fontD h1 .h1-alt { font-family: 'heart-and-soul-alt', cursive, sans-serif; }
-#wedding #fontD h2 { font-family: 'true-north-black-inline', Helvetica, sans-serif; font-size: 70px; color: #5f4a64; margin-top: 0px; }
-#wedding #fontD h2.inline { font-family: 'true-north-dots', Helvetica, sans-serif; }
-#wedding #fontD h2 .glyph { font-family: 'true-north-extras', Helvetica, sans-serif; }
-#wedding #fontD h3 { font-family: 'true-north-extras', Helvetica, sans-serif; font-size: 100px; color: #d2cbd4; margin: 20px; }
 
 /* wedding */
 .wedding-party-pics { height: 400px; }

@@ -1,124 +1,21 @@
 /* wedding details */
 
 #wedding {
-    background-color: #ffffff;
-    .section-content {
-        padding-top: 60px;
-        background-color: #ffffff;
-    }
-    .separate {
-        margin-top: 20px;
-        margin-bottom: 60px;
-        .separator {
-            border-top: 1px solid #ccc;
-            height: 2px;
-        }
-    }
-    h1, h2 {
+    h2 {
+        font-family: 'yonder', sans-serif;
+        font-size: 42px;
+        line-height: 42px;
         text-align: center;
-        margin: 0px;
+        margin: 0px 0px 0px 0px;
         position: relative;
+    }
+    h3 {
+        font-family: 'yonder', sans-serif;
+        font-size: 36px;
+        text-align: center;
     }
     h5 {
         font-family: 'raleway-light', Helvetica, sans-serif;
         margin-top: 40px;
-    }
-    #fontA {
-        h1 {
-            font-family: 'heart-and-soul', cursive, sans-serif;
-            font-size: 100px;
-            color: $green0;
-            .h1-alt {
-                font-family: 'heart-and-soul-alt', cursive, sans-serif;
-            }
-        }
-        h1.ampersand {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        h2 {
-            font-family: 'yonder', Helvetica, sans-serif;
-            font-size: 116px;
-            color: $purple3;
-            margin-top: -55px;
-        }
-        h3 {
-            font-family: 'heart-and-soul-alt', cursive, sans-serif;
-            font-size: 100px;
-            color: $green0;
-            margin-top: -60px;
-        }
-    }
-    #fontB {
-        h1 {
-            font-family: 'smoothy-cursive', cursive, sans-serif;
-            font-size: 80px;
-            color: $purple2;
-            .h1-alt {
-                font-family: 'smoothy-sans', sans-serif;
-            }
-        }
-        h2 {
-            font-family: 'true-north-rough3d', Helvetica, sans-serif;
-            font-size: 70px;
-            color: $purple0;
-            margin-top: -15px;
-            padding-left: 160px;
-        }
-    }
-    #fontC {
-        h1 {
-            font-family: 'heart-and-soul', cursive, sans-serif;
-            font-size: 100px;
-            color: #ccc;
-            .h1-alt {
-                font-family: 'heart-and-soul-alt', cursive, sans-serif;
-            }
-        }
-        h1.ampersand {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        h2 {
-            font-family: 'true-north-inline', Helvetica, sans-serif;
-            font-size: 93px;
-            color: $green3;
-            margin-top: -12px;
-        }
-    }
-    #fontD {
-        h1 {
-            font-family: 'heart-and-soul', cursive, sans-serif;
-            font-size: 160px;
-            color: $purple2;
-            margin-bottom: 0px;
-            &.ampersand {
-                font-family: 'heart-and-soul', cursive, sans-serif;
-                font-size: 120px;
-                color: $purple0;
-                margin: -66px 50px -60px 0px;
-            }
-            .h1-alt {
-                font-family: 'heart-and-soul-alt', cursive, sans-serif;
-            }
-        }
-        h2 {
-            font-family: 'true-north-black-inline', Helvetica, sans-serif;
-            font-size: 70px;
-            color: $purple2;
-            margin-top: 0px;
-            &.inline {
-                font-family: 'true-north-dots', Helvetica, sans-serif;
-            }
-            .glyph {
-                font-family: 'true-north-extras', Helvetica, sans-serif;
-            }
-        }
-        h3 {
-            font-family: 'true-north-extras', Helvetica, sans-serif;
-            font-size: 100px;
-            color: $purple0;
-            margin: 20px;
-        }
     }
 }

@@ -67,6 +67,14 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 /* wedding details */
 #wedding h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
 #wedding div.separator { margin: 20px 0px; height: 1px; }
+#wedding h2#khimaira { font-family: 'heart-and-soul', sans-serif; font-size: 64px; line-height: 54px; margin-bottom: 8px; margin-top: 20px; }
+#wedding h2#luray { font-family: 'return-sender', sans-serif; font-size: 58px; margin-bottom: 10px; }
+#wedding h2#july { font-size: 54px; }
+#wedding h2#time { font-size: 35px; }
+@media (min-width: 768px) { #wedding h2#khimaira { font-size: 64px; }
+  #wedding h2#luray { font-size: 70px; }
+  #wedding h2#july { font-size: 64px; }
+  #wedding h2#time { font-size: 42px; } }
 
 /* wedding */
 .wedding-party-pics { height: 400px; }
@@ -107,8 +115,8 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal.modal-v .modal-content .modal-body { max-width: 420px; max-height: 620px; }
 
 /* guests */
-h2.song-request { font-family: 'true-north', sans-serif; font-size: 24px; text-align: center; }
-@media (max-width: 767px) { h2.song-request { font-size: 14px; } }
+h2.song-request { font-family: 'yonder', sans-serif; font-size: 26px; text-align: center; margin-bottom: 1px; }
+@media (min-width: 768px) { h2.song-request { font-size: 44px; } }
 
 /* song requests */
 .cassette { height: 179px; width: 280px; margin: auto auto; background-image: url("../images/cassette-small.png"); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
@@ -144,7 +152,7 @@ h2.song-request { font-family: 'true-north', sans-serif; font-size: 24px; text-a
 .panel-wedding .panel-body { height: 0px; padding: 0px; box-sizing: border-box; background-color: #F5F5F5; border: 0px solid #DDD; }
 .panel-wedding .panel-body .panel-body-content { visibility: hidden; }
 .panel-wedding .panel-body .panel-body-content .row { margin-bottom: 20px; }
-.panel-wedding .panel-body .panel-body-content h4 { font-size: 14px; margin-top: 0px; }
+.panel-wedding .panel-body .panel-body-content h4 { font-size: 16px; margin: 0px auto 5px auto; }
 .panel-wedding .panel-body .panel-body-content h5 { font-size: 14px; margin: 0px auto; }
 .panel-wedding .panel-body.panel-open { height: 200px; overflow: scroll; padding: 15px; border-width: 0px 1px 1px 1px; }
 .panel-wedding .panel-body.panel-open .panel-body-content { visibility: visible; }

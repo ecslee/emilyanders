@@ -1,12 +1,14 @@
 /* guests */
 h2.song-request {
-    font-family: 'true-north', sans-serif;
-    font-size: 24px;
+    font-family: 'yonder', sans-serif;
+    font-size: 26px;
     text-align: center;
-    @media (max-width: $screen-xs-max) {
-        font-size: 14px;
+    margin-bottom: 1px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 44px;
     }
 }
+ 
 
 /* song requests */
 .cassette {

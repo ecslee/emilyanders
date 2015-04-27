@@ -30,6 +30,7 @@
         border-radius: 0px;
         &:hover {
             background-color: $light-purple;
+            color: white;
         }
     }
     .panel-body {
@@ -40,9 +41,21 @@
         border: 0px solid #DDD;
         .panel-body-content {
             visibility: hidden;
+            .row {
+                margin-bottom: 20px;
+            }
+            h4 {
+                font-size: 14px;
+                margin-top: 0px;
+            }
+            h5 {
+                font-size: 14px;
+                margin: 0px auto;
+            }
         }
         &.panel-open {
             height: 200px;
+            overflow: scroll;
             padding: 15px;
             border-width: 0px 1px 1px 1px;
             .panel-body-content {

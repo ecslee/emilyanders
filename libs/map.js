@@ -132,8 +132,8 @@ $(document).ready(function () {
         });
 
         // open and close markers
-        var markers = [khimairaMarker, mimslynMarker, hamptonMarker, holidayMarker, bestwestMarker, cavernsMarker, shenandoahMarker];
-        var infos = [khimairaInfo, mimslynInfo, hamptonInfo, holidayInfo, bestwestInfo, cavernsInfo, shenandoahInfo];
+        var markers = [khimairaMarker, hamptonMarker, holidayMarker, bestwestMarker, cavernsMarker, shenandoahMarker];
+        var infos = [khimairaInfo, hamptonInfo, holidayInfo, bestwestInfo, cavernsInfo, shenandoahInfo];
         function clickMarker(evt) {
             for (var i=0; i < infos.length; i++) {
                 infos[i].close();

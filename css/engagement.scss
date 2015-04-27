@@ -108,7 +108,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
     // TODO: select image based on screen size
-    background-image: url(../gallery/IMG_0019.JPG);
+    //background-image: url(../gallery/IMG_0019.JPG);
+    //background-image: url(../gallery/yellow/edits-0001-square.jpg);
+    background-image: url(../gallery/falls/edits-0189-sm.jpg);
     @media (min-width: $screen-sm-min) {
         //background-image: url(../gallery/bw/piggy-back-medium.png);
     }

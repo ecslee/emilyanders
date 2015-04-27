@@ -61,6 +61,18 @@
 }
 
 @font-face {
+    font-family: 'true-north-3d';
+    src: url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.eot');
+    src: url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.woff2') format('woff2'),
+         url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.woff') format('woff'),
+         url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.ttf') format('truetype'),
+         url('purchased-fonts/true-north/TrueNorth3D-Regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'true-north-rough3d';
     src: url('purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.eot');
     src: url('purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.eot?#iefix') format('embedded-opentype'),

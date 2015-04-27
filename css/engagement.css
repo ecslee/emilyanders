@@ -1,4 +1,3 @@
-/*rgb(170, 160, 171)*/
 /* colors */
 /* sizes */
 .img-circle { width: 100%; border-radius: 100%; border: 3px solid #fff; background-color: #fff; }
@@ -7,7 +6,8 @@
 
 .backstretch img { -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px); }
 
-body { font-family: "raleway", Verdana, sans-serif; }
+body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
+@media (min-width: 768px) { body { font-size: 16px; } }
 
 /* sections */
 .section { min-height: 600px; padding-bottom: 100px; }
@@ -15,8 +15,10 @@ body { font-family: "raleway", Verdana, sans-serif; }
 .section .section-full { padding-left: 5px; padding-right: 5px; }
 
 .section-purple, .section-green { padding-top: 15vh; }
-.section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 32px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 10px; }
-.section-purple h2, .section-green h2 { font-family: 'yonder', Verdana, sans-serif; font-size: 32px; }
+.section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 28px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 10px; }
+@media (min-width: 768px) { .section-purple h1, .section-green h1 { font-family: 'true-north-inline', Verdana, sans-serif; font-size: 42px; } }
+.section-purple h2, .section-green h2 { font-family: 'yonder', Verdana, sans-serif; font-size: 42px; }
+.section-purple h3, .section-green h3 { font-family: 'yonder', Verdana, sans-serif; font-size: 32px; }
 
 .section-purple { color: #352938; background-color: #d2cbd4; /*#DCD0FF;  lavendar */ }
 
@@ -65,7 +67,6 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 /* wedding details */
 #wedding h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
-#wedding h5 { font-family: 'raleway-light', Helvetica, sans-serif; margin-top: 40px; }
 
 /* wedding */
 .wedding-party-pics { height: 400px; }
@@ -218,6 +219,7 @@ h2.song-request { font-family: 'true-north', sans-serif; font-size: 24px; text-a
 @font-face { font-family: 'true-north-inline'; src: url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthInline-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-black'; src: url("purchased-fonts/true-north/TrueNorth-Black-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorth-Black-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorth-Black-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorth-Black-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorth-Black-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorth-Black-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-black-inline'; src: url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthInline-Black-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'true-north-3d'; src: url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorth3D-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-rough3d'; src: url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthRough3D-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-black-rough'; src: url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthRough-Black-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'true-north-script'; src: url("purchased-fonts/true-north/True North Script-webfont.eot"); src: url("purchased-fonts/true-north/True North Script-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/True North Script-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/True North Script-webfont.woff") format("woff"), url("purchased-fonts/true-north/True North Script-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/True North Script-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }

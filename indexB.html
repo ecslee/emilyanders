@@ -266,41 +266,67 @@
         </div>
     </div>
     <div id="guests" class="section section-purple container-fluid">
-        <div class="section-content section-full row">
-            <div class="col-xs-12">
-                <h1>Guests</h1>
-            </div>
-            <div>
-                <h3>Song requests</h3>
-                <h4>I promise to dance if you play...</h4>
-                <div class="cassette">
-                    <div class="songSuccess hidden">
-                        <h4>Thanks for helping us with the playlist!</h4>
-                        <div class="formButton">
-                            <button id="anotherSong" class="btn btn-green">Add another?</button>
-                        </div>
-                    </div>
-                    <form id="songForm">
-                        <div class="form-group form-group-1">
-                            <div class="input-group">
-                                <span class="input-group-addon glyphicon glyphicon-headphones"></span>
-                                <input id="title" name="title" type="text" class="form-control" placeholder="Song title">
-                                <input id="artist" name="artist" type="text" class="form-control" placeholder="Artist">
-                            </div>
-                        </div>
-                        <div class="form-group form-group-2">
-                            <div class="input-group">
-                                <span class="input-group-addon glyphicon glyphicon-user"></span>
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Your name">
-                            </div>
-                        </div>
-                        <div class="formButton">
-                            <button id="send" type="submit" class="btn btn-green">Add me <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-                        </div>
-                    </form>
+        <div class="section-content col-xs-12 col-sm-10 col-sm-offset-1">
+            <h1>Guest info</h1>
+            <h3>Hotel blocks available</h3>
+            <p>We have hotel blocks available at the following hotels - mention the Lee/Seitz wedding when booking.</p>
+            <div class='row'>
+                <div class='col-xs-5'>
+                    <h4>Hampton Inn (1)</h4>
+                </div>
+                <div class='col-xs-7'>
+                    <h5>9800 Winchester Rd<br>Front Royal, VA 22630</h5>
+                    <h5>(540) 635-1882</h5>
                 </div>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LcoygITAAAAAIhNyDGxVdVReBDiVKNK_8kDV9aa"></div>
+            <div class='row'>
+                <div class='col-xs-5'>
+                    <h4>Holiday Inn (2)</h4>
+                </div>
+                <div class='col-xs-7'>
+                    <h5>1130 Motel Dr<br>Woodstock, VA 22664</h5>
+                    <h5>(540) 459-5000</h5>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-xs-5'>
+                    <h4>Best Western (3)</h4>
+                </div>
+                <div class='col-xs-7'>
+                    <h5>410 W Main St<br>Luray, VA 22835</h5>
+                    <h5>(540) 743-6511</h5>
+                </div>
+            </div>
+        </div>
+        <div class="section-content section-full col-xs-12 col-sm-10 col-sm-offset-1">
+            <h2 class="song-request">I promise to dance if you play...</h2>
+            <div class="cassette">
+                <div class="songSuccess hidden">
+                    <h4>Thanks for helping us with the playlist!</h4>
+                    <div class="formButton">
+                        <button id="anotherSong" class="btn btn-green">Add another?</button>
+                    </div>
+                </div>
+                <form id="songForm">
+                    <div class="form-group form-group-1">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-headphones"></span>
+                            <input id="title" name="title" type="text" class="form-control" placeholder="Song title">
+                            <input id="artist" name="artist" type="text" class="form-control" placeholder="Artist">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-2">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input id="name" name="name" type="text" class="form-control" placeholder="Your name">
+                        </div>
+                    </div>
+                    <div class="formButton">
+                        <button id="send" type="submit" class="btn btn-green">Add me <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                    </div>
+                </form>
+            </div>
+<!--            <div class="g-recaptcha" data-sitekey="6LcoygITAAAAAIhNyDGxVdVReBDiVKNK_8kDV9aa"></div>-->
         </div>
     </div>
     <div id="luray" class="section section-green container-fluid">
@@ -318,14 +344,33 @@
                     <div id="hotelsPanel" class="panel-heading">Hotels<span class="glyphicon glyphicon-home pull-right"></span></div>
                     <div class="panel-body">
                         <div class="panel-body-content">
-                            <p>Mimslyn Inn</p>
-                            <h3>Hampton Inn</h3>
-                            <h4>(540) 635-1882</h4>
-                            <h4>9800 Winchester Rd, Front Royal, VA 22630</h4>
-                            <h3>Holiday Inn</h3>
-                            <h4>(540) 459-5000</h4>
-                            <h4>1130 Motel Dr, Woodstock, VA 22664</h4>
-                            <p>Best Western</p>
+                            <div class='row'>
+                                <div class='col-xs-5'>
+                                    <h4>Hampton Inn (1)</h4>
+                                </div>
+                                <div class='col-xs-7'>
+                                    <h5>9800 Winchester Rd<br>Front Royal, VA 22630</h5>
+                                    <h5>(540) 635-1882</h5>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-xs-5'>
+                                    <h4>Holiday Inn (2)</h4>
+                                </div>
+                                <div class='col-xs-7'>
+                                    <h5>1130 Motel Dr<br>Woodstock, VA 22664</h5>
+                                    <h5>(540) 459-5000</h5>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-xs-5'>
+                                    <h4>Best Western (3)</h4>
+                                </div>
+                                <div class='col-xs-7'>
+                                    <h5>410 W Main St<br>Luray, VA 22835</h5>
+                                    <h5>(540) 743-6511</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="cavernsPanel" class="panel-heading">Luray Caverns<span class="glyphicon glyphicon-globe pull-right"></span></div>
@@ -376,6 +421,7 @@
     <div id="gallery" class="section section-green container-fluid">
         <div class="section-content col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h1>Gallery</h1>
+            <p style="text-align: center;">We recently had an engagement picture session - check back soon for pictures!</p>
         </div>
     </div>
     

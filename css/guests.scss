@@ -1,4 +1,12 @@
 /* guests */
+h2.song-request {
+    font-family: 'true-north', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+        font-size: 14px;
+    }
+}
 
 /* song requests */
 .cassette {
@@ -88,14 +96,18 @@
 }
 
 .songSuccess {
-    width: 390px;
-    height: 165px;
+    height: 179px;
+    width: 280px;
     margin: 0px auto;
     padding: 30px;
     position: relative;
-    top: 40px;
+    //top: 40px;
     border-radius: 10px;
     background-color: $light-green;
+    @media (min-width: $screen-sm-min) {
+        height: 300px;
+        width: 470px;
+    }
     h4 {
         text-align: center;
     }

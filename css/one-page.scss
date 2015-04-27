@@ -51,7 +51,7 @@
                 font-size: 50px;
                 color: #ccc;
                 i {
-                    color: $sage-green;
+                    color: $green1;
                 }
             }
             h2 {
@@ -62,7 +62,7 @@
                 a {
                     color: #ccc;
                     &:hover {
-                        color: $sage-green;
+                        color: $green1;
                         text-decoration: none;
                     }
                 }
@@ -75,7 +75,7 @@
             width: 140px;
             float: right;
             border-radius: 100%;
-            border: 2px solid $sage-green;
+            border: 2px solid $green1;
             background-color: #fff;
         }
     }

@@ -13,7 +13,7 @@
                 img {
                     height: 100%;
                     width: auto;
-                    border: 2px solid $sage-green;
+                    border: 2px solid $green1;
                     border-radius: 100%;
                     box-sizing: border-box;
                 }
@@ -22,12 +22,12 @@
                 a.navbar-brand {
                     background-color: #f8f8f8; // default
                     img {
-                        border: 2px solid $dark-purple;
+                        border: 2px solid $purple2;
                     }
                 }
             }
             .navbar-toggle:hover {
-                background-color: $light-green;
+                background-color: $green0;
             }
         }
         .navbar-collapse {
@@ -49,8 +49,8 @@
                     text-decoration: none;
                 }
                 &:hover a {
-                    color: #eee;
-                    background: $lightest-purple;
+                    color: #fff;
+                    background: $purple0;
                     //background: rgba(255, 255, 255, 0.3);
                     text-decoration: none;
                 }
@@ -71,7 +71,7 @@ div.nav-li-brand {
         img {
             height: 100%;
             width: auto;
-            border: 2px solid $sage-green;
+            border: 2px solid $green2;
             border-radius: 100%;
             box-sizing: border-box;
         }
@@ -83,7 +83,7 @@ div.nav-li-brand {
         a.navbar-brand {
             background-color: #f8f8f8; // default
             img {
-                border: 2px solid $dark-purple;
+                border: 2px solid $purple3;
             }
         }
     }

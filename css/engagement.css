@@ -67,6 +67,7 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 /* wedding details */
 #wedding h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
+#wedding div.separator { margin: 20px 0px; height: 1px; }
 
 /* wedding */
 .wedding-party-pics { height: 400px; }

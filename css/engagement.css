@@ -26,8 +26,8 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 
 /* section backgrounds */
 #welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-image: url(../gallery/falls/edits-0189-sm.jpg); }
-#welcome .welcome-info { margin-top: 100px; padding: 40px 10px; border: 3px solid white; border-radius: 3px; }
-@media (min-width: 768px) { #welcome .welcome-info { margin-top: 10vh; padding: 40px; border-width: 6px; } }
+#welcome .welcome-info { margin-top: 100px; padding: 40px 10px; border: 2px solid white; border-radius: 3px; }
+@media (min-width: 768px) { #welcome .welcome-info { margin-top: 10vh; padding: 40px; border-width: 4px; } }
 
 /* navbar */
 .navbar { margin-top: 60px; }

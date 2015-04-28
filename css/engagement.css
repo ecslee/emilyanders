@@ -146,9 +146,11 @@ h2.song-request { font-family: 'yonder', sans-serif; font-size: 26px; text-align
 
 /* map legend accordion */
 .panel-wedding { margin-bottom: 20px; background-color: transparent; border: 1px solid #DDD; border-top-right-radius: 6px; border-top-left-radius: 6px; box-shadow: none; }
-.panel-wedding .panel-heading { height: 40px; padding: 10px 15px; box-sizing: border-box; color: #333; background-color: #EEEEEE; border: 1px solid #DDD; border-top-width: 0px; border-radius: 0px; }
+.panel-wedding .panel-heading { position: relative; height: 40px; padding: 10px 15px; box-sizing: border-box; color: #333; background-color: #EEEEEE; border: 1px solid #DDD; border-top-width: 0px; border-radius: 0px; }
 .panel-wedding .panel-heading:first-of-type { border-top-width: 1px; border-top-right-radius: 6px; border-top-left-radius: 6px; }
 .panel-wedding .panel-heading:hover { background-color: #96869a; color: white; }
+.panel-wedding .panel-heading .panel-title { position: absolute; }
+.panel-wedding .panel-heading .glyphicon.pull-right { position: absolute; right: 0px; margin-right: 15px; top: 11px; }
 .panel-wedding .panel-body { height: 0px; padding: 0px; box-sizing: border-box; background-color: #F5F5F5; border: 0px solid #DDD; }
 .panel-wedding .panel-body .panel-body-content { visibility: hidden; }
 .panel-wedding .panel-body .panel-body-content .row { margin-bottom: 20px; }

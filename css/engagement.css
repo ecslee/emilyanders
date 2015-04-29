@@ -13,6 +13,7 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 .section { min-height: 600px; padding-bottom: 100px; }
 .section .section-content { min-height: 200px; height: auto; margin-bottom: 20px; padding: 20px; padding-bottom: 60px; background-color: #eeeeee; background-color: rgba(238, 238, 238, 0.7); border-radius: 10px; }
 .section .section-full { padding-left: 5px; padding-right: 5px; }
+.section .section-full h1 { margin-right: 25px; }
 
 .section-purple, .section-green { padding-top: 15vh; }
 .section-purple h1, .section-green h1 { font-family: 'true-north', Verdana, sans-serif; font-size: 28px; text-align: right; margin-bottom: 30px; margin-top: 10px; margin-right: 10px; }
@@ -25,9 +26,8 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 .section-green { color: #1D2951; /* space cadet */ background-color: #D3D9B5; }
 
 /* section backgrounds */
-#welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-image: url(../gallery/falls/edits-0189-sm.jpg); }
-#welcome .welcome-info { margin-top: 100px; padding: 40px 10px; border: 2px solid white; border-radius: 3px; }
-@media (min-width: 768px) { #welcome .welcome-info { margin-top: 10vh; padding: 40px; border-width: 4px; } }
+#welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-image: url(../gallery/yellow/edits-0001-xs.jpg); }
+@media (min-width: 768px) { #welcome { background-position: center top; background-image: url(../gallery/yellow/edits-0001-sm.jpg); } }
 
 /* navbar */
 .navbar { margin-top: 60px; }
@@ -55,7 +55,10 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .seitz-footer.navbar-fixed-bottom .seitz { clear: both; float: right; }
 
 /* welcome */
+.section-intro .welcome-info { margin-top: 100px; padding: 40px 10px; border: 2px solid white; border-radius: 3px; }
+@media (min-width: 768px) { .section-intro .welcome-info { margin-top: 10vh; padding: 40px; border-width: 4px; } }
 .section-intro .welcome-title { text-align: center; margin-bottom: 40px; }
+.section-intro .welcome-title img { width: 100%; }
 .section-intro h1 { color: #fff; font-family: 'heart-and-soul', cursive; font-size: 110px; text-align: center; margin: 0px auto; }
 .section-intro h1 .h1-alt { font-family: 'heart-and-soul-alt', cursive; }
 .section-intro h2 { color: #fff; font-family: 'windsong', Verdana, sans-serif; font-size: 80px; text-align: center; margin: 0px auto; z-index: 2; display: block; }
@@ -108,11 +111,14 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 .wedding-party-modal .modal-content .modal-body img { border: 1px solid #ddd; }
 .wedding-party-modal .modal-content .modal-footer { height: 150px; padding: 10px 20px; border-top: 0; }
 .wedding-party-modal .modal-content .modal-footer h4 { text-align: center; color: #ddd; font-family: 'yonder', sans-serif; font-size: 36px; line-height: 36px; }
+@media (max-width: 767px) { .wedding-party-modal .modal-content .modal-footer h4 { font-size: 26px; } }
 .wedding-party-modal .modal-content .modal-footer h5 { text-align: left; color: #ddd; font-family: 'raleway-extralight', sans-serif; font-size: 14px; }
 .wedding-party-modal.modal-h .modal-content { max-width: 620px; max-height: 550px; }
 .wedding-party-modal.modal-h .modal-content .modal-body { max-width: 620px; max-height: 420px; }
 .wedding-party-modal.modal-v .modal-content { max-width: 420px; max-height: 720px; }
 .wedding-party-modal.modal-v .modal-content .modal-body { max-width: 420px; max-height: 620px; }
+@media (max-width: 767px) { .wedding-party-modal#aleksiModal .modal-dialog { margin-top: 5vh; } }
+@media (max-width: 767px) { .wedding-party-modal#aleksiModal .modal-footer { height: 240px; } }
 
 /* guests */
 h2.song-request { font-family: 'yonder', sans-serif; font-size: 26px; text-align: center; margin-bottom: 1px; }
@@ -236,3 +242,6 @@ h2.song-request { font-family: 'yonder', sans-serif; font-size: 26px; text-align
 @font-face { font-family: 'true-north-extras'; src: url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.eot"); src: url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.woff") format("woff"), url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/true-north/TrueNorthExtras-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
 /* Yonder */
 @font-face { font-family: 'yonder'; src: url("purchased-fonts/yonder/Yonder-Regular-webfont.eot"); src: url("purchased-fonts/yonder/Yonder-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("purchased-fonts/yonder/Yonder-Regular-webfont.woff2") format("woff2"), url("purchased-fonts/yonder/Yonder-Regular-webfont.woff") format("woff"), url("purchased-fonts/yonder/Yonder-Regular-webfont.ttf") format("truetype"), url("purchased-fonts/yonder/Yonder-Regular-webfont.svg") format("svg"); font-weight: normal; font-style: normal; }
+/* Texta Narrow */
+@font-face { font-family: 'textanarrow'; src: url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.eot"); src: url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.woff2") format("woff2"), url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.woff") format("woff"), url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.ttf") format("truetype"), url("fonts/textanarrow/textanarrow_regular/textanarrow-regular-webfont.svg#textanarrow-regular-webfont") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'textanarrow-light'; src: url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.eot"); src: url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.woff2") format("woff2"), url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.woff") format("woff"), url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.ttf") format("truetype"), url("fonts/textanarrow/textanarrow_light/textanarrow-light-webfont.svg#textanarrow-light-webfont") format("svg"); font-weight: normal; font-style: normal; }

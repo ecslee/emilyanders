@@ -107,6 +107,9 @@
                 font-family: 'yonder', sans-serif;
                 font-size: 36px;
                 line-height: 36px;
+                @media (max-width: $screen-xs-max) {
+                    font-size: 26px;
+                }
             }
             h5 {
                 text-align: left;
@@ -130,6 +133,18 @@
         .modal-body {
             max-width: 420px;
             max-height: 620px;
+        }
+    }
+    &#aleksiModal {
+        .modal-dialog {
+            @media (max-width: $screen-xs-max) {
+                margin-top: 5vh;
+            }
+        }
+        .modal-footer {
+            @media (max-width: $screen-xs-max) {
+                height: 240px;
+            }
         }
     }
 }

@@ -26,8 +26,10 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 .section-green { color: #1D2951; /* space cadet */ background-color: #D3D9B5; }
 
 /* section backgrounds */
-#welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-image: url(../gallery/yellow/edits-0001-xs.jpg); }
-@media (min-width: 768px) { #welcome { background-position: center top; background-image: url(../gallery/yellow/edits-0001-sm.jpg); } }
+#welcome:hover:before { background-color: rgba(130, 130, 130, 0.8); z-index: -1; }
+
+#welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-image: url(../gallery/falls/edits-0189-xs-edit.jpg); }
+@media (min-width: 768px) { #welcome { background-position: center top; background-image: url(../gallery/falls/edits-0189-md-edit.jpg); } }
 
 #guests { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: 33% 0%; background-image: url(../gallery/falls/edits-0196-xs.jpg); }
 @media (min-width: 768px) { #guests { background-position: center; background-image: url(../gallery/falls/edits-0196-md.jpg); } }

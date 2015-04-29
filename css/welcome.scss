@@ -63,3 +63,13 @@
         }
     }
 }
+
+.emily-anders-pic {
+    width: 100%;
+    margin-top: 15px;
+    border: 4px solid #FFF;
+    content: url('../gallery/falls/edits-0150-xs.jpg');
+    @media (min-width: $screen-md-min) {
+        content: url('../gallery/falls/edits-0150-sm.jpg');
+    }
+}

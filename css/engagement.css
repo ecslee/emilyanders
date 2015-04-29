@@ -67,6 +67,9 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
   .section-intro h2 { font-size: 48px; }
   .section-intro h3 { font-size: 48px; } }
 
+.emily-anders-pic { width: 100%; margin-top: 15px; border: 4px solid #FFF; content: url("../gallery/falls/edits-0150-xs.jpg"); }
+@media (min-width: 992px) { .emily-anders-pic { content: url("../gallery/falls/edits-0150-sm.jpg"); } }
+
 /* wedding details */
 #wedding h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
 #wedding div.separator { margin: 20px 0px; height: 1px; }

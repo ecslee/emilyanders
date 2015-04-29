@@ -112,14 +112,45 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    // TODO: select image based on screen size
-    //background-image: url(../gallery/IMG_0019.JPG);
-    
-    //background-image: url(../gallery/falls/edits-0189-sm.jpg);
     background-image: url(../gallery/yellow/edits-0001-xs.jpg);
     @media (min-width: $screen-sm-min) {
         background-position: center top;
         background-image: url(../gallery/yellow/edits-0001-sm.jpg);
+    }
+}
+
+#guests {
+    z-index: 100 !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 33% 0%;
+    background-image: url(../gallery/falls/edits-0196-xs.jpg);
+    @media (min-width: $screen-sm-min) {
+        background-position: center;
+        background-image: url(../gallery/falls/edits-0196-md.jpg);
+    }
+    .section-content {
+        background-color: rgba(238, 238, 238, 0.9);
+    }
+}
+
+#registry {
+    z-index: 100 !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 55% 0%;
+    background-image: url(../gallery/mill/edits-0101-xs.jpg);
+    @media (min-width: $screen-sm-min) {
+        background-position: left top;
+        background-image: url(../gallery/mill/edits-0101-md.jpg);
     }
 }
 

@@ -9,6 +9,8 @@ $green1: #BCDE8A;
 $green2: #869E62;
 $green3: #505E3A;
 
+$space-cadet: #1D2951;
+
 /* sizes */
 $screen-xs-max: 767px;
 $screen-sm-min: 768px;
@@ -97,7 +99,7 @@ body {
     /*#DCD0FF;  lavendar */
 }
 .section-green {
-    color: #1D2951;
+    color: $space-cadet;
     /* space cadet */
     background-color: $green0;
 }
@@ -116,11 +118,11 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    background-image: url(../gallery/falls/edits-0189-xs-edit.jpg);
+    background-image: url(../gallery/falls/edits-0189-xs-overlay.jpg);
     //background-image: url(../gallery/yellow/edits-0001-xs.jpg);
     @media (min-width: $screen-sm-min) {
         background-position: center top;
-        background-image: url(../gallery/falls/edits-0189-md-edit.jpg);
+        background-image: url(../gallery/falls/edits-0189-md-overlay.jpg);
         //background-image: url(../gallery/yellow/edits-0001-sm.jpg);
     }
 }
@@ -163,8 +165,6 @@ body {
 @import "navbar";
 @import "welcome";
 @import "wedding";
-@import "wedding-party";
-@import "guests";
 @import "map";
 @import "registry";
 @import "one-page";

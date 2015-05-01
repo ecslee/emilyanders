@@ -36,7 +36,7 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 #guests .section-content { background-color: rgba(238, 238, 238, 0.9); }
 
 #registry { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: 55% 0%; background-image: url(../gallery/mill/edits-0101-xs.jpg); }
-@media (min-width: 768px) { #registry { background-position: left top; background-image: url(../gallery/mill/edits-0101-md.jpg); } }
+@media (min-width: 768px) { #registry { background-position: 33% 0%; background-image: url(../gallery/mill/edits-0101-md.jpg); } }
 
 /* navbar */
 .navbar { margin-top: 60px; }

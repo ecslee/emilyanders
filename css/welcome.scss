@@ -1,14 +1,15 @@
 /* welcome */
 
 .section-intro {
+    padding-top: 5vh;
     .welcome-info {
         //max-height: 80vh;
-        margin-top: 60px;
+        margin-top: 40px;
         padding: 40px 10px;
         border: 2px solid white;
         border-radius: 3px;
         @media (min-width: $screen-sm-min) {
-            margin-top: 10vh;
+            margin-top: 5vh;
             padding: 40px;
             border-width: 4px;
         }

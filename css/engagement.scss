@@ -98,12 +98,15 @@ body {
         }
     }
     .section-fit {
-        box-sizing: content-box;
-        padding: 30px;
-        background-color: #eeeeee;
-        background-color: rgba(238, 238, 238, 0.7);
-        border-radius: 10px;
         margin-bottom: 60px;
+        .section-fit-this {
+            box-sizing: content-box;
+            padding: 30px;
+            margin: auto;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+            border-radius: 10px;
+        }
     }
 }
 

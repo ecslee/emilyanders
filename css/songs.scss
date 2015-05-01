@@ -13,8 +13,8 @@ $cassette-md-line-height: 38px;
 .song-request {
     height: $cassette-xs-height + $cassette-xs-line-height;
     width: $cassette-xs-width;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
     @media (min-width: $screen-sm-min) {
         height: $cassette-sm-height + $cassette-sm-line-height;
         width: $cassette-sm-width;

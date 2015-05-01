@@ -1,24 +1,49 @@
+/* cassette vars */
+$cassette-xs-width: 280px;
+$cassette-xs-height: 179px;
+$cassette-xs-line-height: 24px;
+$cassette-sm-width: 375px;
+$cassette-sm-height: 239px;
+$cassette-sm-line-height: 30px;
+$cassette-md-width: 470px;
+$cassette-md-height: 300px;
+$cassette-md-line-height: 38px;
+
 /* song requests */
 .song-request {
-    padding: 0px;
-    border: 0px solid $space-cadet;
+    height: $cassette-xs-height + $cassette-xs-line-height;
+    width: $cassette-xs-width;
+    margin-left: auto;
+    margin-right: auto;
     @media (min-width: $screen-sm-min) {
-        border-width: 0px 0px 0px 1px;
+        height: $cassette-sm-height + $cassette-sm-line-height;
+        width: $cassette-sm-width;
+    }
+    @media (min-width: $screen-md-min) {
+        height: $cassette-md-height + $cassette-md-line-height;
+        width: $cassette-md-width;
     }
     
     > h2 {
         font-family: 'yonder', sans-serif;
         font-size: 26px;
+        line-height: $cassette-xs-line-height;
         text-align: center;
-        margin-bottom: 1px;
+        color: #555;
+        margin-bottom: 0px;
         @media (min-width: $screen-sm-min) {
-            font-size: 42px;
+            font-size: 35px;
+            line-height: $cassette-sm-line-height;
+        }
+        @media (min-width: $screen-md-min) {
+            font-size: 44px;
+            line-height: $cassette-md-line-height;
         }
     }
 
     .cassette {
-        height: 179px;
-        width: 280px;
+        height: $cassette-xs-height;
+        width: $cassette-xs-width;
         margin: auto auto;
         background-image: url('../images/cassette-xs.png');
         background-repeat: no-repeat;
@@ -28,13 +53,13 @@
         -o-background-size: contain;
         background-size: contain;
         @media (min-width: $screen-sm-min) {
-            height: 239px;
-            width: 375px;
+            height: $cassette-sm-height;
+            width: $cassette-sm-width;
             background-image: url('../images/cassette-sm.png');
         }
         @media (min-width: $screen-md-min) {
-            height: 300px;
-            width: 470px;
+            height: $cassette-md-height;
+            width: $cassette-md-width;
             background-image: url('../images/cassette-md.png');
         }
         form {

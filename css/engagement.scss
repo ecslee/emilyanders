@@ -101,8 +101,10 @@ body {
         margin-bottom: 60px;
         .section-fit-this {
             box-sizing: content-box;
+            display: inline-block;
+            vertical-align: bottom;
             padding: 30px;
-            margin: auto;
+            //margin: auto;
             background-color: #eeeeee;
             background-color: rgba(238, 238, 238, 0.7);
             border-radius: 10px;

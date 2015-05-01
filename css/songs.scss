@@ -9,6 +9,24 @@ $cassette-md-width: 470px;
 $cassette-md-height: 300px;
 $cassette-md-line-height: 38px;
 
+/* menu vars */
+$menu-xs-width: $cassette-xs-width;
+$menu-sm-width: 220px;
+$menu-md-width: 270px;
+
+.section-fit.dinner-dancing {
+    width: $cassette-xs-width + 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $screen-sm-min) {
+        width: $cassette-sm-width + 60px + 40px + $menu-sm-width + 60px;
+    }
+    @media (min-width: $screen-md-min) {
+        height: $cassette-md-height + $cassette-md-line-height;
+        width: $cassette-md-width + 60px + 40px + $menu-md-width + 60px;
+    }
+}
+
 /* song requests */
 .song-request {
     height: $cassette-xs-height + $cassette-xs-line-height;
@@ -186,4 +204,73 @@ $cassette-md-line-height: 38px;
             margin-top: 30px;
         }
     }
+}
+
+/* menu */
+.menu {
+    // fill same height as cassette
+    @media (max-width: $screen-xs-max) {
+        width: $menu-xs-width;
+        margin-bottom: 60px;
+    }
+    @media (min-width: $screen-sm-min) {
+        height: $cassette-sm-height + $cassette-sm-line-height;
+        width: $menu-sm-width;
+        margin-right: 30px;
+    }
+    @media (min-width: $screen-md-min) {
+        height: $cassette-md-height + $cassette-md-line-height;
+        width: $menu-md-width;
+    }
+    .dinner {
+        font-size: 16px;
+        margin-top: 40px;
+        @media (min-width: $screen-sm-min) {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        @media (min-width: $screen-md-min) {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 12px;
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+        .food-icon {
+            margin: 20px auto;
+            width: 180px;
+            @media (min-width: $screen-sm-min) {
+                width: 150px;
+            }
+            @media (min-width: $screen-md-min) {
+                width: 180px;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+                @media (min-width: $screen-sm-min) {
+                    width: 40px;
+                    height: 40px;
+                }
+                @media (min-width: $screen-md-min) {
+                    width: 50px;
+                    height: 50px;
+                }
+                margin-right: 10px;
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+div.separatorLine {
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $space-cadet;
 }

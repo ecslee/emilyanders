@@ -11,266 +11,283 @@ $cassette-md-line-height: 38px;
 
 /* menu vars */
 $menu-xs-width: $cassette-xs-width;
-$menu-sm-width: 220px;
+$menu-sm-width: 200px;
 $menu-md-width: 270px;
 
-.section-fit.dinner-dancing {
-    width: $cassette-xs-width + 60px;
-    margin-left: auto;
-    margin-right: auto;
-    @media (min-width: $screen-sm-min) {
-        width: $cassette-sm-width + 60px + 40px + $menu-sm-width + 60px;
-    }
-    @media (min-width: $screen-md-min) {
-        height: $cassette-md-height + $cassette-md-line-height;
-        width: $cassette-md-width + 60px + 40px + $menu-md-width + 60px;
-    }
-}
-
-/* song requests */
-.song-request {
-    height: $cassette-xs-height + $cassette-xs-line-height;
-    width: $cassette-xs-width;
-    //margin-left: auto;
-    //margin-right: auto;
-    @media (min-width: $screen-sm-min) {
-        height: $cassette-sm-height + $cassette-sm-line-height;
-        width: $cassette-sm-width;
-    }
-    @media (min-width: $screen-md-min) {
-        height: $cassette-md-height + $cassette-md-line-height;
-        width: $cassette-md-width;
-    }
-    
-    > h2 {
+#wedding2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    h2 {
         font-family: 'yonder', sans-serif;
-        font-size: 26px;
-        line-height: $cassette-xs-line-height;
+        font-size: 42px;
+        line-height: 42px;
         text-align: center;
-        color: #555;
-        margin-bottom: 0px;
-        @media (min-width: $screen-sm-min) {
-            font-size: 35px;
-            line-height: $cassette-sm-line-height;
-        }
-        @media (min-width: $screen-md-min) {
-            font-size: 44px;
-            line-height: $cassette-md-line-height;
+        margin: 0px 0px 0px 0px;
+        position: relative;
+    }
+    .dinner-dancing {
+        padding: 3px;
+        .section-fit {
+            width: $cassette-xs-width + 60px;
+            margin-left: auto;
+            margin-right: auto;
+            @media (min-width: $screen-sm-min) {
+                width: $cassette-sm-width + 60px + 40px + $menu-sm-width + 60px;
+            }
+            @media (min-width: $screen-md-min) {
+                height: $cassette-md-height + $cassette-md-line-height;
+                width: $cassette-md-width + 60px + 40px + $menu-md-width + 60px;
+            }
         }
     }
 
-    .cassette {
-        height: $cassette-xs-height;
+    /* song requests */
+    .song-request {
+        height: $cassette-xs-height + $cassette-xs-line-height;
         width: $cassette-xs-width;
-        margin: auto auto;
-        background-image: url('../images/cassette-xs.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
+        //margin-left: auto;
+        //margin-right: auto;
         @media (min-width: $screen-sm-min) {
-            height: $cassette-sm-height;
+            height: $cassette-sm-height + $cassette-sm-line-height;
             width: $cassette-sm-width;
-            background-image: url('../images/cassette-sm.png');
         }
         @media (min-width: $screen-md-min) {
-            height: $cassette-md-height;
+            height: $cassette-md-height + $cassette-md-line-height;
             width: $cassette-md-width;
-            background-image: url('../images/cassette-md.png');
         }
-        form {
-            position: relative;
-            top: 21px;
-            width: 236px;
-            margin: 0px auto;
-            .form-group-1 {
+
+        > h2 {
+            font-family: 'yonder', sans-serif;
+            font-size: 26px;
+            line-height: $cassette-xs-line-height;
+            text-align: center;
+            color: #555;
+            margin-bottom: 0px;
+            @media (min-width: $screen-sm-min) {
+                font-size: 35px;
+                line-height: $cassette-sm-line-height;
+            }
+            @media (min-width: $screen-md-min) {
+                font-size: 44px;
+                line-height: $cassette-md-line-height;
+            }
+        }
+
+        .cassette {
+            height: $cassette-xs-height;
+            width: $cassette-xs-width;
+            margin: auto auto;
+            background-image: url('../images/cassette-xs.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            @media (min-width: $screen-sm-min) {
+                height: $cassette-sm-height;
+                width: $cassette-sm-width;
+                background-image: url('../images/cassette-sm.png');
+            }
+            @media (min-width: $screen-md-min) {
+                height: $cassette-md-height;
+                width: $cassette-md-width;
+                background-image: url('../images/cassette-md.png');
+            }
+            form {
+                position: relative;
+                top: 21px;
                 width: 236px;
                 margin: 0px auto;
-            }
-            .form-group-2 {
-                width: 133px;
-                margin: 49px auto 0px auto;
-            }
-            .formButton {
-                margin-top: 12px;
-            }
-            @media (min-width: $screen-sm-min) {
-                position: relative;
-                top: 29px;
-                width: 310px;
-                margin: 0px auto;
                 .form-group-1 {
+                    width: 236px;
+                    margin: 0px auto;
+                }
+                .form-group-2 {
+                    width: 133px;
+                    margin: 49px auto 0px auto;
+                }
+                .formButton {
+                    margin-top: 12px;
+                }
+                @media (min-width: $screen-sm-min) {
+                    position: relative;
+                    top: 29px;
                     width: 310px;
                     margin: 0px auto;
-                }
-                .form-group-2 {
-                    width: 170px;
-                    margin: 70px auto 0px auto;
-                }
-                .formButton {
-                    margin-top: 24px;
-                }
-            }
-            @media (min-width: $screen-md-min) {
-                position: relative;
-                top: 42px;
-                width: 340px;
-                margin: 0px auto;
-                .form-group-1 {
-                    width: 340px;
-                    margin: 0px auto;
-                }
-                .form-group-2 {
-                    width: 190px;
-                    margin: 95px auto 0px auto;
-                }
-                .formButton {
-                    margin-top: 35px;
-                }
-            }
-            .input-group {
-                .input-group-addon {
-                    height: 28px;
-                    width: 30px;
-                    padding: 3px 6px;
-                    font-size: 16px;
-                    color: #FFFFFF;
-                    background-color: #555;
-                    border: 1px solid #333;
-                    top: 0px;
-                    @media (min-width: $screen-sm-min) {
-                        height: 34px;
+                    .form-group-1 {
+                        width: 310px;
+                        margin: 0px auto;
                     }
-                    @media (min-width: $screen-md-min) {
-                        height: 34px;
+                    .form-group-2 {
+                        width: 170px;
+                        margin: 70px auto 0px auto;
                     }
-                }
-                input {
-                    height: 28px;
-                    width: 103px;
-                    background-color: transparent;
-                    color: #555555;
-                    border: 2px solid #333;
-                    border-left: 0px;
-                    @media (min-width: $screen-sm-min) {
-                        height: 34px;
-                        width: 140px;
+                    .formButton {
+                        margin-top: 24px;
                     }
-                    @media (min-width: $screen-md-min) {
-                        height: 34px;
-                        width: 150px;
-                    }
-                }
-            }
-        }
-    }
-
-    .formButton {
-        width: 90px;
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .songSuccess {
-        height: 179px;
-        width: 280px;
-        margin: 0px auto;
-        padding: 30px;
-        position: relative;
-        font-size: 18px;
-        line-height: 24px;
-        //top: 40px;
-        border-radius: 10px;
-        background-color: $purple3;
-        @media (min-width: $screen-sm-min) {
-            height: 239px;
-            width: 375px;
-            padding: 70px 10px 30px 10px;
-        }
-        @media (min-width: $screen-md-min) {
-            height: 300px;
-            width: 470px;
-            padding: 90px 10px 30px 10px;
-        }
-        h4 {
-            color: #fff;
-            text-align: center;
-        }
-        .formButton {
-            width: 112px;
-            margin-top: 30px;
-        }
-    }
-}
-
-/* menu */
-.menu {
-    // fill same height as cassette
-    @media (max-width: $screen-xs-max) {
-        width: $menu-xs-width;
-        margin-bottom: 60px;
-    }
-    @media (min-width: $screen-sm-min) {
-        height: $cassette-sm-height + $cassette-sm-line-height;
-        width: $menu-sm-width;
-        margin-right: 30px;
-    }
-    @media (min-width: $screen-md-min) {
-        height: $cassette-md-height + $cassette-md-line-height;
-        width: $menu-md-width;
-    }
-    .dinner {
-        font-size: 16px;
-        margin-top: 40px;
-        @media (min-width: $screen-sm-min) {
-            font-size: 12px;
-            margin-top: 20px;
-        }
-        @media (min-width: $screen-md-min) {
-            font-size: 16px;
-            margin-top: 40px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 12px;
-            &:last-of-type {
-                margin-bottom: 0px;
-            }
-        }
-        .food-icon {
-            margin: 20px auto;
-            width: 180px;
-            @media (min-width: $screen-sm-min) {
-                width: 150px;
-            }
-            @media (min-width: $screen-md-min) {
-                width: 180px;
-            }
-            img {
-                width: 50px;
-                height: 50px;
-                @media (min-width: $screen-sm-min) {
-                    width: 40px;
-                    height: 40px;
                 }
                 @media (min-width: $screen-md-min) {
+                    position: relative;
+                    top: 42px;
+                    width: 340px;
+                    margin: 0px auto;
+                    .form-group-1 {
+                        width: 340px;
+                        margin: 0px auto;
+                    }
+                    .form-group-2 {
+                        width: 190px;
+                        margin: 95px auto 0px auto;
+                    }
+                    .formButton {
+                        margin-top: 35px;
+                    }
+                }
+                .input-group {
+                    .input-group-addon {
+                        height: 28px;
+                        width: 30px;
+                        padding: 3px 6px;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        background-color: #555;
+                        border: 1px solid #333;
+                        top: 0px;
+                        @media (min-width: $screen-sm-min) {
+                            height: 34px;
+                        }
+                        @media (min-width: $screen-md-min) {
+                            height: 34px;
+                        }
+                    }
+                    input {
+                        height: 28px;
+                        width: 103px;
+                        background-color: transparent;
+                        color: #555555;
+                        border: 2px solid #333;
+                        border-left: 0px;
+                        @media (min-width: $screen-sm-min) {
+                            height: 34px;
+                            width: 140px;
+                        }
+                        @media (min-width: $screen-md-min) {
+                            height: 34px;
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .formButton {
+            width: 90px;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .songSuccess {
+            height: 179px;
+            width: 280px;
+            margin: 0px auto;
+            padding: 30px;
+            position: relative;
+            font-size: 18px;
+            line-height: 24px;
+            //top: 40px;
+            border-radius: 10px;
+            background-color: $purple3;
+            @media (min-width: $screen-sm-min) {
+                height: 239px;
+                width: 375px;
+                padding: 70px 10px 30px 10px;
+            }
+            @media (min-width: $screen-md-min) {
+                height: 300px;
+                width: 470px;
+                padding: 90px 10px 30px 10px;
+            }
+            h4 {
+                color: #fff;
+                text-align: center;
+            }
+            .formButton {
+                width: 112px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    /* menu */
+    .menu {
+        // fill same height as cassette
+        @media (max-width: $screen-xs-max) {
+            width: $menu-xs-width;
+            margin-bottom: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @media (min-width: $screen-sm-min) {
+            height: $cassette-sm-height + $cassette-sm-line-height;
+            width: $menu-sm-width;
+            margin-right: 30px;
+        }
+        @media (min-width: $screen-md-min) {
+            height: $cassette-md-height + $cassette-md-line-height;
+            width: $menu-md-width;
+        }
+        .dinner {
+            font-size: 16px;
+            margin-top: 40px;
+            @media (min-width: $screen-sm-min) {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+            @media (min-width: $screen-md-min) {
+                font-size: 16px;
+                margin-top: 40px;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 12px;
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+            }
+            .food-icon {
+                margin: 20px auto;
+                width: 180px;
+                @media (min-width: $screen-sm-min) {
+                    width: 150px;
+                }
+                @media (min-width: $screen-md-min) {
+                    width: 180px;
+                }
+                img {
                     width: 50px;
                     height: 50px;
-                }
-                margin-right: 10px;
-                &:last-of-type {
-                    margin-right: 0px;
+                    @media (min-width: $screen-sm-min) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @media (min-width: $screen-md-min) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    margin-right: 10px;
+                    &:last-of-type {
+                        margin-right: 0px;
+                    }
                 }
             }
         }
     }
-}
-div.separatorLine {
-    height: 1px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid $space-cadet;
+    div.separatorLine {
+        height: 1px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $space-cadet;
+    }
 }

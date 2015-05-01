@@ -45,41 +45,6 @@
             font-size: 42px;
         }
     }
-    .dinner {
-        @media (min-width: $screen-sm-min) {
-            margin-top: 40px;
-        }
-        @media (max-width: $screen-md-min) {
-            font-size: 12px;
-        }
-            
-        &>.row {
-            line-height: 50px;
-            .food-icon {
-                @media (max-width: $screen-md-min) {
-                    padding-right: 0px;
-                }
-            }
-            img {
-                width: 50px;
-                height: 50px;
-                float: right;
-            }
-            &:last-of-type {
-                line-height: 16px;
-                margin-top: 20px;
-            }
-        }
-    }
-    div.separatorLine {
-        height: 1px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid $space-cadet;
-    }
-    
-    @import "songs";
 }
-
 
 @import "wedding-party";

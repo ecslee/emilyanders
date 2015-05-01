@@ -20,7 +20,7 @@
         height: 179px;
         width: 280px;
         margin: auto auto;
-        background-image: url('../images/cassette-small.png');
+        background-image: url('../images/cassette-xs.png');
         background-repeat: no-repeat;
         background-position: center;
         -webkit-background-size: contain;
@@ -28,9 +28,14 @@
         -o-background-size: contain;
         background-size: contain;
         @media (min-width: $screen-sm-min) {
+            height: 239px;
+            width: 375px;
+            background-image: url('../images/cassette-sm.png');
+        }
+        @media (min-width: $screen-md-min) {
             height: 300px;
             width: 470px;
-            background-image: url('../images/cassette.png');
+            background-image: url('../images/cassette-md.png');
         }
         form {
             position: relative;
@@ -49,6 +54,23 @@
                 margin-top: 12px;
             }
             @media (min-width: $screen-sm-min) {
+                position: relative;
+                top: 29px;
+                width: 310px;
+                margin: 0px auto;
+                .form-group-1 {
+                    width: 310px;
+                    margin: 0px auto;
+                }
+                .form-group-2 {
+                    width: 170px;
+                    margin: 70px auto 0px auto;
+                }
+                .formButton {
+                    margin-top: 24px;
+                }
+            }
+            @media (min-width: $screen-md-min) {
                 position: relative;
                 top: 42px;
                 width: 340px;
@@ -78,6 +100,9 @@
                     @media (min-width: $screen-sm-min) {
                         height: 34px;
                     }
+                    @media (min-width: $screen-md-min) {
+                        height: 34px;
+                    }
                 }
                 input {
                     height: 28px;
@@ -87,6 +112,10 @@
                     border: 2px solid #333;
                     border-left: 0px;
                     @media (min-width: $screen-sm-min) {
+                        height: 34px;
+                        width: 140px;
+                    }
+                    @media (min-width: $screen-md-min) {
                         height: 34px;
                         width: 150px;
                     }
@@ -108,14 +137,23 @@
         margin: 0px auto;
         padding: 30px;
         position: relative;
+        font-size: 18px;
+        line-height: 24px;
         //top: 40px;
         border-radius: 10px;
-        background-color: $green1;
+        background-color: $purple3;
         @media (min-width: $screen-sm-min) {
+            height: 239px;
+            width: 375px;
+            padding: 70px 10px 30px 10px;
+        }
+        @media (min-width: $screen-md-min) {
             height: 300px;
             width: 470px;
+            padding: 90px 10px 30px 10px;
         }
         h4 {
+            color: #fff;
             text-align: center;
         }
         .formButton {

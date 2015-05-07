@@ -14,9 +14,18 @@ $menu-xs-width: $cassette-xs-width;
 $menu-sm-width: 200px;
 $menu-md-width: 270px;
 
-#wedding2 {
-    padding-left: 5px;
-    padding-right: 5px;
+#wedding3 {
+    padding-left: 0px;
+    padding-right: 0px;
+    h1 {
+        margin-top: -20px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        @media (min-width: $screen-sm-min) {
+            margin-top: 0px;
+            margin-right: 40px;
+        }
+    }
     h2 {
         font-family: 'yonder', sans-serif;
         font-size: 42px;
@@ -26,9 +35,9 @@ $menu-md-width: 270px;
         position: relative;
     }
     .dinner-dancing {
-        padding: 3px;
+        padding: 0px;
         .section-fit {
-            width: $cassette-xs-width + 60px;
+            width: $cassette-xs-width + 20px;
             margin-left: auto;
             margin-right: auto;
             @media (min-width: $screen-sm-min) {
@@ -45,8 +54,11 @@ $menu-md-width: 270px;
     .song-request {
         height: $cassette-xs-height + $cassette-xs-line-height;
         width: $cassette-xs-width;
-        //margin-left: auto;
-        //margin-right: auto;
+        @media (max-width: $screen-xs-max) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @media (min-width: $screen-sm-min) {
             height: $cassette-sm-height + $cassette-sm-line-height;
             width: $cassette-sm-width;
@@ -228,6 +240,9 @@ $menu-md-width: 270px;
             margin-bottom: 60px;
             padding-top: 20px;
             padding-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         @media (min-width: $screen-sm-min) {
             height: $cassette-sm-height + $cassette-sm-line-height;

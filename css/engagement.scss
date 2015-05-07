@@ -28,6 +28,11 @@ $screen-lg-min: 1200px;
     background-color: $green2;
     border-color: white;
 }
+.btn-purple {
+    color: white;
+    background-color: $purple2;
+    border-color: white;
+}
 .backstretch {
     img {
         -webkit-filter: blur(3px);
@@ -40,7 +45,6 @@ $screen-lg-min: 1200px;
 
 body {
     font-family: "raleway", Verdana, sans-serif;
-    //font-family: "textanarrow-light", Verdana, sans-serif;
     font-size: 14px;
     @media (min-width: $screen-sm-min) {
         font-size: 16px;
@@ -135,26 +139,36 @@ body {
     background-size: cover;
     background-position: center;
     background-image: url(../gallery/falls/edits-0189-xs-overlay.jpg);
-    //background-image: url(../gallery/yellow/edits-0001-xs.jpg);
     @media (min-width: $screen-sm-min) {
         background-position: center top;
         background-image: url(../gallery/falls/edits-0189-md-overlay.jpg);
-        //background-image: url(../gallery/yellow/edits-0001-sm.jpg);
     }
 }
 
-#guests {
-    z-index: 100 !important;
-    background-repeat: no-repeat;
-    background-position: center;
+#wedding2 { // wedding party
+    //z-index: 100 !important;
+    background: url(../gallery/ring-rose-xs.JPG) 50% 0 no-repeat fixed;
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: 33% 0%;
-    background-image: url(../gallery/falls/edits-0196-xs.jpg);
     @media (min-width: $screen-sm-min) {
-        background-position: center;
+        background-image: url(../gallery/ring-rose-md.JPG);
+    }
+    .section-content {
+        background-color: rgba(238, 238, 238, 0.9);
+    }
+}
+
+#guests {
+    //z-index: 100 !important;
+    background: url(../gallery/falls/edits-0196-xs.jpg) 33% 0 no-repeat fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media (min-width: $screen-sm-min) {
+        background-position: 50% 0;
         background-image: url(../gallery/falls/edits-0196-md.jpg);
     }
     .section-content {
@@ -163,17 +177,14 @@ body {
 }
 
 #registry {
-    z-index: 100 !important;
-    background-repeat: no-repeat;
-    background-position: center;
+    //z-index: 100 !important;
+    background: url(../gallery/mill/edits-0101-xs.jpg) 55% 0 no-repeat fixed;
     -webkit-background-size:cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: 55% 0%;
-    background-image: url(../gallery/mill/edits-0101-xs.jpg);
     @media (min-width: $screen-sm-min) {
-        background-position: 33% 0%;
+        background-position: 33% 0;
         background-image: url(../gallery/mill/edits-0101-md.jpg);
     }
 }

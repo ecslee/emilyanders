@@ -4,6 +4,8 @@
 
 .btn-green { color: white; background-color: #869E62; border-color: white; }
 
+.btn-purple { color: white; background-color: #5f4a64; border-color: white; }
+
 .backstretch img { -webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px); }
 
 body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
@@ -31,12 +33,16 @@ body { font-family: "raleway", Verdana, sans-serif; font-size: 14px; }
 #welcome { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-image: url(../gallery/falls/edits-0189-xs-overlay.jpg); }
 @media (min-width: 768px) { #welcome { background-position: center top; background-image: url(../gallery/falls/edits-0189-md-overlay.jpg); } }
 
-#guests { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: 33% 0%; background-image: url(../gallery/falls/edits-0196-xs.jpg); }
-@media (min-width: 768px) { #guests { background-position: center; background-image: url(../gallery/falls/edits-0196-md.jpg); } }
+#wedding2 { background: url(../gallery/ring-rose-xs.JPG) 50% 0 no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media (min-width: 768px) { #wedding2 { background-image: url(../gallery/ring-rose-md.JPG); } }
+#wedding2 .section-content { background-color: rgba(238, 238, 238, 0.9); }
+
+#guests { background: url(../gallery/falls/edits-0196-xs.jpg) 33% 0 no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media (min-width: 768px) { #guests { background-position: 50% 0; background-image: url(../gallery/falls/edits-0196-md.jpg); } }
 #guests .section-content { background-color: rgba(238, 238, 238, 0.9); }
 
-#registry { z-index: 100 !important; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: 55% 0%; background-image: url(../gallery/mill/edits-0101-xs.jpg); }
-@media (min-width: 768px) { #registry { background-position: 33% 0%; background-image: url(../gallery/mill/edits-0101-md.jpg); } }
+#registry { background: url(../gallery/mill/edits-0101-xs.jpg) 55% 0 no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media (min-width: 768px) { #registry { background-position: 33% 0; background-image: url(../gallery/mill/edits-0101-md.jpg); } }
 
 /* navbar */
 .navbar { margin-top: 60px; }
@@ -134,79 +140,82 @@ div.nav-li-brand.active a.navbar-brand img, div.nav-li-brand:hover a.navbar-bran
 
 /* cassette vars */
 /* menu vars */
-#wedding2 { padding-left: 5px; padding-right: 5px; /* song requests */ /* menu */ }
-#wedding2 h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
-#wedding2 .dinner-dancing { padding: 3px; }
-#wedding2 .dinner-dancing .section-fit { width: 340px; margin-left: auto; margin-right: auto; }
-@media (min-width: 768px) { #wedding2 .dinner-dancing .section-fit { width: 735px; } }
-@media (min-width: 992px) { #wedding2 .dinner-dancing .section-fit { height: 338px; width: 900px; } }
-#wedding2 .song-request { height: 203px; width: 280px; }
-@media (min-width: 768px) { #wedding2 .song-request { height: 269px; width: 375px; } }
-@media (min-width: 992px) { #wedding2 .song-request { height: 338px; width: 470px; } }
-#wedding2 .song-request > h2 { font-family: 'yonder', sans-serif; font-size: 26px; line-height: 24px; text-align: center; color: #555; margin-bottom: 0px; }
-@media (min-width: 768px) { #wedding2 .song-request > h2 { font-size: 35px; line-height: 30px; } }
-@media (min-width: 992px) { #wedding2 .song-request > h2 { font-size: 44px; line-height: 38px; } }
-#wedding2 .song-request .cassette { height: 179px; width: 280px; margin: auto auto; background-image: url("../images/cassette-xs.png"); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
-@media (min-width: 768px) { #wedding2 .song-request .cassette { height: 239px; width: 375px; background-image: url("../images/cassette-sm.png"); } }
-@media (min-width: 992px) { #wedding2 .song-request .cassette { height: 300px; width: 470px; background-image: url("../images/cassette-md.png"); } }
-#wedding2 .song-request .cassette form { position: relative; top: 21px; width: 236px; margin: 0px auto; }
-#wedding2 .song-request .cassette form .form-group-1 { width: 236px; margin: 0px auto; }
-#wedding2 .song-request .cassette form .form-group-2 { width: 133px; margin: 49px auto 0px auto; }
-#wedding2 .song-request .cassette form .formButton { margin-top: 12px; }
-@media (min-width: 768px) { #wedding2 .song-request .cassette form { position: relative; top: 29px; width: 310px; margin: 0px auto; }
-  #wedding2 .song-request .cassette form .form-group-1 { width: 310px; margin: 0px auto; }
-  #wedding2 .song-request .cassette form .form-group-2 { width: 170px; margin: 70px auto 0px auto; }
-  #wedding2 .song-request .cassette form .formButton { margin-top: 24px; } }
-@media (min-width: 992px) { #wedding2 .song-request .cassette form { position: relative; top: 42px; width: 340px; margin: 0px auto; }
-  #wedding2 .song-request .cassette form .form-group-1 { width: 340px; margin: 0px auto; }
-  #wedding2 .song-request .cassette form .form-group-2 { width: 190px; margin: 95px auto 0px auto; }
-  #wedding2 .song-request .cassette form .formButton { margin-top: 35px; } }
-#wedding2 .song-request .cassette form .input-group .input-group-addon { height: 28px; width: 30px; padding: 3px 6px; font-size: 16px; color: #FFFFFF; background-color: #555; border: 1px solid #333; top: 0px; }
-@media (min-width: 768px) { #wedding2 .song-request .cassette form .input-group .input-group-addon { height: 34px; } }
-@media (min-width: 992px) { #wedding2 .song-request .cassette form .input-group .input-group-addon { height: 34px; } }
-#wedding2 .song-request .cassette form .input-group input { height: 28px; width: 103px; background-color: transparent; color: #555555; border: 2px solid #333; border-left: 0px; }
-@media (min-width: 768px) { #wedding2 .song-request .cassette form .input-group input { height: 34px; width: 140px; } }
-@media (min-width: 992px) { #wedding2 .song-request .cassette form .input-group input { height: 34px; width: 150px; } }
-#wedding2 .song-request .formButton { width: 90px; box-sizing: border-box; margin-left: auto; margin-right: auto; }
-#wedding2 .song-request .songSuccess { height: 179px; width: 280px; margin: 0px auto; padding: 30px; position: relative; font-size: 18px; line-height: 24px; border-radius: 10px; background-color: #352938; }
-@media (min-width: 768px) { #wedding2 .song-request .songSuccess { height: 239px; width: 375px; padding: 70px 10px 30px 10px; } }
-@media (min-width: 992px) { #wedding2 .song-request .songSuccess { height: 300px; width: 470px; padding: 90px 10px 30px 10px; } }
-#wedding2 .song-request .songSuccess h4 { color: #fff; text-align: center; }
-#wedding2 .song-request .songSuccess .formButton { width: 112px; margin-top: 30px; }
-@media (max-width: 767px) { #wedding2 .menu { width: 280px; margin-bottom: 60px; padding-top: 20px; padding-bottom: 20px; } }
-@media (min-width: 768px) { #wedding2 .menu { height: 269px; width: 200px; margin-right: 30px; } }
-@media (min-width: 992px) { #wedding2 .menu { height: 338px; width: 270px; } }
-#wedding2 .menu .dinner { font-size: 16px; margin-top: 40px; }
-@media (min-width: 768px) { #wedding2 .menu .dinner { font-size: 12px; margin-top: 20px; } }
-@media (min-width: 992px) { #wedding2 .menu .dinner { font-size: 16px; margin-top: 40px; } }
-#wedding2 .menu .dinner p { text-align: center; margin-bottom: 12px; }
-#wedding2 .menu .dinner p:last-of-type { margin-bottom: 0px; }
-#wedding2 .menu .dinner .food-icon { margin: 20px auto; width: 180px; }
-@media (min-width: 768px) { #wedding2 .menu .dinner .food-icon { width: 150px; } }
-@media (min-width: 992px) { #wedding2 .menu .dinner .food-icon { width: 180px; } }
-#wedding2 .menu .dinner .food-icon img { width: 50px; height: 50px; margin-right: 10px; }
-@media (min-width: 768px) { #wedding2 .menu .dinner .food-icon img { width: 40px; height: 40px; } }
-@media (min-width: 992px) { #wedding2 .menu .dinner .food-icon img { width: 50px; height: 50px; } }
-#wedding2 .menu .dinner .food-icon img:last-of-type { margin-right: 0px; }
-#wedding2 div.separatorLine { height: 1px; margin-top: 40px; margin-bottom: 40px; border-bottom: 1px solid #1D2951; }
+#wedding3 { padding-left: 0px; padding-right: 0px; /* song requests */ /* menu */ }
+#wedding3 h1 { margin-top: -20px; margin-right: 20px; margin-bottom: 0px; }
+@media (min-width: 768px) { #wedding3 h1 { margin-top: 0px; margin-right: 40px; } }
+#wedding3 h2 { font-family: 'yonder', sans-serif; font-size: 42px; line-height: 42px; text-align: center; margin: 0px 0px 0px 0px; position: relative; }
+#wedding3 .dinner-dancing { padding: 0px; }
+#wedding3 .dinner-dancing .section-fit { width: 300px; margin-left: auto; margin-right: auto; }
+@media (min-width: 768px) { #wedding3 .dinner-dancing .section-fit { width: 735px; } }
+@media (min-width: 992px) { #wedding3 .dinner-dancing .section-fit { height: 338px; width: 900px; } }
+#wedding3 .song-request { height: 203px; width: 280px; }
+@media (max-width: 767px) { #wedding3 .song-request { display: block; margin-left: auto; margin-right: auto; } }
+@media (min-width: 768px) { #wedding3 .song-request { height: 269px; width: 375px; } }
+@media (min-width: 992px) { #wedding3 .song-request { height: 338px; width: 470px; } }
+#wedding3 .song-request > h2 { font-family: 'yonder', sans-serif; font-size: 26px; line-height: 24px; text-align: center; color: #555; margin-bottom: 0px; }
+@media (min-width: 768px) { #wedding3 .song-request > h2 { font-size: 35px; line-height: 30px; } }
+@media (min-width: 992px) { #wedding3 .song-request > h2 { font-size: 44px; line-height: 38px; } }
+#wedding3 .song-request .cassette { height: 179px; width: 280px; margin: auto auto; background-image: url("../images/cassette-xs.png"); background-repeat: no-repeat; background-position: center; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+@media (min-width: 768px) { #wedding3 .song-request .cassette { height: 239px; width: 375px; background-image: url("../images/cassette-sm.png"); } }
+@media (min-width: 992px) { #wedding3 .song-request .cassette { height: 300px; width: 470px; background-image: url("../images/cassette-md.png"); } }
+#wedding3 .song-request .cassette form { position: relative; top: 21px; width: 236px; margin: 0px auto; }
+#wedding3 .song-request .cassette form .form-group-1 { width: 236px; margin: 0px auto; }
+#wedding3 .song-request .cassette form .form-group-2 { width: 133px; margin: 49px auto 0px auto; }
+#wedding3 .song-request .cassette form .formButton { margin-top: 12px; }
+@media (min-width: 768px) { #wedding3 .song-request .cassette form { position: relative; top: 29px; width: 310px; margin: 0px auto; }
+  #wedding3 .song-request .cassette form .form-group-1 { width: 310px; margin: 0px auto; }
+  #wedding3 .song-request .cassette form .form-group-2 { width: 170px; margin: 70px auto 0px auto; }
+  #wedding3 .song-request .cassette form .formButton { margin-top: 24px; } }
+@media (min-width: 992px) { #wedding3 .song-request .cassette form { position: relative; top: 42px; width: 340px; margin: 0px auto; }
+  #wedding3 .song-request .cassette form .form-group-1 { width: 340px; margin: 0px auto; }
+  #wedding3 .song-request .cassette form .form-group-2 { width: 190px; margin: 95px auto 0px auto; }
+  #wedding3 .song-request .cassette form .formButton { margin-top: 35px; } }
+#wedding3 .song-request .cassette form .input-group .input-group-addon { height: 28px; width: 30px; padding: 3px 6px; font-size: 16px; color: #FFFFFF; background-color: #555; border: 1px solid #333; top: 0px; }
+@media (min-width: 768px) { #wedding3 .song-request .cassette form .input-group .input-group-addon { height: 34px; } }
+@media (min-width: 992px) { #wedding3 .song-request .cassette form .input-group .input-group-addon { height: 34px; } }
+#wedding3 .song-request .cassette form .input-group input { height: 28px; width: 103px; background-color: transparent; color: #555555; border: 2px solid #333; border-left: 0px; }
+@media (min-width: 768px) { #wedding3 .song-request .cassette form .input-group input { height: 34px; width: 140px; } }
+@media (min-width: 992px) { #wedding3 .song-request .cassette form .input-group input { height: 34px; width: 150px; } }
+#wedding3 .song-request .formButton { width: 90px; box-sizing: border-box; margin-left: auto; margin-right: auto; }
+#wedding3 .song-request .songSuccess { height: 179px; width: 280px; margin: 0px auto; padding: 30px; position: relative; font-size: 18px; line-height: 24px; border-radius: 10px; background-color: #352938; }
+@media (min-width: 768px) { #wedding3 .song-request .songSuccess { height: 239px; width: 375px; padding: 70px 10px 30px 10px; } }
+@media (min-width: 992px) { #wedding3 .song-request .songSuccess { height: 300px; width: 470px; padding: 90px 10px 30px 10px; } }
+#wedding3 .song-request .songSuccess h4 { color: #fff; text-align: center; }
+#wedding3 .song-request .songSuccess .formButton { width: 112px; margin-top: 30px; }
+@media (max-width: 767px) { #wedding3 .menu { width: 280px; margin-bottom: 60px; padding-top: 20px; padding-bottom: 20px; display: block; margin-left: auto; margin-right: auto; } }
+@media (min-width: 768px) { #wedding3 .menu { height: 269px; width: 200px; margin-right: 30px; } }
+@media (min-width: 992px) { #wedding3 .menu { height: 338px; width: 270px; } }
+#wedding3 .menu .dinner { font-size: 16px; margin-top: 40px; }
+@media (min-width: 768px) { #wedding3 .menu .dinner { font-size: 12px; margin-top: 20px; } }
+@media (min-width: 992px) { #wedding3 .menu .dinner { font-size: 16px; margin-top: 40px; } }
+#wedding3 .menu .dinner p { text-align: center; margin-bottom: 12px; }
+#wedding3 .menu .dinner p:last-of-type { margin-bottom: 0px; }
+#wedding3 .menu .dinner .food-icon { margin: 20px auto; width: 180px; }
+@media (min-width: 768px) { #wedding3 .menu .dinner .food-icon { width: 150px; } }
+@media (min-width: 992px) { #wedding3 .menu .dinner .food-icon { width: 180px; } }
+#wedding3 .menu .dinner .food-icon img { width: 50px; height: 50px; margin-right: 10px; }
+@media (min-width: 768px) { #wedding3 .menu .dinner .food-icon img { width: 40px; height: 40px; } }
+@media (min-width: 992px) { #wedding3 .menu .dinner .food-icon img { width: 50px; height: 50px; } }
+#wedding3 .menu .dinner .food-icon img:last-of-type { margin-right: 0px; }
+#wedding3 div.separatorLine { height: 1px; margin-top: 40px; margin-bottom: 40px; border-bottom: 1px solid #1D2951; }
 
-/* map */
-.luray-map { height: 400px; box-sizing: border-box; border: 3px solid white; }
-
-/* map legend accordion */
-.panel-wedding { margin-bottom: 20px; background-color: transparent; border: 1px solid #DDD; border-top-right-radius: 6px; border-top-left-radius: 6px; box-shadow: none; }
-.panel-wedding .panel-heading { position: relative; height: 40px; padding: 10px 15px; box-sizing: border-box; color: #333; background-color: #EEEEEE; border: 1px solid #DDD; border-top-width: 0px; border-radius: 0px; }
-.panel-wedding .panel-heading:first-of-type { border-top-width: 1px; border-top-right-radius: 6px; border-top-left-radius: 6px; }
-.panel-wedding .panel-heading:hover { background-color: #96869a; color: white; }
-.panel-wedding .panel-heading .panel-title { position: absolute; }
-.panel-wedding .panel-heading .glyphicon.pull-right { position: absolute; right: 0px; margin-right: 15px; top: 11px; }
-.panel-wedding .panel-body { height: 0px; padding: 0px; box-sizing: border-box; background-color: #F5F5F5; border: 0px solid #DDD; }
-.panel-wedding .panel-body .panel-body-content { visibility: hidden; }
-.panel-wedding .panel-body .panel-body-content .row { margin-bottom: 20px; }
-.panel-wedding .panel-body .panel-body-content h4 { font-size: 16px; margin: 0px auto 5px auto; }
-.panel-wedding .panel-body .panel-body-content h5 { font-size: 14px; margin: 0px auto; }
-.panel-wedding .panel-body.panel-open { height: 200px; overflow: scroll; padding: 15px; border-width: 0px 1px 1px 1px; }
-.panel-wedding .panel-body.panel-open .panel-body-content { visibility: visible; }
+#luray { /* map */ /* map legend accordion */ }
+#luray > h1 { margin-top: 0px; margin-right: 20px; margin-bottom: 20px; }
+@media (min-width: 768px) { #luray > h1 { margin-top: -10px; margin-right: 40px; margin-bottom: 40px; } }
+#luray .luray-map { height: 400px; box-sizing: border-box; border: 3px solid white; }
+#luray .panel-wedding { margin-bottom: 20px; background-color: transparent; border: 1px solid #DDD; border-top-right-radius: 6px; border-top-left-radius: 6px; box-shadow: none; }
+#luray .panel-wedding .panel-heading { position: relative; height: 40px; padding: 10px 15px; box-sizing: border-box; color: #333; background-color: #EEEEEE; border: 1px solid #DDD; border-top-width: 0px; border-radius: 0px; }
+#luray .panel-wedding .panel-heading:first-of-type { border-top-width: 1px; border-top-right-radius: 6px; border-top-left-radius: 6px; }
+#luray .panel-wedding .panel-heading:hover { background-color: #96869a; color: white; }
+#luray .panel-wedding .panel-heading .panel-title { position: absolute; }
+#luray .panel-wedding .panel-heading .glyphicon.pull-right { position: absolute; right: 0px; margin-right: 15px; top: 11px; }
+#luray .panel-wedding .panel-body { height: 0px; padding: 0px; box-sizing: border-box; background-color: #F5F5F5; border: 0px solid #DDD; }
+#luray .panel-wedding .panel-body .panel-body-content { visibility: hidden; }
+#luray .panel-wedding .panel-body .panel-body-content .row { margin-bottom: 20px; }
+#luray .panel-wedding .panel-body .panel-body-content h4 { font-size: 16px; margin: 0px auto 5px auto; }
+#luray .panel-wedding .panel-body .panel-body-content h5 { font-size: 14px; margin: 0px auto; }
+#luray .panel-wedding .panel-body.panel-open { height: 200px; overflow: scroll; padding: 15px; border-width: 0px 1px 1px 1px; }
+#luray .panel-wedding .panel-body.panel-open .panel-body-content { visibility: visible; }
 
 /* registry */
 .registry-link img { padding: 15px; }

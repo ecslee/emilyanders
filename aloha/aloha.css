@@ -1,0 +1,103 @@
+/* colors */
+/* sizes */
+/* line 18, aloha.scss */
+div { box-sizing: border-box; }
+
+/* line 22, aloha.scss */
+.container-fluid { height: 100vh; }
+
+/* line 26, aloha.scss */
+.row { height: 100%; }
+
+/* line 30, aloha.scss */
+#sidebar-left { height: 100%; border-right: 4px solid #FFF; background-color: #96869a; padding: 5% 8px; }
+
+/* line 37, aloha.scss */
+#sidebar-left #sidebar-title { height: 100%; max-width: 75px; width: 100%; float: right; background-image: url(images/sidebar.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+
+@media (min-width: 768px) { /* line 49, aloha.scss */
+  #sidebar-left { padding: 5% 18px; } }
+/* line 54, aloha.scss */
+#sidebar-right { height: 100%; border-left: 4px solid #FFF; background-color: #96869a; }
+
+/* line 60, aloha.scss */
+#centerbar { height: 14%; background-color: #FFF; border-top: 4px solid #FFF; border-bottom: 4px solid #FFF; text-align: center; padding: 0px; position: relative; font-size: 13vh; }
+
+/* line 71, aloha.scss */
+#centerbar #centerbar-title { height: 100%; margin: auto auto; background-image: url(images/centerbar.png); background-repeat: no-repeat; background-size: contain; background-position: center; }
+
+/* line 80, aloha.scss */
+#centerbar #centerbar-title:hover { background-image: url(images/centerbar-hover.png); }
+
+/* line 84, aloha.scss */
+#centerbar h2 { position: relative; top: 5%; font-size: 40%; color: #555; text-shadow: -2px -2px #6A7b59; margin: 0px -0.6em 0px 0px; letter-spacing: 0.6em; }
+
+/* line 94, aloha.scss */
+#centerbar h3 { position: relative; top: 5%; font-size: 20%; color: #6A7b59; margin: 2px auto; margin: 0px -1px 0px 0px; letter-spacing: 1px; }
+
+/* line 104, aloha.scss */
+#centerbar h4 { position: relative; top: 5%; font-size: 20%; color: #555; margin: 0px auto 0px auto; }
+
+/* line 112, aloha.scss */
+#centerbar h4 .bullet { font-size: 50%; margin: auto 5px; }
+
+/* line 117, aloha.scss */
+#centerbar h4 a { color: #555; }
+
+/* line 121, aloha.scss */
+#centerbar h4 a:hover { text-decoration: none; color: #CDC5DB; }
+
+@media (max-width: 767px) { /* line 127, aloha.scss */
+  #centerbar h2 { font-size: 25%; top: 15%; text-shadow: -1px -1px #FFF; }
+  /* line 132, aloha.scss */
+  #centerbar h3, #centerbar h4 { font-size: 20%; top: 15%; } }
+@media (max-width: 991px) { /* line 140, aloha.scss */
+  #centerbar h2 { margin: 0px -0.5em 0px 0px; letter-spacing: 0.5em; } }
+@media (min-width: 992px) { /* line 147, aloha.scss */
+  #centerbar h2 { margin: 0px -0.6em 0px 0px; letter-spacing: 0.6em; } }
+/* line 153, aloha.scss */
+#savethedate-main { height: 60%; background-image: url("images/savethedate-main-sm.png"); background-size: cover; background-position: center; }
+
+@media (min-width: 992px) { /* line 161, aloha.scss */
+  #savethedate-main { background-image: url("images/savethedate-main-md.png"); } }
+/* line 166, aloha.scss */
+#small-pics { height: 26%; }
+
+/* line 170, aloha.scss */
+#savethedate-left { height: 100%; background-image: url("images/savethedate-left-sm.png"); background-size: cover; background-position: center top; border-right: 2px solid #FFF; }
+
+/* line 178, aloha.scss */
+#savethedate-right { height: 100%; background-image: url("images/savethedate-right-sm.png"); background-size: cover; background-position: center top; border-left: 2px solid #FFF; }
+
+/* line 186, aloha.scss */
+.preload { visibility: hidden; position: absolute; overflow: hidden; height: 1px; width: 1px; }
+
+/* line 194, aloha.scss */
+.section-hawaii { min-height: 0px; padding: 15px; color: #5f4a64; }
+@media (min-width: 768px) { /* line 194, aloha.scss */
+  .section-hawaii { padding-top: 15vh; } }
+
+/* line 203, aloha.scss */
+.main-hawaii { background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-image: url(images/edits-0020-sm.jpg); }
+@media (min-width: 768px) { /* line 203, aloha.scss */
+  .main-hawaii { background-image: url(images/edits-0020-md.jpg); } }
+/* line 215, aloha.scss */
+.main-hawaii .main-hawaii-info { text-align: center; }
+/* line 217, aloha.scss */
+.main-hawaii .main-hawaii-info h1 { font-family: 'heart-and-soul', sans-serif; font-size: 42px; margin-top: 40px; text-align: center; }
+@media (min-width: 768px) { /* line 217, aloha.scss */
+  .main-hawaii .main-hawaii-info h1 { font-size: 64px; margin-top: 50px; } }
+/* line 227, aloha.scss */
+.main-hawaii .main-hawaii-info h2 { margin: 0px; font-size: 26px; line-height: 30px; }
+@media (min-width: 768px) { /* line 227, aloha.scss */
+  .main-hawaii .main-hawaii-info h2 { font-size: 42px; line-height: 46px; } }
+/* line 236, aloha.scss */
+.main-hawaii .main-hawaii-info h3 { margin: 0px; font-family: 'return-sender', sans-serif; font-size: 48px; line-height: 50px; }
+/* line 241, aloha.scss */
+.main-hawaii .main-hawaii-info h3 em { font-family: 'heart-and-soul', sans-serif; font-size: 30px; line-height: 18px; }
+@media (min-width: 768px) { /* line 236, aloha.scss */
+  .main-hawaii .main-hawaii-info h3 { font-size: 64px; line-height: 66px; }
+  /* line 249, aloha.scss */
+  .main-hawaii .main-hawaii-info h3 em { font-size: 48px; line-height: 30px; } }
+/* line 255, aloha.scss */
+.main-hawaii .main-hawaii-info h4 { font-family: 'raleway-light-italic', sans-serif; margin-top: 20px; }
